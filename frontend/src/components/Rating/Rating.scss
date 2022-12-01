@@ -1,0 +1,14 @@
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__numReviews {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #d02245;
+  }
+}
+.rating-bl-clr {
+  color: #ffce3d !important;
+}

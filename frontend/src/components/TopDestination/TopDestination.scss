@@ -1,0 +1,8 @@
+.topDes {
+  background-color: #f5f5f5;
+  &__content {
+    .row {
+      --bs-gutter-x: 0rem !important;
+    }
+  }
+}

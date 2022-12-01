@@ -1,0 +1,71 @@
+.cardCus {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    z-index: 1;
+  }
+  img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+  .smallImg {
+    height: 300px;
+  }
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    color: #fff;
+    overflow: hidden;
+    padding: 20px;
+  }
+  &__main {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      border: 1px solid #ccc;
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 10px 0;
+    }
+  }
+  &__btn {
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    svg {
+      background: #fff;
+    }
+  }
+}

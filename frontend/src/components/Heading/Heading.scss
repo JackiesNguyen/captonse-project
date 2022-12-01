@@ -1,0 +1,17 @@
+.heading {
+  text-align: center;
+  &__container {
+    width: 100%;
+    padding: 40px 20px;
+    margin: 10px 0;
+    .title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .desc {
+      font-size: 17px;
+      font-weight: 500;
+    }
+  }
+}

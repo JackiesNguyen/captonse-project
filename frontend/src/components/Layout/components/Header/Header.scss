@@ -1,0 +1,217 @@
+.header {
+  &__top {
+    background: #000;
+    color: #fff;
+    padding: 5px 0;
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        background-color: #d02245;
+        border-radius: 5px;
+        padding: 2px 5px;
+        margin: 0;
+      }
+    }
+    &-left {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 0;
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  &__bot {
+    background: #fff;
+    color: #f66683;
+    padding: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    &-auth {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-logo {
+      img {
+        width: 130px;
+        height: 53px;
+        object-fit: cover;
+      }
+    }
+    &-category {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 5px;
+      border: 1px solid #f66683;
+      cursor: pointer;
+      position: relative;
+      &:hover .area {
+        height: 186px;
+        visibility: visible;
+      }
+      .area {
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        top: 35px;
+        z-index: 1000;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 0;
+        visibility: hidden;
+        transition: height 0.4s ease-in-out;
+        li {
+          padding: 5px 10px;
+          a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+            &:hover {
+              color: #d02245;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  &-item {
+    list-style: none;
+    position: relative;
+    &:hover .categoryList {
+      visibility: visible;
+    }
+    &:hover .experience {
+      visibility: visible;
+    }
+    &:hover .introList {
+      visibility: visible;
+    }
+    .categoryList {
+      padding: 0;
+      margin: 0;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 47px;
+      z-index: 1000;
+      width: 200px;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      visibility: hidden;
+      li {
+        display: flex;
+        gap: 5px;
+        padding: 5px 10px;
+        a {
+          display: block;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.3;
+          color: #000;
+          &:hover {
+            color: #d02245;
+          }
+        }
+      }
+    }
+    .experience {
+      padding: 0;
+      margin: 0;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 47px;
+      z-index: 1000;
+      width: 200px;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      visibility: hidden;
+      li {
+        display: flex;
+        gap: 5px;
+        padding: 5px 10px;
+        a {
+          display: block;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.3;
+          color: #000;
+          &:hover {
+            color: #d02245;
+          }
+        }
+      }
+    }
+    .introList {
+      padding: 0;
+      margin: 0;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 47px;
+      z-index: 1000;
+      width: 200px;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      visibility: hidden;
+      li {
+        display: flex;
+        gap: 5px;
+        padding: 5px 10px;
+        a {
+          display: block;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.3;
+          color: #000;
+          &:hover {
+            color: #d02245;
+          }
+        }
+      }
+    }
+  }
+  &-link {
+    display: block;
+    text-decoration: none;
+    color: #f66683;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      color: #f66683;
+      border-bottom: 2px solid #f66683;
+    }
+  }
+}
+
+.active {
+  border-bottom: 2px solid #f66683 !important;
+}
