@@ -11,6 +11,7 @@ import logomain from "../../../../assets/images/logomain.png";
 import { BsCaretDownFill } from "react-icons/bs";
 
 import "./Header.scss";
+import SearchBar from "../../../SearchBar/SearchBar";
 const Header = () => {
   const [time, setTime] = useState();
   useEffect(() => {
@@ -170,6 +171,10 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
+
+            {/* <div className="header__search">
+              <SearchBar />
+            </div> */}
             <div className="header__bot-auth">
               <div
                 className="btn btn__primary"
