@@ -1,6 +1,87 @@
 const places = [
   {
-    _id: "1",
+    //_id: "1",
+    name: "Cầu Rồng",
+    title: "Cầu Rồng Đà Nẵng phun lửa, phun nước độc đáo giữa thành phố",
+    slug: "cau-rong",
+    category: "Địa điểm tham quan",
+    image: "/images/caurong.jpg",
+    district: "Sơn Trà",
+    imageCaption:
+      "Cầu Rồng - Biểu tượng du lịch của thành phố Đà Nẵng (Ảnh: IG hahinmakeup86)",
+    detailDescription: [
+      {
+        desc: "Thiết kế cầu Rồng có tổng chiều dài là 666 m, bao gồm 5 nhịp cầu chính và 3 nhịp cầu dẫn. Chiều rộng cầu là 37,5m với 6 làn xe chạy và 2 làn dành cho người đi bộ. Cây cầu Rồng có kết cấu nhịp thép độc đáo, mô phỏng lại hình dáng một con rồng lớn dài 568m, cùng nhiều bộ phận với tổng trọng lượng gần 9.000 tấn. ",
+        img: "/images/caurong/4.jpg",
+        text: "Có thể thấy, những công nghệ được áp dụng để xây dựng cầu Rồng đều được các kỹ sư tính toán một cách rất kỹ lưỡng, đảm bảo chất lượng cũng như độ an toàn ở mức cao nhất. Toàn bộ cầu Rồng được phủ 5 lớp sơn, vừa có khả năng chống ăn mòn, vừa tạo màu sắc ấn tượng. ",
+      },
+      {
+        desc: "Đến ngay cầu Rồng bạn nhé! Cầu Rồng Đà Nẵng đẹp nhất sẽ vào buổi tối, khi mà hơn 2.500 điểm đèn LED nhiều màu sắc khác nhau được hoạt động. Điểm độc đáo của hệ thống đèn này, đó là có thể thay đổi màu sắc linh hoạt, tùy theo quy mô và loại hình sự kiện lễ hội được tổ chức.",
+        img: "/images/caurong/3.jpg",
+        text: "Lịch phun lửa cầu Rồng Đà Nẵng sẽ được diễn ra vào 9 giờ tối thứ 7, chủ nhật hàng tuần, các ngày lễ lớn để phục vụ người dân và khách du lịch.Màn biểu diễn phun lửa sẽ diễn ra 2 lượt, mỗi lượt sẽ gồm 9 lần. Tiếp theo là màn trình diễn phun nước với 3 lượt, mỗi lượt 1 lần, bằng công nghệ hiện đại. Hoạt động này đã khiến cho cây cầu Rồng trở nên ấn tượng và trở thành địa điểm du lịch nổi tiếng Đà Nẵng thu hút rất nhiều khách du lịch mỗi năm.",
+      },
+      {
+        desc: "Trước khi diễn ra màn trình diễn phun lửa, phun nước thì ban tổ chức sẽ cấm các phương tiện đi qua lại, vì vậy bạn hoàn toàn có thể đứng trên cây cầu để chiêm ngưỡng. Lưu ý hãy chọn điểm đứng phù hợp để tránh bị dính nước nhé!",
+        img: "/images/caurong/2.jpg",
+        text: "Đường Bạch Đằng là con phố đi bộ nổi tiếng ngay gần với cầu Rồng, từ đây bạn cũng có thể ngắm được màn trình diễn cũng như vẻ đẹp của sông Hàn. Với góc nhìn khá rộng và xa, bạn sẽ cảm thấy thực sự bất ngờ với vẻ đẹp siêu lung linh khi diễn ra chương trình phun lửa, nước trên cầu Rồng. ",
+      },
+      {
+        desc: "",
+        img: "/images/caurong/1.jpg",
+        text: "Cầu Rồng là cây cầu thứ 7 và là cây cầu mới nhất bắc qua sông Hàn. Vì cây cầu có hình dáng giống 1 con rồng nên được gọi là Cầu Rồng. Cầu Rồng dài 666m và rộng 37.5m với 6 làn xe chạy. Nó được chính thức thông xe ngày 29 tháng 3 năm 2013, kinh phí xây cầu gần 1,5 nghìn tỷ đồng (US$88m). Cầu được thiết kế bởi Ammann & Whitney Consulting Engineers với tập đoàn Louis Berger.Cây cầu hiện đại này bắc qua sông Hàn tại bùng binh Lê Đình Dương/Bạch Đằng, tạo con đường ngắn nhất từ sân bay quốc tế Đà Nẵng tới các đường chính trong thành phố Đà Nẵng, và một tuyến đường trực tiếp đến bãi biển Mỹ Khê và Bãi biển Non Nước ở rìa phía đông của thành phố. Cầu được thiết kế và xây dựng với hình dạng của một con rồng có khả năng phun lửa và phun nước như thật.",
+      },
+    ],
+    rating: 5,
+    numReviews: "1023",
+    address: "P. An Hải Tây, Q. Sơn Trà, TP. Đà Nẵng",
+    description:
+      "Đưa vào hoạt động năm 2013, điểm tham quan Đà Nẵng Cầu Rồng là một trong những địa điểm du lịch mới ở Đà Nẵng hấp dẫn du khách. Với thiết kế độc đáo mang hình dáng con Rồng bắc qua sông Hàn thơ mộng, cầu Rồng là cây cầu thứ 7 tạo nên biểu tượng “thành phố của những câu cầu”. Đến đây vào các ngày cuối tuần, bạn còn xem được cảnh rồng phun lửa, phun nước sống động.",
+    mapUrl:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.081082546806!2d108.22603211480771!3d16.061281688885813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219cd0a9906bf%3A0x7e2ae8ecba05aea7!2zQ-G6p3UgUuG7k25nIMSQw6AgTuG6tW5nLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1665727100064!5m2!1svi!2s",
+  },
+
+  {
+    //_id: "2",
+    name: "Ghềnh Bàng",
+    title: "Ghềnh Bàng Đà Nẵng - Điểm đến mới cho “team” mê trải nghiệm",
+    slug: "ghenh-bang",
+    category: "Địa điểm tham quan",
+    image: "/images/ghenhbang.jpg",
+    detailDescription: [
+      {
+        desc: "Ghềnh Bàng, hay còn được gọi là Ghềnh Bàng Sơn Trà, tọa lạc tại Bãi Bụt, Bãi Chẹ thuộc bán đảo Sơn Trà, thành phố Đà Nẵng. Địa điểm này cách trung tâm thành phố khoảng 20km. Nếu thích trải nghiệm “phượt”, bạn có thể thuê xe máy để di chuyển. Còn nếu muốn tiết kiệm thời gian hoặc đi theo nhóm đông người thì thuê taxi sẽ thuận tiện hơn rất nhiều.",
+        img: "/images/ghenhbang/4.jpg",
+        text: "Do Ghềnh Bàng không sử dụng cho mục đích khai thác du lịch Đà Nẵng nên bạn có thể ghé đây bất cứ lúc nào mà không mất phí tham quan. Tuy nhiên, bạn cần phải chuẩn bị các vật dụng cần thiết, đồ ăn, thức uống do Ghềnh Bàng không có hàng quán phục vụ. Ngoài ra, bạn nên giữ gìn vệ sinh chung, không xả rác bừa bãi để bảo vệ cảnh quan thiên nhiên.",
+      },
+      {
+        desc: "Do thành phố du lịch nên việc di chuyển đến Ghềnh Bàng - địa điểm phượt Đà Nẵng khá dễ dàng. Từ trung tâm thành phố, bạn chỉ cần đi theo đường Võ Nguyên Giáp và đường Hoàng Sa để đến bán đảo Sơn Trà. Đây là cung đường ven biển đẹp nhất thành phố, vì vậy, bạn có thể vừa di chuyển vừa ngắm khung cảnh xung quanh. ",
+        img: "/images/ghenhbang/3.jpg",
+        text: "Sau khi đến bán đảo Sơn Trà, bạn hãy gửi xe và đi bộ đến Ghềnh Bàng. Đoạn đường này có chiều dài khoảng 1km, cần phải băng qua rừng với nhiều dốc cao, dựng đứng. Trong quá trình di chuyển, bạn nên bám chắc vào cây cối 2 bên để tránh trượt ngã. Thành quả cho thử thách vượt qua giới hạn là bờ biển Ghềnh Bàng đẹp như trời Tây hiện ra trước mắt. Lúc này thì tranh thủ ngắm cảnh và chụp những bức hình phong cảnh đẹp nhất về làm kỷ niệm ngay nhé!",
+      },
+      {
+        desc: "Ghềnh Bàng mùa nào cũng đẹp, mùa nào cũng thơ. Tuy nhiên, để có một chuyến tham quan trọn vẹn thì bạn cũng nên quan tâm đến yếu tố thời tiết. Theo kinh nghiệm du lịch Đà Nẵng, bạn nên đến Ghềnh Bàng vào mùa khô là tốt nhất. Thời điểm này kéo dài từ tháng 2 cho đến tháng 8, thời tiết nắng ráo, ít mưa, không có bão. Vì vậy, bạn có thể thoải mái ngắm cảnh, tắm biển và tham gia nhiều hoạt động thú vị khác tại đây. ",
+        img: "/images/ghenhbang/2.jpg",
+        text: "Ghềnh Bàng có gì hấp dẫn mà trở thành điểm đến được nhiều du khách du lịch Đà Nẵng tự túc yêu thích đến vậy? Hãy cùng tìm hiểu những hoạt động, trải nghiệm đặc sắc tại “viên ngọc xanh” tuyệt đẹp của thành phố biển này ngay nhé!",
+      },
+      {
+        desc: "Với những người thích “phượt”, mê khám phá thì Đà Nẵng có gì chơi hay không? Câu trả lời là tham gia hoạt động cắm trại tại Ghềnh Bàng ngay nhé! Do nơi đây còn khá hoang sơ và chưa được khai thác du lịch nên bạn có thể thoải mái lựa chọn nơi dựng lều để chiêm ngưỡng khung cảnh thiên nhiên tuyệt đẹp này. Còn gì tuyệt vời hơn khi được cùng bạn bè cắm trại ở một nơi yên tĩnh, cùng nhau nướng thịt, hát hò và ngắm cảnh biển mênh mông nhỉ? ",
+        img: "/images/ghenhbang/1.jpg",
+        text: "Ghềnh Bàng hội tụ nhiều yếu tố để trở thành một điểm lặn ngắm san hô ấn tượng như: nguồn nước trong, độ sâu vừa phải cũng như có nhiều rạn san hô mọc san sát nhau, nhiều hình dáng, nhiều màu sắc. Chỉ cần học một chút kỹ năng lặn và thêm một chút phí thuê kính lặn là bạn đã có thể bắt đầu hành trình khám phá một trong những bãi biển Đà Nẵng đẹp nhất. Nếu điện thoại của bạn có tính năng chống nước thì đừng quên lưu lại những khoảnh khắc đẹp nhất dưới đại dương xanh mát.",
+      },
+    ],
+    district: "Sơn Trà",
+    imageCaption:
+      "Địa điểm du lịch Đà Nẵng Ghềnh Bàng với những mỏm đá nhiều hình thù độc đáo (Ảnh: Sưu tầm)",
+    rating: 3,
+    numReviews: "39",
+    address: "Hoàng Sa, P. Thọ Quang, Q. Sơn Trà, TP. Đà Nẵng",
+    description:
+      "Cách trung tâm thành phố tầm 20km, Ghềnh Bàng là địa điểm du lịch Đà Nẵng thu hút đông đảo các bạn trẻ đến đây check in, chụp hình. Nơi đây quyến rũ du khách gần xa bởi hình thù độc đáo của các mỏm đá nhấp nhô đầy tính nghệ thuật. Đến đây, du khách tha hồ tắm biển, ngắm san hô, cắm trại, thưởng thức hải sản tươi ngon,...",
+    mapUrl:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.0940765754194!2d108.30944351480834!3d16.112433588854234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31423df2819c425b%3A0xfac92c3b7e0f9926!2zR2jhu4FuaCBCw6BuZw!5e0!3m2!1svi!2s!4v1665726851699!5m2!1svi!2s",
+  },
+  {
+    //_id: "3",
     name: "Bãi Bụt",
     slug: "bai-but",
     category: "Địa điểm tham quan",
@@ -11,65 +92,21 @@ const places = [
       "/images/baibut/3.jpg",
       "/images/baibut/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Bãi bụt sơ hữu cảnh đẹp hoang sơ, thu hút nhiều tín đồ xê dịch đến khám phá (Ảnh: Sưu tầm)",
-    rating: "4.5",
-    numReviews: "10",
+    rating: 3,
+    numReviews: "100",
     address: "Hoàng Sa, Bãi Bụt, Bán Đảo Sơn Trà, TP. Đà Nẵng",
     description:
       "Nằm ở phía nam bán đảo Sơn Trà, Bãi Bụt là một trong những địa điểm du lịch Đà Nẵng miễn phí đáng đến nhất. Được mệnh danh là tuyệt cảnh dưới chân Chùa Linh Ứng, Bãi Bụt là nơi nhiều du khách trong và ngoài nước chọn làm nơi tham quan, tắm biển, ngắm san hô, khám phá các loài sinh vật biển,... khi đến du lịch tại Đà Nẵng.",
     mapUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.2694398193894!2d108.27984861480827!3d16.103356888859814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314217ecad88a6bf%3A0xa8c74d670827b36b!2zSG_DoG5nIFNhLCBUaOG7jSBRdWFuZywgU8ahbiBUcsOgLCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1665737118584!5m2!1svi!2s",
   },
+
   {
-    _id: "2",
-    name: "Ghềnh Bàng",
-    slug: "ghenh-bang",
-    category: "Địa điểm tham quan",
-    image: "/images/ghenhbang.jpg",
-    imageArr: [
-      "/images/ghenhbang/1.jpg",
-      "/images/ghenhbang/2.jpg",
-      "/images/ghenhbang/3.jpg",
-      "/images/ghenhbang/4.jpg",
-    ],
-    district: "Sơn Trà",
-    imageCaption:
-      "Địa điểm du lịch Đà Nẵng Ghềnh Bàng với những mỏm đá nhiều hình thù độc đáo (Ảnh: Sưu tầm)",
-    rating: "4",
-    numReviews: "10",
-    address: "Hoàng Sa, P. Thọ Quang, Q. Sơn Trà, TP. Đà Nẵng",
-    description:
-      "Cách trung tâm thành phố tầm 20km, Ghềnh Bàng là địa điểm du lịch Đà Nẵng thu hút đông đảo các bạn trẻ đến đây check in, chụp hình. Nơi đây quyến rũ du khách gần xa bởi hình thù độc đáo của các mỏm đá nhấp nhô đầy tính nghệ thuật. Đến đây, du khách tha hồ tắm biển, ngắm san hô, cắm trại, thưởng thức hải sản tươi ngon,...",
-    mapUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.0940765754194!2d108.30944351480834!3d16.112433588854234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31423df2819c425b%3A0xfac92c3b7e0f9926!2zR2jhu4FuaCBCw6BuZw!5e0!3m2!1svi!2s!4v1665726851699!5m2!1svi!2s",
-  },
-  {
-    _id: "3",
-    name: "Cầu Rồng",
-    slug: "cau-rong",
-    category: "Địa điểm tham quan",
-    image: "/images/caurong.jpg",
-    imageArr: [
-      "/images/caurong/1.jpg",
-      "/images/caurong/2.jpg",
-      "/images/caurong/3.jpg",
-      "/images/caurong/4.jpg",
-    ],
-    district: "Sơn Trà",
-    imageCaption:
-      "Cầu Rồng - Biểu tượng du lịch của thành phố Đà Nẵng (Ảnh: IG hahinmakeup86)",
-    rating: "4",
-    numReviews: "10",
-    address: "P. An Hải Tây, Q. Sơn Trà, TP. Đà Nẵng",
-    description:
-      "Đưa vào hoạt động năm 2013, điểm tham quan Đà Nẵng Cầu Rồng là một trong những địa điểm du lịch mới ở Đà Nẵng hấp dẫn du khách. Với thiết kế độc đáo mang hình dáng con Rồng bắc qua sông Hàn thơ mộng, cầu Rồng là cây cầu thứ 7 tạo nên biểu tượng “thành phố của những câu cầu”. Đến đây vào các ngày cuối tuần, bạn còn xem được cảnh rồng phun lửa, phun nước sống động.",
-    mapUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.081082546806!2d108.22603211480771!3d16.061281688885813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219cd0a9906bf%3A0x7e2ae8ecba05aea7!2zQ-G6p3UgUuG7k25nIMSQw6AgTuG6tW5nLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1665727100064!5m2!1svi!2s",
-  },
-  {
-    _id: "4",
+    //_id: "4",
     name: "Núi Ngũ Hành Sơn",
     slug: "nui-ngu-hanh-son",
     category: "Địa điểm tham quan",
@@ -80,10 +117,11 @@ const places = [
       "/images/nuinguhanhson/3.jpg",
       "/images/nuinguhanhson/4.jpg",
     ],
+    priceRange: "",
     district: "Ngũ Hành Sơn",
     imageCaption:
       "Ngắm nhìn vẻ đẹp toàn thành phố từ đỉnh núi Ngũ Hành Sơn (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 3,
     numReviews: "10",
     address: "81 Huyền Trân Công Chúa, Hòa Hải, Ngũ Hành Sơn, Đà Nẵng",
     description:
@@ -92,7 +130,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.210486240408!2d108.2597816148069!3d16.002554688922057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314210c78ccc5f93%3A0x481d7ec1b9029ca7!2zODEgSHV54buBbiBUcsOibiBDw7RuZyBDaMO6YSwgSG_DoCBI4bqjaSwgTmfFqSBIw6BuaCBTxqFuLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1665728829236!5m2!1svi!2s",
   },
   {
-    _id: "5",
+    //_id: "5",
     name: "Đèo Hải Vân",
     slug: "deo-hai-van",
     category: "Địa điểm tham quan",
@@ -103,10 +141,11 @@ const places = [
       "/images/deohaivan/3.jpg",
       "/images/deohaivan/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Đèo Hải Vân - Cung đường đẹp bậc nhất với các tín đồ xê dịch (Ảnh: IG thuyxokum)",
-    rating: "4",
+    rating: 5,
     numReviews: "10",
     address:
       "Giáp ranh giữa TP Đà Nẵng và tỉnh Thừa Thiên Huế. Thuộc tt. Lăng Cô, Phú Lộc, Thừa Thiên Huế",
@@ -116,7 +155,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15327.087106292063!2d108.08135022760274!3d16.180715470992787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314220e3850e33d3%3A0xf06af6bdd5743905!2zxJDDqG8gSOG6o2kgVsOibiwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1665728942130!5m2!1svi!2s",
   },
   {
-    _id: "6",
+    //_id: "6",
     name: "Suối Mơ",
     slug: "suoi-mo",
     category: "Địa điểm tham quan",
@@ -127,10 +166,11 @@ const places = [
       "/images/suoimo/3.jpg",
       "/images/suoimo/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Địa điểm du lịch Suối Mơ – địa điểm dã ngoại yêu thích của nhiều du khách (Ảnh: IG nguyenthanh.262)",
-    rating: "4",
+    rating: 3,
     numReviews: "10",
     address: "xã Hòa Ninh, huyện Hòa Vang, Đà Nẵng",
     description:
@@ -139,7 +179,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15327.087106292063!2d108.08135022760274!3d16.180715470992787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314220e3850e33d3%3A0xf06af6bdd5743905!2zxJDDqG8gSOG6o2kgVsOibiwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1665728942130!5m2!1svi!2s",
   },
   {
-    _id: "7",
+    //_id: "7",
     name: "Thác Ba Đờ Phọt",
     slug: "thac-ba-do-phot",
     category: "Địa điểm tham quan",
@@ -150,9 +190,10 @@ const places = [
       "/images/thacbadophot/3.jpg",
       "/images/thacbadophot/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption: "Thác Ba Đờ Phọt hùng vĩ, tuyệt đẹp (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 5,
     numReviews: "10",
     address: "xã Hoà Phú, huyện Hòa Vang, TP Đà Nẵng",
     description:
@@ -161,7 +202,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15344.366063374873!2d107.97732847836643!3d15.95659657320827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141f77af7e9b92b%3A0xfaf4e097094874f3!2zSMOyYSBQaMO6IFRow6BuaCBUb3VyaXN0IC0gVHLGsOG7o3QgdGjDoWMgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1665729396402!5m2!1svi!2s",
   },
   {
-    _id: "8",
+    //_id: "8",
     name: "Làng nghề nước mắm Nam Ô",
     slug: "lang-nghe-nuoc-mam-nam-o",
     category: "Địa điểm tham quan",
@@ -172,10 +213,11 @@ const places = [
       "/images/langnghenuocmamnamo/3.jpg",
       "/images/langnghenuocmamnamo/4.jpg",
     ],
+    priceRange: "",
     district: "Liên Chiểu",
     imageCaption:
       "Vẻ đẹp yên bình của địa điểm du lịch Đà Nẵng Làng nghề nước mắm Nam Ô (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 1,
     numReviews: "10",
     address: "Nam Ô, P. Hòa Hiệp Nam, Q. Liên Chiểu, TP Đà Nẵng",
     description:
@@ -184,7 +226,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1916.508387945366!2d108.12763145806315!3d16.116433047212936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421fe5d9c9ec2d%3A0xdaf04b88490d22d5!2zTsaw4bubYyBt4bqvbSBOYW0gw5QgLSBIxrDGoW5nIEzDoG5nIEPhu5U!5e0!3m2!1svi!2s!4v1665730234712!5m2!1svi!2s",
   },
   {
-    _id: "9",
+    //_id: "9",
     name: "Làng cổ Phong Nam",
     slug: "lang-co-phong-nam",
     category: "Địa điểm tham quan",
@@ -195,10 +237,11 @@ const places = [
       "/images/langcophongnam/3.jpg",
       "/images/langcophongnam/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Những bức tường rong rêu phủ kín tại làng cổ Phong Nam (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 1,
     numReviews: "10",
     address: "xã Phong Lệ, huyện Hòa Vang,TP Đà Nẵng",
     description:
@@ -207,7 +250,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.517571851782!2d108.18884762384035!3d15.986550453531011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421b3a022c381d%3A0xf1091f8a1ae04521!2zTMOgbmcgY-G7lSBQaG9uZyBOYW0!5e0!3m2!1svi!2s!4v1665730386320!5m2!1svi!2s",
   },
   {
-    _id: "10",
+    //_id: "10",
     name: "Làng bánh tráng Túy Loan",
     slug: "lang-banh-trang-tuy-loan",
     category: "Địa điểm tham quan",
@@ -218,10 +261,11 @@ const places = [
       "/images/langbanhtrangtuylan/3.jpg",
       "/images/langbanhtrangtuylan/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Nhà thờ tộc lưu giữ nét kiến trúc cổ tại địa điểm du lịch Đà Nẵng Làng bánh tráng Túy Loan (Ảnh: Báo Lao Động)",
-    rating: "4",
+    rating: 4.5,
     numReviews: "10",
     address: "Túy Loan, Hòa Phong, Hòa Vang, Đà Nẵng ",
     description:
@@ -230,7 +274,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61364.877949160764!2d108.06649855820312!3d15.997637299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421c7156cb3745%3A0x381024ae64ced3b5!2zxJDDrG5oIGzDoG5nIFTDunkgTG9hbg!5e0!3m2!1svi!2s!4v1665730571759!5m2!1svi!2s",
   },
   {
-    _id: "11",
+    //_id: "11",
     name: "Giếng Trời",
     slug: "gieng-troi",
     category: "Địa điểm tham quan",
@@ -241,10 +285,11 @@ const places = [
       "/images/giengtroi/3.jpg",
       "/images/giengtroi/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Giếng Trời - địa điểm vui chơi hòa cùng thiên nhiên tuyệt đẹp tại Đà Nẵng (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 1.5,
     numReviews: "10",
     address: "xã Hòa Ninh, H. Hòa Vang, TP Đà Nẵng",
     description:
@@ -253,7 +298,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.591634003767!2d107.98643092384573!3d16.034759853405845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141f6831262b307%3A0xa64c6ed6f98b579b!2zR2nhur9uZyBUcuG7nWk!5e0!3m2!1svi!2s!4v1665730713771!5m2!1svi!2s",
   },
   {
-    _id: "12",
+    //_id: "12",
     name: "Đỉnh Bàn Cờ ",
     slug: "dinh-ban-co",
     category: "Địa điểm tham quan",
@@ -264,10 +309,11 @@ const places = [
       "/images/dinhbanco/3.jpg",
       "/images/dinhbanco/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Đỉnh Bàn Cờ - địa điểm du lịch nổi tiếng tại Đà Nẵng (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 4,
     numReviews: "10",
     address: "P. Thọ Quang, Q. Sơn Trà, TP. Đà Nẵng",
     description:
@@ -276,7 +322,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15331.79237955468!2d108.26719112758971!3d16.11998572159204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31423d71a211a64f%3A0xb65a8033e2183c23!2zxJHhu4luaCBCw6BuIEPhu50!5e0!3m2!1svi!2s!4v1665730840600!5m2!1svi!2s",
   },
   {
-    _id: "13",
+    //_id: "13",
     name: "Hải đăng Tiên Sa",
     slug: "hai-dang-tien-sa",
     category: "Địa điểm tham quan",
@@ -287,10 +333,11 @@ const places = [
       "/images/haidangtiensa/3.jpg",
       "/images/haidangtiensa/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Địa điểm du lịch Đà Nẵng Hải đăng Tiên Sa tạo lạc trên bán đảo Sơn Trà (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 1,
     numReviews: "10",
     address: "P. Thọ Quang, Q. Sơn Trà, TP. Đà Nẵng",
     description:
@@ -299,7 +346,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3832.5669489781435!2d108.31987381480872!3d16.139687488837435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31423dd18d128a23%3A0xab60f4ad03227395!2zSOG6o2kgxJHEg25nIFPGoW4gVHLDoA!5e0!3m2!1svi!2s!4v1665730967515!5m2!1svi!2s",
   },
   {
-    _id: "14",
+    //_id: "14",
     name: "Hồ Đồng Xanh – Đồng Nghệ",
     slug: "ho-dong-xanh-dong-nghe",
     category: "Địa điểm tham quan",
@@ -310,10 +357,11 @@ const places = [
       "/images/hodongxanhdongnghe/3.jpg",
       "/images/hodongxanhdongnghe/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Hòa mình cùng thiên nhiên xanh mát tại hồ Đồng Xanh - Đồng Nghệ (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 4,
     numReviews: "10",
     address: "xã Hòa Khương, H. Hòa Vang, TP. Đà Nẵng",
     description:
@@ -322,7 +370,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15345.043733504957!2d108.06065507755312!3d15.947744273295962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421d374a16e2bf%3A0xfe0c7eac32913b30!2zSOG7kyDEkOG7k25nIFhhbmggLSDEkOG7k25nIE5naOG7hw!5e0!3m2!1svi!2s!4v1665731170756!5m2!1svi!2s",
   },
   {
-    _id: "15",
+    //_id: "15",
     name: "Rừng dừa Bảy Mẫu",
     slug: "rung-dua-bay-mau",
     category: "Địa điểm tham quan",
@@ -333,10 +381,11 @@ const places = [
       "/images/rungduabaymau/3.jpg",
       "/images/rungduabaymau/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Rừng dừa Bảy Mẫu - địa điểm check-in cực hot gần Đà Nẵng (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 2,
     numReviews: "10",
     address: "P. Cẩm Thanh, TP. Hội An, Quảng Nam",
     description:
@@ -345,7 +394,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.6661640318025!2d108.37154191480518!3d15.874133689001676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420dadaf61a853%3A0xf6d4fb8016f50b0e!2zS2h1IGRpIHTDrWNoIGzhu4tjaCBz4butIGPDoWNoIG3huqFuZyBS4burbmcgROG7q2EgQuG6o3kgTeG6q3U!5e0!3m2!1svi!2s!4v1665731346840!5m2!1svi!2s",
   },
   {
-    _id: "16",
+    //_id: "16",
     name: "Thánh địa Mỹ Sơn",
     slug: "thanh-dia-my-son",
     category: "Địa điểm tham quan",
@@ -356,10 +405,11 @@ const places = [
       "/images/thanhdiamyson/3.jpg",
       "/images/thanhdiamyson/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Thánh địa Mỹ Sơn - điểm sống ảo cực chất gần Đà Nẵng (Ảnh: IG myng21)",
-    rating: "4",
+    rating: 1,
     numReviews: "10",
     address: "xã Duy Phú, H. Duy Xuyên, T. Quảng Nam",
     description:
@@ -368,7 +418,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15358.940873960844!2d108.10501767253845!3d15.765140415702259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314200a30f3839eb%3A0xe7c8b131ea5e90b2!2zVGjDoW5oIMSR4buLYSBN4bu5IFPGoW4sIER1eSBYdXnDqm4sIFF14bqjbmcgTmFtLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1665731457114!5m2!1svi!2s",
   },
   {
-    _id: "17",
+    //_id: "17",
     name: "Bãi biển Mỹ Khê ",
     slug: "bai-bien-my-khe",
     category: "Bãi biển đẹp",
@@ -379,10 +429,11 @@ const places = [
       "/images/baibienmykhe/3.jpg",
       "/images/baibienmykhe/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Biển Mỹ Khê là một trong những bãi biển đẹp nhất tại Đà Nẵng (Ảnh: IG hanggxuu)",
-    rating: "4",
+    rating: 4,
     numReviews: "10",
     address: "P. Phước Mỹ, Q. Sơn Trà, TP. Đà Nẵng",
     description:
@@ -391,7 +442,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7668.136719706929!2d108.24279657434147!3d16.06194205554166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421782f7fa0ee3%3A0xeafb8ba272ee55ac!2zQsOjaSBiaeG7g24gTeG7uSBLaMOq!5e0!3m2!1svi!2s!4v1665731585463!5m2!1svi!2s",
   },
   {
-    _id: "18",
+    //_id: "18",
     name: "Bãi biển Xuân Thiều",
     slug: "bai-bien-xuan-thieu",
     category: "Bãi biển đẹp",
@@ -402,10 +453,11 @@ const places = [
       "/images/baibienxuanthieu/3.jpg",
       "/images/baibienxuanthieu/4.jpg",
     ],
+    priceRange: "",
     district: "Liên Chiểu",
     imageCaption:
       "Bãi biển Xuân Thiều cũng là một trong những địa điểm du lịch biển lý tưởng tại Đà Nẵng (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 4,
     numReviews: "10",
     address: "Đường Nguyễn Tất Thành, P. Liên Chiểu,TP. Đà Nẵng",
     description:
@@ -414,7 +466,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30666.881425909804!2d108.11973717060779!3d16.098658364929264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218c89fccd181%3A0x3c19d491d8564798!2zQsOjaSB04bqvbSBMacOqbiBDaGnhu4N1!5e0!3m2!1svi!2s!4v1665731711443!5m2!1svi!2s",
   },
   {
-    _id: "19",
+    //_id: "19",
     name: "Bãi biển Non Nước",
     slug: "bai-bien-non-nuoc",
     category: "Bãi biển đẹp",
@@ -425,10 +477,11 @@ const places = [
       "/images/baibiennonnuoc/3.jpg",
       "/images/baibiennonnuoc/4.jpg",
     ],
+    priceRange: "",
     district: "Ngũ Hành Sơn",
     imageCaption:
       "Bãi biển Non Nước có cảnh sắc hoang sơ thu hút khách du lịch (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 1,
     numReviews: "10",
     address: "P. Hòa Hải, Q. Ngũ Hành Sơn, TP Đà Nẵng",
     description:
@@ -437,7 +490,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30682.762455282038!2d108.23798611864186!3d15.995530224282936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314210dcc92cfa5f%3A0x6426dff2323ae607!2zQsOjaSBiaeG7g24gTm9uIE7GsOG7m2M!5e0!3m2!1svi!2s!4v1665731838549!5m2!1svi!2s",
   },
   {
-    _id: "20",
+    //_id: "20",
     name: "Bãi biển Nam Ô",
     slug: "bai-bien-nam-o",
     category: "Bãi biển đẹp",
@@ -448,10 +501,11 @@ const places = [
       "/images/baibiennamo/3.jpg",
       "/images/baibiennamo/4.jpg",
     ],
+    priceRange: "",
     district: "Liên Chiểu",
     imageCaption:
       "Du khách chụp hình tại địa điểm du lịch Đà Nẵng Bãi rạn Nam Ô (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 4,
     numReviews: "10",
     address: "P. Hòa Hiệp, Q. Liên Chiểu, TP Đà Nẵng",
     description:
@@ -460,7 +514,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3832.966986480837!2d108.12820721480853!3d16.119008588850193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314221e2e052169f%3A0x32cce407b36782e0!2zQsOjaSB04bqvbSBOYW0gw5Q!5e0!3m2!1svi!2s!4v1665731952367!5m2!1svi!2s",
   },
   {
-    _id: "21",
+    //_id: "21",
     name: "Bãi biển Tiên Sa",
     slug: "bai-bien-tien-sa",
     category: "Bãi biển đẹp",
@@ -471,10 +525,11 @@ const places = [
       "/images/baibientiensa/3.jpg",
       "/images/baibientiensa/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Biển Tiên Sa Đà Nẵng là một vùng biển yên bình, tuyệt đẹp (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 4,
     numReviews: "10",
     address: "Yết Kiêu,  P. Thọ Quang, Q Sơn Trà, TP Đà Nẵng",
     description:
@@ -483,7 +538,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1916.4318819024047!2d108.21794216759625!3d16.124346888293438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314222bb891f6be3%3A0xca95728275706863!2zQsOjaSBiaeG7g24gVGnDqm4gU2E!5e0!3m2!1svi!2s!4v1665732106150!5m2!1svi!2s",
   },
   {
-    _id: "22",
+    //_id: "22",
     name: "Bãi biển An Bàng",
     slug: "bai-bien-an-bang",
     category: "Bãi biển đẹp",
@@ -494,10 +549,11 @@ const places = [
       "/images/baibienanbang/3.jpg",
       "/images/baibienanbang/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Bãi biễn An Bàng mộc mạc, hoang sơ, du khách thỏa sức trải nghiệm du lịch biển (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 4,
     numReviews: "10",
     address: "Đ. Hai Bà Trưng, Tp. Hội An, Quảng Nam",
     description:
@@ -506,7 +562,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3836.9133999353967!2d108.33846021480568!3d15.913607188977243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420df96d5396ab%3A0xed0d9e973a32b1ef!2zQsOjaSBiaeG7g24gQW4gQsOgbmc!5e0!3m2!1svi!2s!4v1665732269987!5m2!1svi!2s",
   },
   {
-    _id: "23",
+    //_id: "23",
     name: "Chùa Linh Ứng",
     slug: "chua-linh-ung",
     category: "Văn hoá tín ngưỡng bản địa",
@@ -517,10 +573,11 @@ const places = [
       "/images/chualinhung/3.jpg",
       "/images/chualinhung/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Du lịch tâm linh ở Đà Nẵng không thể bỏ qua chùa Linh Ứng (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 3,
     numReviews: "10",
     address: "Bãi Bụt, P Thọ Quang, Q. Sơn Trà, TP. Đà Nẵng",
     description:
@@ -529,7 +586,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.33059707272!2d108.27326602385331!3d16.100190253236107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314217095c3bd6a5%3A0xcb940140517b3e26!2zQ2jDuWEgbGluaCDhu6luZw!5e0!3m2!1svi!2s!4v1665732469102!5m2!1svi!2s",
   },
   {
-    _id: "24",
+    //_id: "24",
     name: "Nhà thờ Con Gà",
     slug: "nha-tho-con-ga",
     category: "Văn hoá tín ngưỡng bản địa",
@@ -540,10 +597,11 @@ const places = [
       "/images/nhathoconga/3.jpg",
       "/images/nhathoconga/4.jpg",
     ],
+    priceRange: "",
     district: "Hải Châu",
     imageCaption:
       "Địa điểm du lịch Đà Nẵng Nhà thờ Con Gà với kiến trúc nổi bật, thu hút (Ảnh: Sưu tầm)",
-    rating: "4",
+    rating: 4,
     numReviews: "10",
     address: "Hải Châu 1, Q. Hải Châu, TP. Đà Nẵng ",
     description:
@@ -552,7 +610,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963052.2523077275!2d106.00870482363464!3d14.067242122942728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142198f38589aef%3A0x9409e1a4c30cbf79!2zTmjDoCBUaMahzIAgQ29uIEfDoA!5e0!3m2!1svi!2s!4v1665732666385!5m2!1svi!2s",
   },
   {
-    _id: "25",
+    //_id: "25",
     name: "Chùa Quan Âm",
     slug: "chua-quan-am",
     category: "Văn hoá tín ngưỡng bản địa",
@@ -563,10 +621,11 @@ const places = [
       "/images/chuaquanam/3.jpg",
       "/images/chuaquanam/4.jpg",
     ],
+    priceRange: "",
     district: "Ngũ Hành Sơn",
     imageCaption:
       "Chùa Quan Âm có kiến trúc độc đáo, thu hút đông đảo khách du lịch hằng năm (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "48 Sư Vạn Hạnh, Hoà Hải, Ngũ Hành Sơn, Đà Nẵng",
     description:
@@ -575,7 +634,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122766.15406702441!2d108.22304415504075!3d15.938261546106718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314210bc07fdc7f9%3A0xccc3f3297b33d5ba!2zQ2jDuWEgUXXDoW4gVGjhur8gw4Jt!5e0!3m2!1svi!2s!4v1665732814508!5m2!1svi!2s",
   },
   {
-    _id: "26",
+    //_id: "26",
     name: "Đền Lĩnh Chúa Linh Từ",
     slug: "den-linh-chua-linh-tu",
     category: "Văn hoá tín ngưỡng bản địa",
@@ -586,10 +645,11 @@ const places = [
       "/images/denlinhchualinhtu/3.jpg",
       "/images/denlinhchualinhtu/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Địa điểm du lịch Đà Nẵng đền Lĩnh Chúa Linh Từ nằm giữa thiên nhiên nên thơ hùng vĩ (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "xã Hoà Phú, H. Hòa Vang, TP. Đà Nẵng",
     description:
@@ -598,7 +658,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.3014250326632!2d107.9814153348877!3d15.99781690000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141f6e309de2751%3A0xfa2ecafd8675906e!2zTGluaCBQaG9uZyBU4bux!5e0!3m2!1svi!2s!4v1665732995746!5m2!1svi!2s",
   },
   {
-    _id: "27",
+    //_id: "27",
     name: "Nhà Thờ Chính Toà",
     slug: "nha-tho-chinh-toa",
     category: "Văn hoá tín ngưỡng bản địa",
@@ -609,10 +669,11 @@ const places = [
       "/images/nhathochinhtoa/3.jpg",
       "/images/nhathochinhtoa/4.jpg",
     ],
+    priceRange: "",
     district: "Hải Châu",
     imageCaption:
       "Nhà thờ Chính Tòa có màu hồng bắt mắt, trở thành điểm check-in thu hút tại Đà Nẵng (Ảnh: Sưu tầm) ",
-    rating: "5",
+    rating: 3,
     numReviews: "10",
     address: "156 Đ. Trần Phú, Q. Hải Châu, TP. Đà Nẵng ",
     description:
@@ -621,7 +682,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.9772221122525!2d108.21848592184476!3d16.06667175332295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421832547c341d%3A0xf5a1cee35303f175!2zR2nDoW8geOG7qSBDaMOtbmggdMOyYSDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1665733208291!5m2!1svi!2s",
   },
   {
-    _id: "28",
+    //_id: "28",
     name: "Bảo tàng Đà Nẵng",
     slug: "bao-tang-da-nang",
     category: "Văn hoá tín ngưỡng bản địa",
@@ -632,10 +693,11 @@ const places = [
       "/images/baotangdanang/3.jpg",
       "/images/baotangdanang/4.jpg",
     ],
+    priceRange: "",
     district: "Hải Châu",
     imageCaption:
       "Thỏa sức check-in với nhiều bức tranh 3D độc đáo tại bảo tàng Đà Nẵng (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "24 Đ. Trần Phú, Thạch Thang, Hải Châu, Đà Nẵng",
     description:
@@ -644,7 +706,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7732832189276!2d108.22048451457493!3d16.07725048887602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183691882913%3A0xc9180a3982a9ef58!2zQuG6o28gdMOgbmcgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1665733369926!5m2!1svi!2s",
   },
   {
-    _id: "29",
+    //_id: "29",
     name: "Bảo tàng Đồng Đình",
     slug: "bao-tang-dong-dinh",
     category: "Văn hoá tín ngưỡng bản địa",
@@ -655,10 +717,11 @@ const places = [
       "/images/baotangdongdinh/3.jpg",
       "/images/baotangdongdinh/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Bảo tàng Đồng Đình - nơi hòa mình trong những không gian xưa cũ (Ảnh: IG wygo.club)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "Hoàng Sa, P. Thọ Quang, Q. Sơn Trà, TP. Đà Nẵng",
     description:
@@ -667,7 +730,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.307032041241!2d108.27389871457531!3d16.101410488861063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314217d700e5ae69%3A0xe0ee545e81e43d99!2zQuG6o28gdMOgbmcgxJDhu5NuZyDEkMOsbmg!5e0!3m2!1svi!2s!4v1665733521366!5m2!1svi!2s",
   },
   {
-    _id: "30",
+    //_id: "30",
     name: "Chợ đêm Sơn Trà",
     slug: "cho-dem-son-tra",
     category: "Địa điểm vui chơi hấp dẫn",
@@ -678,10 +741,11 @@ const places = [
       "/images/chodemsontra/3.jpg",
       "/images/chodemsontra/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Chợ đêm Sơn Trà là trung tâm mua sắm sầm uất bậc nhất tại Đà Nẵng (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "Mai Hắc Đế, An Hải Trung, Sơn Trà, Đà Nẵng ",
     description:
@@ -690,7 +754,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.0749925945624!2d108.22979681457473!3d16.061597788885624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142195a335892bd%3A0x8f53976f3c0fe60!2zQ2jhu6MgxJDDqm0gU8ahbiBUcsOg!5e0!3m2!1svi!2s!4v1665733725433!5m2!1svi!2s",
   },
   {
-    _id: "31",
+    //_id: "31",
     name: "Bảo tàng 3D Trick Eye",
     slug: "bao-tang-3d-trick-eye",
     category: "Địa điểm vui chơi hấp dẫn",
@@ -701,10 +765,11 @@ const places = [
       "/images/baotang3d/3.jpg",
       "/images/baotang3d/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Nhiều góc chụp cực hot tại bảo tàng 3D Trick Eye (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 3,
     numReviews: "10",
     address: "Trần Nhân Tông, P. Thọ Quang, Q. Sơn Trà, TP.Đà Nẵng",
     description:
@@ -713,7 +778,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.4190987392403!2d108.24062691457519!3d16.095606688864635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314217f750645271%3A0x91c392fc753f0fb0!2sB%E1%BA%A3o%20t%C3%A0ng%203D%20Art%20In%20Paradise!5e0!3m2!1svi!2s!4v1665733935738!5m2!1svi!2s",
   },
   {
-    _id: "32",
+    //_id: "32",
     name: "Ngôi nhà úp ngược (Upside down house)",
     slug: "ngoi-nha-up-nguoc",
     category: "Địa điểm vui chơi hấp dẫn",
@@ -724,10 +789,11 @@ const places = [
       "/images/ngoinhaupnguoc/3.jpg",
       "/images/ngoinhaupnguoc/4.jpg",
     ],
+    priceRange: "",
     district: "Ngũ Hành Sơn",
     imageCaption:
       "Địa điểm du lịch Đà Nẵng Ngôi nhà úp ngược là địa điểm check in yêu thích của các bạn trẻ (Ảnh: VnExpress)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "44 Hồ Xuân Hương, Q.  Ngũ Hành Sơn, TP Đà Nẵng",
     description:
@@ -736,7 +802,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.513549881898!2d108.24267611457432!3d16.03881888889968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142175df3cf64ed%3A0xd6c749b2672602cf!2zTmfDtGkgTmjDoCDEkOG6o28gTmfGsOG7o2MgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1665734212334!5m2!1svi!2s",
   },
   {
-    _id: "33",
+    //_id: "33",
     name: "Công viên biển Đông",
     slug: "cong-vien-bien-dong",
     category: "Địa điểm vui chơi hấp dẫn",
@@ -747,10 +813,11 @@ const places = [
       "/images/congvienbiendong/3.jpg",
       "/images/congvienbiendong/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Công viên Biển Đông - địa điểm vui chơi, check-in tại Đà Nẵng (Ảnh: IG haphuoong)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "P. Phước Mỹ, Q. Sơn Trà, TP. Đà Nẵng",
     description:
@@ -759,7 +826,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.9069582231145!2d108.24135212184507!3d16.07031725331353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142171781bc61df%3A0x88236faf8a5f84f8!2zQ8O0bmcgdmnDqm4gQmnhu4NuIMSQw7RuZw!5e0!3m2!1svi!2s!4v1665734375483!5m2!1svi!2s",
   },
   {
-    _id: "34",
+    //_id: "34",
     name: "Cung văn hóa thiếu nhi Đà Nẵng",
     slug: "cung-van-hoa-thieu-nhi-da-nang",
     category: "Địa điểm vui chơi hấp dẫn",
@@ -770,10 +837,11 @@ const places = [
       "/images/cungvanhoathieunhi/3.jpg",
       "/images/cungvanhoathieunhi/4.jpg",
     ],
+    priceRange: "",
     district: "Hải Châu",
     imageCaption:
       "Nhiều góc chụp nghệ thuật tại cung thiếu nhi Đà Nẵng (Ảnh: Sưu Tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "2a Phan Đăng Lưu, P.Hòa Cường Bắc, Q. Hải Châu, TP Đà Nẵng",
     description:
@@ -782,7 +850,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.5142886771823!2d108.22321851457427!3d16.038780488899732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219e86774bd2f%3A0x57338b4658ba024f!2zQ3VuZyBUaGnhur91IE5oaSDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1665734658051!5m2!1svi!2s",
   },
   {
-    _id: "35",
+    //_id: "35",
     name: "Sky bar 36",
     slug: "sky-bar-36",
     category: "Địa điểm vui chơi hấp dẫn",
@@ -793,10 +861,11 @@ const places = [
       "/images/skybar36/3.jpg",
       "/images/skybar36/4.jpg",
     ],
+    priceRange: "",
     district: "Hải Châu",
     imageCaption:
       "Sky bar 36 là điểm vui chơi quen thuộc với nhiều giới trẻ, khách du lịch khi đến Đà Nẵng (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "36 Bạch Đằng, P. Thạch Thang, Q. Hải Châu, TP Đà Nẵng",
     description:
@@ -805,7 +874,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7703809081645!2d108.22160871457491!3d16.077400988875837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183ae54d6015%3A0xa61168c6e58166a2!2sSky36%20-%20Lounge%2C%20Sky%20Bar%20%26%20Event%20Venue!5e0!3m2!1svi!2s!4v1665734807945!5m2!1svi!2s",
   },
   {
-    _id: "36",
+    //_id: "36",
     name: "Làng bích họa Tam Thanh",
     slug: "lang-bich-hoa-tam-thanh",
     category: "Check-in Đà Nẵng",
@@ -816,10 +885,11 @@ const places = [
       "/images/langbichhoatamthanh/3.jpg",
       "/images/langbichhoatamthanh/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Địa điểm du lịch Đà Nẵng Làng Bích Họa Tam Thanh thu hút các bạn trẻ đến check in, chụp hình (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "Tam Thanh, Tam Kỳ, Quảng Nam",
     description:
@@ -828,7 +898,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.7857603000266!2d108.54137581480174!3d15.603091289170365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3169db944cfa9265%3A0x178f0a22c6deb046!2zTMOgbmcgYsOtY2ggaOG7jWEgVGFtIFRoYW5o!5e0!3m2!1svi!2s!4v1665735016525!5m2!1svi!2s",
   },
   {
-    _id: "37",
+    //_id: "37",
     name: "Cầu khóa tình yêu",
     slug: "cau-khoa-tinh-yeu",
     category: "Check-in Đà Nẵng",
@@ -839,10 +909,11 @@ const places = [
       "/images/caukhoatinhyeu/3.jpg",
       "/images/caukhoatinhyeu/4.jpg",
     ],
+    priceRange: "",
     district: "Ngũ Hành Sơn",
     imageCaption:
       "Cầu khóa tình yêu - địa điểm du lịch quen thuộc tại Đà Nẵng (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "Trần Hưng Đạo, P. Mỹ An, Ngũ Hành Sơn, Đà Nẵng",
     description:
@@ -851,7 +922,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15337.03447975502!2d108.21981312120829!3d16.052063916789233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219619542c5dd%3A0x7d43b6210f4a07fe!2zQ-G6p3UgVMOsbmggWcOqdSDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1665735240312!5m2!1svi!2s",
   },
   {
-    _id: "38",
+    //_id: "38",
     name: "Phim trường Thuận Phước Field",
     slug: "phim-truong-thuan-phuoc-filed",
     category: "Check-in Đà Nẵng",
@@ -862,10 +933,11 @@ const places = [
       "/images/phimtruongthuanphuoc/3.jpg",
       "/images/phimtruongthuanphuoc/4.jpg",
     ],
+    priceRange: "",
     district: "Hải Châu",
     imageCaption:
       "Không gian rộng lớn tại Phim trường Thuận Phước Field (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "Thuận Phước, Hải Châu, Đà Nẵng",
     description:
@@ -874,7 +946,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30666.482796648346!2d108.19005059111863!3d16.10123870670392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421805882d0b87%3A0xb5aab2cee6f31a56!2zS2h1IMSQaeG7h24g4bqibmggdsOgIETDoyBOZ2_huqFpIMSQw6AgTuG6tW5nLCBOZ3V54buFbiBI4buvdSBBbiwgTuG6oWkgSGnDqm4gxJDDtG5nLCBTxqFuIFRyw6AsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1665735456407!5m2!1svi!2s",
   },
   {
-    _id: "39",
+    //_id: "39",
     name: "Bãi Cát Vàng",
     slug: "bai-cat-vang",
     category: "Check-in Đà Nẵng",
@@ -885,10 +957,11 @@ const places = [
       "/images/baicatvang/3.jpg",
       "/images/baicatvang/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Du lịch Đà Nẵng nên ghé qua bãi Cát Vàng với không gian xanh mát (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "P. Thọ Quang, Q. Sơn Trà, TP. Đà Nẵng",
     description:
@@ -897,7 +970,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15330.048991101576!2d108.22322312386741!3d16.142513121369525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314222d20198a6a9%3A0xb0ba6f5a1247e61a!2zQsOjaSBDw6F0IFbDoG5n!5e0!3m2!1svi!2s!4v1665735624947!5m2!1svi!2s",
   },
   {
-    _id: "40",
+    //_id: "40",
     name: "Cầu Sông Hàn",
     slug: "cau-song-han",
     category: "Check-in Đà Nẵng",
@@ -908,9 +981,10 @@ const places = [
       "/images/causonghan/3.jpg",
       "/images/causonghan/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption: "Vẻ đẹp lung linh của Cầu sông Hàn về đêm (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "Cầu Sông Hàn, P. An Hải Bắc, Q. Sơn Trà, TP. Đà Nẵng ",
     description:
@@ -919,7 +993,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.864782114502!2d108.22748291457485!3d16.072505088878845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142182fb6302a5b%3A0x5f3e0391184d11e8!2zQ-G6p3UgU8O0bmcgSMOgbiwgQW4gSOG6o2kgQuG6r2MsIFPGoW4gVHLDoCwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1665735833291!5m2!1svi!2s",
   },
   {
-    _id: "41",
+    //_id: "41",
     name: "Tượng cá chép hóa rồng",
     slug: "tuong-ca-chep-hoa-rong",
     category: "Check-in Đà Nẵng",
@@ -930,10 +1004,11 @@ const places = [
       "/images/tuongcachephoarong/3.jpg",
       "/images/tuongcachephoarong/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Check-in tại tượng cá chép hóa rồng - biểu tượng của du lịch Đà Nẵng (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "Đ. Trần Hưng Đạo, An Hải Tây, Sơn Trà, Đà Nẵng",
     description:
@@ -942,7 +1017,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.0497113126567!2d108.22533032184424!3d16.062909953332753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142198c825000e1%3A0x9b011fe03c346db3!2zVMaw4bujbmcgQ8OhIENow6lwIEjDs2EgUuG7k25n!5e0!3m2!1svi!2s!4v1665736122792!5m2!1svi!2s",
   },
   {
-    _id: "42",
+    //_id: "42",
     name: "Cù Lao Chàm",
     slug: "cu-lao-cham",
     category: "Check-in Đà Nẵng",
@@ -953,10 +1028,11 @@ const places = [
       "/images/culaocham/3.jpg",
       "/images/culaocham/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption:
       "Khám phá du lịch gần Đà Nẵng ở điểm tham quan Cù Lao Chàm (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "Tân Hiệp, Tp. Hội An, T. Quảng Nam",
     description:
@@ -965,7 +1041,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.5815379189166!2d108.33878461457208!3d15.878576088999017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420db37fd80def%3A0xc498aa1c5a6d7c11!2zQ8O5IExhbyBDaMOgbSAtIMSQw6AgTuG6tW5n!5e0!3m2!1svi!2s!4v1665736298634!5m2!1svi!2s",
   },
   {
-    _id: "43",
+    //_id: "43",
     name: "Bãi cỏ cháy",
     slug: "bai-co-chay",
     category: "Check-in Đà Nẵng",
@@ -976,10 +1052,11 @@ const places = [
       "/images/baicochay/3.jpg",
       "/images/baicochay/4.jpg",
     ],
+    priceRange: "",
     district: "Sơn Trà",
     imageCaption:
       "Địa điểm du lịch Đà Nẵng Bãi Cỏ Cháy thu hút nhiều bạn trẻ đến chụp hình (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "P. Thọ Quang, Q. Sơn Trà, TP Đà Nẵng",
     description:
@@ -988,7 +1065,7 @@ const places = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.316095307475!2d108.26659541457525!3d16.10094118886137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314217d915f40f77%3A0x3ddd2ed4a988a1ed!2zQsOjaSBDaMOheQ!5e0!3m2!1svi!2s!4v1665736449303!5m2!1svi!2s",
   },
   {
-    _id: "44",
+    //_id: "44",
     name: "Rừng thông Bồ Bồ",
     slug: "rung-thong-bo-bo",
     category: "Check-in Đà Nẵng",
@@ -999,9 +1076,10 @@ const places = [
       "/images/rungthongbobo/3.jpg",
       "/images/rungthongbobo/4.jpg",
     ],
+    priceRange: "",
     district: "Khác",
     imageCaption: "Rủ rê bạn bè dã ngoại tại rừng thông Bồ Bồ (Ảnh: Sưu tầm)",
-    rating: "5",
+    rating: 5,
     numReviews: "10",
     address: "ĐT605, Điện Thọ, H. Điện Bàn, T. Quảng Nam",
     description:

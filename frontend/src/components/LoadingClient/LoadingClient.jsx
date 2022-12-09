@@ -1,17 +1,17 @@
 import React from "react";
-import FadeLoader from "react-spinners/FadeLoader";
+import HashLoader from "react-spinners/HashLoader";
 
 const LoadingClient = (props) => {
   const { loading } = props;
   return (
     <div className="loading">
-      <FadeLoader
+      <HashLoader
         loading={loading}
-        size={150}
+        size={50}
         aria-label="Loading Spinner"
         data-testid="loader"
         color="#d02245"
-        speedMultiplier={2}
+        speedMultiplier={1}
       />
     </div>
   );

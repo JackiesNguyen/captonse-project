@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/esm/Container";
 import Heading from "../Heading/Heading";
 import Row from "react-bootstrap/Row";
@@ -13,8 +13,42 @@ import {
 } from "./index";
 import CardCus from "../CardCustom/CardCus";
 import "./TopDestination.scss";
+import axios from "axios";
 
 const TopDestination = () => {
+  const [places, setPlaces] = useState([]);
+  useEffect(() => {
+    const fetchPlaces = async () => {
+      const { data } = await axios.get("/api/places");
+      setPlaces(data);
+    };
+    fetchPlaces();
+  }, []);
+  const categories = places.reduce((acc, cur) => {
+    acc[cur.district] = (acc[cur.district] || 0) + 1;
+    return acc;
+  }, {});
+
+  let renameKeys = (keysMap, object) =>
+    Object.keys(object).reduce(
+      (acc, key) => ({
+        ...acc,
+        ...{ [keysMap[key] || key]: object[key] },
+      }),
+      {}
+    );
+
+  let result = renameKeys(
+    {
+      "Hải Châu": "haichau",
+      "Thanh Khê": "thanhkhe",
+      "Sơn Trà": "sontra",
+      "Cẩm Lệ": "camle",
+      "Liên Chiểu": "lienchieu",
+      "Ngũ Hành Sơn": "nguhanhson",
+    },
+    categories
+  );
   return (
     <div className="topDes">
       <Container>
@@ -32,7 +66,7 @@ const TopDestination = () => {
                     <CardCus
                       image={haichau}
                       title="Hải Châu"
-                      quantity="6000"
+                      quantity={result.haichau || 0}
                       desc="Là trung tâm thành phố sầm uất, quận Hải Châu đón bao bước chân đến khám phá"
                     />
                   </Col>
@@ -40,7 +74,7 @@ const TopDestination = () => {
                     <CardCus
                       image={camle}
                       title="Cẩm Lệ"
-                      quantity="4432"
+                      quantity={result.camle || 0}
                       desc="Cẩm Lệ là khu dân cư đầy triển vọng, để lại ấn tượng lớn với người khám phá"
                       smallImg
                     />
@@ -49,7 +83,7 @@ const TopDestination = () => {
                     <CardCus
                       image={lienchieu}
                       title="Liên Chiểu"
-                      quantity="5231"
+                      quantity={result.lienchieu || 0}
                       desc="Vùng ngoại ô yên tĩnh Liên Chiểu nổi tiếng với Đèo Hải Vân..."
                       smallImg
                     />
@@ -62,7 +96,7 @@ const TopDestination = () => {
                     <CardCus
                       image={thanhkhe}
                       title="Thanh Khê"
-                      quantity="5231"
+                      quantity={result.thanhkhe || 0}
                       desc="Vùng ngoại ô yên tĩnh Liên Chiểu nổi tiếng với Đèo Hải Vân..."
                       smallImg
                     />
@@ -71,7 +105,7 @@ const TopDestination = () => {
                     <CardCus
                       image={sontra}
                       title="Sơn Trà"
-                      quantity="5231"
+                      quantity={result.sontra || 0}
                       desc="Sơn Trà nổi tiếng với rất nhiều bãi tắm đẹp..."
                       smallImg
                     />
@@ -80,7 +114,7 @@ const TopDestination = () => {
                     <CardCus
                       image={nguhanhson}
                       title="Ngũ Hành Sơn"
-                      quantity="5231"
+                      quantity={result.nguhanhson || 0}
                       desc="Quận Ngũ Hành Sơn trù phú nổi tiếng với Bãi biển Mỹ Khê cát mịn màng, điểm lý tưởng để bơi lội và chơi..."
                     />
                   </Col>

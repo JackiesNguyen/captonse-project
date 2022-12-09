@@ -19,17 +19,17 @@ const Weather = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
   return (
     <div className="weather">
       {loading ? (
         <LoadingClient loading={loading} />
       ) : (
-        <>
+        <div className="weather__container">
           <Banner bannerImg={WeatherImg} />
           <Container>
-            <div className="weather__container">
+            <div className="weather__content">
               <Row>
                 <Col sm={2}></Col>
                 <Col sm={8}>
@@ -138,7 +138,7 @@ const Weather = () => {
               </Row>
             </div>
           </Container>
-        </>
+        </div>
       )}
     </div>
   );

@@ -25,17 +25,17 @@ const Overview = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
   return (
     <div className="overview">
       {loading ? (
         <LoadingClient loading={loading} />
       ) : (
-        <>
+        <div className="overview__container">
           <Banner bannerImg={overviewImg} />
           <Container>
-            <div className="overview__container">
+            <div className="overview__content">
               <Row>
                 <Col sm={2}></Col>
                 <Col sm={8}>
@@ -786,7 +786,7 @@ const Overview = () => {
               </Row>
             </div>
           </Container>
-        </>
+        </div>
       )}
     </div>
   );

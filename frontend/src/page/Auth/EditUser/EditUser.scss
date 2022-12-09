@@ -1,0 +1,22 @@
+/* -------------- Edit User ----------------- */
+.edit_user .go_back {
+  background: white;
+  margin: 20px;
+  font-size: 1.2rem;
+}
+.edit_user .col-left {
+  margin-top: 50px;
+}
+.edit_user .col-left input {
+  background: #eee;
+}
+.edit_user .col-left #isAdmin {
+  width: 20px;
+  height: 20px;
+  transform: translateY(3px);
+  margin: 10px 0;
+}
+.edit_user .col-left #isAdmin + label {
+  display: inline-block;
+  margin-left: 5px;
+}

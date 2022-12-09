@@ -5,9 +5,9 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <Header />
-      <div className="content">
+      <div className="content" style={{ background: "#f5f5f5" }}>
         <Outlet />
       </div>
       <Footer />

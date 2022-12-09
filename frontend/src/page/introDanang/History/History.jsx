@@ -17,17 +17,17 @@ const History = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
   return (
     <div className="history">
       {loading ? (
         <LoadingClient loading={loading} />
       ) : (
-        <>
+        <div className="history__container">
           <Banner bannerImg={historyImg} />
           <Container>
-            <div className="history__container">
+            <div className="history__content">
               <Row>
                 <Col sm={2}></Col>
                 <Col sm={8}>
@@ -232,7 +232,7 @@ const History = () => {
               </Row>
             </div>
           </Container>
-        </>
+        </div>
       )}
     </div>
   );

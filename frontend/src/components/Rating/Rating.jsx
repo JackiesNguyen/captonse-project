@@ -55,7 +55,9 @@ const Rating = (props) => {
           )}
         </span>
       </div>
-      <span className="rating__numReviews">{numReviews} reviews</span>
+      {numReviews ? (
+        <span className="rating__numReviews">{numReviews} reviews</span>
+      ) : null}
     </div>
   );
 };
