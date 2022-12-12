@@ -205,7 +205,7 @@ const Header = () => {
                       <AiOutlineArrowRight />
                       <NavLink
                         id="RouterNavLink"
-                        to="diem-du-lich/van-hoa-tin-nguong"
+                        to="diem-du-lich/van-hoa-tin-nguong-ban-dia"
                       >
                         Văn hoá tín ngưỡng bản địa
                       </NavLink>

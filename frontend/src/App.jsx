@@ -33,6 +33,10 @@ import {
 } from "./redux/actions/authAction";
 import PlaceDetail from "./page/PlaceDetail/PlaceDetail";
 import VisitLocation from "./page/TouristAttraction/VisitLocation/VisitLocation";
+import Beach from "./page/TouristAttraction/Beach/Beach";
+import Culture from "./page/TouristAttraction/Culture/Culture";
+import Entertainment from "./page/TouristAttraction/Entertainment/Entertainment";
+import Checkin from "./page/TouristAttraction/Checkin/Checkin";
 function App() {
   const dispatch = useDispatch();
   const token = useSelector((state) => state.token);
@@ -102,10 +106,19 @@ function App() {
               path="/diem-du-lich/dia-diem-tham-quan"
               element={<VisitLocation />}
             />
-            <Route path="bai-bien-dep" element={<Outlet />} />
-            <Route path="van-hoa-tin-nguong-ban-dia" element={<Outlet />} />
-            <Route path="dia-diem-vui-choi-hap-dan" element={<Outlet />} />
-            <Route path="dia-diem-checkin-hap-dan" element={<Outlet />} />
+            <Route path="/diem-du-lich/bai-bien-dep" element={<Beach />} />
+            <Route
+              path="/diem-du-lich/van-hoa-tin-nguong-ban-dia"
+              element={<Culture />}
+            />
+            <Route
+              path="/diem-du-lich/dia-diem-vui-choi-hap-dan"
+              element={<Entertainment />}
+            />
+            <Route
+              path="/diem-du-lich/dia-diem-checkin-hap-dan"
+              element={<Checkin />}
+            />
           </Route>
           <Route path="/trai-nghiem">
             <Route path="khack-san" element={<Outlet />} />

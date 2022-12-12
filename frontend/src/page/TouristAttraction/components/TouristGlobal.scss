@@ -1,0 +1,60 @@
+.touristGlobal {
+  &__container {
+    padding: 20px 0;
+    animation: opacity 0.4s ease-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .loading {
+    min-height: 100vh;
+    text-align: center;
+    padding: 50px;
+    span {
+      margin: 0 auto;
+    }
+  }
+  &__head {
+    padding: 10px 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      a {
+        display: block;
+        font-size: 17px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #e61b23;
+        &:hover {
+          color: blue;
+        }
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 17px;
+        font-weight: 500;
+      }
+    }
+    &-bot {
+      h2 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.5;
+        text-transform: capitalize;
+      }
+    }
+  }
+  &__body {
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+  }
+}

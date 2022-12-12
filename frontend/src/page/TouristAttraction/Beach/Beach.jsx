@@ -1,8 +1,12 @@
 import React from "react";
-import "./Beach.scss";
+import TourisGlobal from "../components/TouristGlobal";
 
 const Beach = () => {
-  return <div>Beach</div>;
+  return (
+    <div className="beach">
+      <TourisGlobal name="Bãi biển đẹp" />
+    </div>
+  );
 };
 
 export default Beach;
