@@ -4,14 +4,14 @@ import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import { useNavigate, useParams } from "react-router-dom";
-import LoadingClient from "../../../components/LoadingClient/LoadingClient";
-import Rating from "../../../components/Rating/Rating";
+import LoadingClient from "../../components/LoadingClient/LoadingClient";
+import Rating from "../../components/Rating/Rating";
 import "./PlaceDetail.scss";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/esm/FloatingLabel";
 import Button from "react-bootstrap/Button";
-import SuggestedPlace from "../../../components/SuggestedPlace/SuggestedPlace";
-import OtherPalces from "../../../components/OtherPalces/OtherPlaces";
+import SuggestedPlace from "../../components/SuggestedPlace/SuggestedPlace";
+import OtherPalces from "../../components/OtherPalces/OtherPlaces";
 
 const reducer = (state, action) => {
   switch (action.type) {

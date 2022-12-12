@@ -7,7 +7,7 @@ import { MdPlace } from "react-icons/md";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AiOutlineArrowRight, AiOutlineUser } from "react-icons/ai";
 
-import logomain from "../../../../assets/images/logomain.png";
+import logomain from "../../../../assets/images/LOGO.png";
 import { BsCaretDownFill } from "react-icons/bs";
 import { AiFillCaretDown } from "react-icons/ai";
 
@@ -22,7 +22,7 @@ const Header = () => {
       setTime(date.toLocaleTimeString());
     }, 1000);
     return () => clearInterval(timeId);
-  }, []);
+  }, [time]);
 
   const navigate = useNavigate();
   const today = format(new Date(), `EEEE, dd-MM-yyyy`);
@@ -58,6 +58,13 @@ const Header = () => {
       </div>
     );
   };
+  const [navbar, setNavbar] = useState(false);
+  const sticky = () => {
+    const navbar = document.querySelector(".header__bot");
+    const navHeight = navbar.getBoundingClientRect().height;
+    window.scrollY > navHeight ? setNavbar(true) : setNavbar(false);
+  };
+  window.addEventListener("scroll", sticky);
 
   return (
     <header className="header">
@@ -86,7 +93,7 @@ const Header = () => {
           </div>
         </Container>
       </div>
-      <div className="header__bot">
+      <div className={!navbar ? "header__bot" : "header__bot sticky"}>
         <Container>
           <div className="header__bot-container">
             <a href="/" className="header__bot-logo">
@@ -172,11 +179,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="menu-item">
-                <NavLink
-                  id="RouterNavLink"
-                  to="/diem-du-lich"
-                  className="menu-link"
-                >
+                <div className="menu-link" style={{ cursor: "pointer" }}>
                   Điểm du lịch
                   <ul className="categoryList">
                     <li>
@@ -226,14 +229,10 @@ const Header = () => {
                       </NavLink>
                     </li>
                   </ul>
-                </NavLink>
+                </div>
               </li>
               <li className="menu-item">
-                <NavLink
-                  id="RouterNavLink"
-                  to="/trai-nghiem"
-                  className="menu-link"
-                >
+                <div className="menu-link" style={{ cursor: "pointer" }}>
                   Trải nghiệm
                   <ul className="experience">
                     <li>
@@ -249,7 +248,7 @@ const Header = () => {
                       </NavLink>
                     </li>
                   </ul>
-                </NavLink>
+                </div>
               </li>
               <li className="menu-item">
                 <NavLink id="RouterNavLink" to="/lien-he" className="menu-link">

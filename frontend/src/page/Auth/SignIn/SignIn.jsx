@@ -77,8 +77,23 @@ const SignIn = () => {
     }
   };
   // Login Facebook
-  const responseFacebook = (response) => {
-    console.log(response);
+  const responseFacebook = async (response) => {
+    try {
+      const { accessToken, userID } = response;
+      const res = await axios.post("/api/user/facebook_login", {
+        accessToken,
+        userID,
+      });
+
+      setUser({ ...user, error: "", success: res.data.msg });
+      localStorage.setItem("firstLogin", true);
+
+      dispatch(dispatchLogin());
+      navigate("/");
+    } catch (err) {
+      err.response.data.msg &&
+        setUser({ ...user, err: err.response.data.msg, success: "" });
+    }
   };
 
   if (err) {
@@ -154,7 +169,7 @@ const SignIn = () => {
               shape="circle"
             />
             <FacebookLogin
-              appId="458756252880564"
+              appId="879436149725754"
               autoLoad={false}
               fields="name,email,picture"
               icon={<ImFacebook />}

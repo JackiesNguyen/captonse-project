@@ -49,9 +49,7 @@ const MostDes = () => {
             <div className="mostDes__list">
               {places.map(
                 (place) =>
-                  place.category === "Địa điểm tham quan" && (
-                    <Place place={place} key={place._id} />
-                  )
+                  place.rating >= 3 && <Place place={place} key={place._id} />
               )}
             </div>
           )}

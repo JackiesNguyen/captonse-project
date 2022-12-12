@@ -1,0 +1,124 @@
+.introDn {
+  width: 100%;
+  height: 100%;
+  &__container {
+    padding: 20px 0;
+    animation: opacity 0.4s ease-out;
+    transition: all 0.4s ease-in-out;
+  }
+  &__head {
+    background-color: #fff;
+    padding: 10px 40px;
+    &-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      a {
+        display: block;
+        text-decoration: none;
+        color: #e61b23;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    &-bot {
+      margin-top: 10px;
+      h2 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &__body {
+    margin-top: 20px;
+  }
+  &__left {
+    background-color: #fff;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    a {
+      display: block;
+      text-decoration: none;
+      color: darkblue;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      &:hover {
+        color: #e61b23;
+      }
+    }
+    .date__post {
+      margin: 5px 0 0 0;
+      padding: 0;
+      font-size: 13px;
+      color: #ccc;
+    }
+  }
+  &__desc {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #333;
+    text-align: justify;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 0.6;
+  }
+  &__img {
+    width: 100%;
+    height: 200px;
+    flex: 0.4;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__right {
+    background-color: #fff;
+    h2 {
+      font-size: 20px;
+      text-align: center;
+      font-weight: 700;
+      color: #000;
+      padding: 10px;
+    }
+  }
+
+  .loading {
+    min-height: 100vh;
+    text-align: center;
+    padding: 50px;
+    span {
+      margin: 0 auto;
+    }
+  }
+}

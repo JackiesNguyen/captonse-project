@@ -33,5 +33,6 @@ userRouter.delete("/delete/:id", auth, authAdmin, userCtrl.deleteUser);
 
 // // Social Login
 userRouter.post("/google_login", userCtrl.googleLogin);
+userRouter.post("/facebook_login", userCtrl.facebookLogin);
 
 export default userRouter;

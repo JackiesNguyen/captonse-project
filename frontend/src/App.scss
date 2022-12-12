@@ -53,3 +53,17 @@ body {
     opacity: 1;
   }
 }
+@keyframes showNav {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.placesGlobal__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}

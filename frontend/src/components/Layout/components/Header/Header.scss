@@ -28,7 +28,8 @@
   }
   &__bot {
     background: #fff;
-    color: #f66683;
+    // color: #f66683;
+    color: #000;
     padding: 10px 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     &-auth {
@@ -44,7 +45,7 @@
     &-logo {
       img {
         width: 130px;
-        height: 53px;
+        height: 70px;
         object-fit: cover;
       }
     }
@@ -52,7 +53,7 @@
       font-size: 16px;
       font-weight: 500;
       padding: 5px;
-      border: 1px solid #f66683;
+      border: 1px solid #000;
       cursor: pointer;
       position: relative;
       &:hover .area {
@@ -199,7 +200,8 @@
   &-link {
     display: block;
     text-decoration: none;
-    color: #f66683;
+    // color: #f66683;
+    color: #000;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -289,4 +291,16 @@
       margin-left: 5px;
     }
   }
+}
+
+.header__bot.sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10001;
+  transition: all 0.3s ease-in-out;
+  animation: opacity 0.3s linear, showNav 0.3s linear;
+  padding: 0;
 }

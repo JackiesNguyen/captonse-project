@@ -1,4 +1,4 @@
-import ACTIONS from "./index";
+import ACTIONS from ".";
 import axios from "axios";
 
 export const dispatchLogin = () => {
@@ -8,7 +8,7 @@ export const dispatchLogin = () => {
 };
 
 export const fetchUser = async (token) => {
-  const res = await axios.get("api/user/infor", {
+  const res = await axios.get("/api/user/infor", {
     headers: { Authorization: token },
   });
   return res;
