@@ -37,6 +37,17 @@ import Beach from "./page/TouristAttraction/Beach/Beach";
 import Culture from "./page/TouristAttraction/Culture/Culture";
 import Entertainment from "./page/TouristAttraction/Entertainment/Entertainment";
 import Checkin from "./page/TouristAttraction/Checkin/Checkin";
+
+import HaiChau from "./page/District/HaiChau/index";
+import LienChieu from "./page/District/LienChieu";
+import NguHanhSon from "./page/District/NguHanhSon";
+import SonTra from "./page/District/SonTra";
+import ThanhKhe from "./page/District/ThanhKhe";
+import CamLe from "./page/District/CamLe";
+import Search from "./page/Search/Search";
+import SearchLayout from "./components/Layout/SearchLayout/SearchLayout";
+
+//
 function App() {
   const dispatch = useDispatch();
   const token = useSelector((state) => state.token);
@@ -65,6 +76,8 @@ function App() {
     }
   }, [token, dispatch]);
 
+  //
+
   return (
     <Router>
       <div className="app">
@@ -72,6 +85,7 @@ function App() {
           {/* Layout Default */}
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
+
             <Route path="/dia-diem/:slug" element={<PlaceDetail />} />
             {/* Auth  */}
             <Route
@@ -90,15 +104,14 @@ function App() {
             />
             <Route path="/gioi-thieu/thoi-tiet-da-nang" element={<Weather />} />
             <Route path="/gioi-thieu/lich-su-da-nang" element={<History />} />
-            {/*  */}
-            <Route path="/khu-vuc">
-              <Route path="hai-chau" element={<Outlet />} />
-              <Route path="son-tra" element={<Outlet />} />
-              <Route path="ngu-hanh-son" element={<Outlet />} />
-              <Route path="lien-chieu" element={<Outlet />} />
-              <Route path="thanh-khe" element={<Outlet />} />
-              <Route path="cam-le" element={<Outlet />} />
-            </Route>
+            {/* Khu vuc */}
+
+            <Route path="/khu-vuc/hai-chau" element={<HaiChau />} />
+            <Route path="/khu-vuc/son-tra" element={<SonTra />} />
+            <Route path="/khu-vuc/ngu-hanh-son" element={<NguHanhSon />} />
+            <Route path="/khu-vuc/lien-chieu" element={<LienChieu />} />
+            <Route path="/khu-vuc/thanh-khe" element={<ThanhKhe />} />
+            <Route path="/khu-vuc/cam-le" element={<CamLe />} />
 
             {/* Diem du lich */}
 
@@ -119,6 +132,9 @@ function App() {
               path="/diem-du-lich/dia-diem-checkin-hap-dan"
               element={<Checkin />}
             />
+          </Route>
+          <Route element={<SearchLayout />}>
+            <Route path="/search/:query" element={<Search />} />
           </Route>
           <Route path="/trai-nghiem">
             <Route path="khack-san" element={<Outlet />} />

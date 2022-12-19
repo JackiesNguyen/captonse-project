@@ -19,7 +19,7 @@ const reducer = (state, action) => {
 };
 
 const VisitLocation = (props) => {
-  const { name } = props;
+  const { name, text } = props;
   const [{ error, places }, dispatch] = useReducer(reducer, {
     places: [],
     error: "",
@@ -73,6 +73,25 @@ const VisitLocation = (props) => {
                   ) : null
                 )}
               </div>
+            </div>
+            <div className="touristGlobal__bot">
+              <p>{text}</p>
+              <p style={{ marginTop: "10px" }}>
+                Bạn đang không biết lựa chọn địa điểm nào cho cuộc hẹn sắp tới?
+                Hãy để{" "}
+                <a
+                  href="/"
+                  style={{
+                    color: "#e61b23",
+                    display: "inline-block",
+                    fontWeight: "700",
+                    textDecoration: "none",
+                  }}
+                >
+                  TravelCaps
+                </a>{" "}
+                đồng hành cùng bạn ở khắp mọi nơi trong thành phố nhé!
+              </p>
             </div>
           </Container>
         </div>

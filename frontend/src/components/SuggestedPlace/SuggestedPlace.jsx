@@ -43,10 +43,7 @@ const SuggestedPlace = ({ district, name }) => {
         {places.map((place) =>
           district === place.district && place.name !== name ? (
             <li className="suggPlace__item" key={place._id}>
-              <Link
-                className="suggPlace__link"
-                to={`/diem-du-lich/dia-diem-tham-quan/${place.slug}`}
-              >
+              <Link className="suggPlace__link" to={`/dia-diem/${place.slug}`}>
                 <img src={place.image} className="suggPlace__img" alt="Img" />
                 <div className="suggPlace__content">
                   <h2 className="suggPlace__name">{place.name}</h2>

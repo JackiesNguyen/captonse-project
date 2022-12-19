@@ -20,6 +20,8 @@ import LoadingClient from "../../../components/LoadingClient/LoadingClient";
 import "./Overview.scss";
 
 const Overview = () => {
+  window.scrollTo(0, 0);
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);

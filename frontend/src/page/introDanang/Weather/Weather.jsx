@@ -14,6 +14,7 @@ import thoitietthang9 from "../../../assets/images/thoi-tiet-da-nang-thang-9-den
 import "./Weather.scss";
 
 const Weather = () => {
+  window.scrollTo(0, 0);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);

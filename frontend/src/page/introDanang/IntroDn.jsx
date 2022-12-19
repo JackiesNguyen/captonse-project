@@ -18,6 +18,7 @@ const IntroDn = () => {
       setLoading(false);
     }, 2000);
   }, []);
+  window.scrollTo(0, 0);
   return (
     <div className="introDn">
       {loading ? (

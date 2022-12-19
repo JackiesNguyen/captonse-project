@@ -57,4 +57,17 @@
     grid-template-columns: auto auto auto auto;
     gap: 20px;
   }
+  &__bot {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px 80px;
+    p {
+      padding: 0;
+      margin: 0;
+      text-align: justify;
+      line-height: 2;
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
 }

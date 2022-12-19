@@ -55,7 +55,16 @@ const PlaceDetail = () => {
         navigate("/diem-du-lich/dia-diem-tham-quan");
         break;
       case "Bãi biển đẹp":
-        <p>Bãi biển đẹp</p>;
+        navigate("/diem-du-lich/bai-bien-dep");
+        break;
+      case "Văn hoá tín ngưỡng bản địa":
+        navigate("/diem-du-lich/van-hoa-tin-nguong-ban-dia");
+        break;
+      case "Địa điểm vui chơi hấp dẫn":
+        navigate("/diem-du-lich/dia-diem-vui-choi-hap-dan");
+        break;
+      case "Check-in Đà Nẵng":
+        navigate("/diem-du-lich/dia-diem-checkin-hap-dan");
         break;
       default:
         break;

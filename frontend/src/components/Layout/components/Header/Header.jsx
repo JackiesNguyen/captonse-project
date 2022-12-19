@@ -129,7 +129,7 @@ const Header = () => {
                 </li>
                 <li>
                   <NavLink id="RouterNavLink" to="/khu-vuc/cam-le">
-                    Thanh Khê
+                    Cẩm Lệ
                   </NavLink>
                 </li>
               </ul>

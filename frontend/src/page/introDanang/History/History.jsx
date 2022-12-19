@@ -12,6 +12,7 @@ import lichsudanang3 from "../../../assets/images/lich-su-da-nang-3.jpg";
 import "./History.scss";
 
 const History = () => {
+  window.scrollTo(0, 0);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);

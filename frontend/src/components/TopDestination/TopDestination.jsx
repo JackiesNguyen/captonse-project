@@ -68,6 +68,7 @@ const TopDestination = () => {
                       title="Hải Châu"
                       quantity={result.haichau || 0}
                       desc="Là trung tâm thành phố sầm uất, quận Hải Châu đón bao bước chân đến khám phá"
+                      navigateLink="/khu-vuc/hai-chau"
                     />
                   </Col>
                   <Col lg={6} md={6}>
@@ -77,6 +78,7 @@ const TopDestination = () => {
                       quantity={result.camle || 0}
                       desc="Cẩm Lệ là khu dân cư đầy triển vọng, để lại ấn tượng lớn với người khám phá"
                       smallImg
+                      navigateLink="/khu-vuc/cam-le"
                     />
                   </Col>
                   <Col lg={6} md={6}>
@@ -86,6 +88,7 @@ const TopDestination = () => {
                       quantity={result.lienchieu || 0}
                       desc="Vùng ngoại ô yên tĩnh Liên Chiểu nổi tiếng với Đèo Hải Vân..."
                       smallImg
+                      navigateLink="/khu-vuc/lien-chieu"
                     />
                   </Col>
                 </Row>
@@ -99,6 +102,7 @@ const TopDestination = () => {
                       quantity={result.thanhkhe || 0}
                       desc="Vùng ngoại ô yên tĩnh Liên Chiểu nổi tiếng với Đèo Hải Vân..."
                       smallImg
+                      navigateLink="/khu-vuc/thanh-khe"
                     />
                   </Col>
                   <Col lg={6}>
@@ -108,6 +112,7 @@ const TopDestination = () => {
                       quantity={result.sontra || 0}
                       desc="Sơn Trà nổi tiếng với rất nhiều bãi tắm đẹp..."
                       smallImg
+                      navigateLink="/khu-vuc/son-tra"
                     />
                   </Col>
                   <Col lg={12}>
@@ -116,6 +121,7 @@ const TopDestination = () => {
                       title="Ngũ Hành Sơn"
                       quantity={result.nguhanhson || 0}
                       desc="Quận Ngũ Hành Sơn trù phú nổi tiếng với Bãi biển Mỹ Khê cát mịn màng, điểm lý tưởng để bơi lội và chơi..."
+                      navigateLink="/khu-vuc/ngu-hanh-son"
                     />
                   </Col>
                 </Row>

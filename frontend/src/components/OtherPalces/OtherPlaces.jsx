@@ -1,8 +1,4 @@
 import { React, useEffect, useReducer } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
@@ -10,8 +6,6 @@ import "./OtherPlaces.scss";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 
-// import required modules
-import { Pagination, Autoplay } from "swiper";
 import axios from "axios";
 
 const reducer = (state, action) => {
@@ -47,29 +41,16 @@ const OtherPalces = () => {
   return (
     <div className="otherPlace">
       <h2 className="otherPlace__title">Các địa điểm khác</h2>
-      <Swiper
-        slidesPerView={4}
-        spaceBetween={10}
-        loop={true}
-        pagination={{
-          dynamicBullets: true,
-        }}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
-        modules={[Pagination, Autoplay]}
-      >
-        {places.map((place) => (
-          <SwiperSlide key={place._id} className="py-4 px-0">
-            <Card>
-              <Link to={`/place/${place.slug}`} className="otherPlace__img">
-                <img src={place.image} alt={place.name} />
-              </Link>
-            </Card>
-          </SwiperSlide>
+      <div className="otherPlace__list">
+        {places.slice(0, 12).map((place) => (
+          <Card key={place._id}>
+            <Link to={`/dia-diem/${place.slug}`} className="otherPlace__img">
+              <img src={place.image} alt={place.name} />
+              <h2>{place.name}</h2>
+            </Link>
+          </Card>
         ))}
-      </Swiper>
+      </div>
     </div>
   );
 };

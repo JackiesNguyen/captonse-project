@@ -1,9 +1,10 @@
 import React from "react";
 import "./CardCus.scss";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const CardCus = (props) => {
-  const { image, title, quantity, desc, smallImg } = props;
+  const { image, title, quantity, desc, smallImg, navigateLink } = props;
   return (
     <div className="cardCus">
       <img
@@ -13,13 +14,13 @@ const CardCus = (props) => {
         width="100%"
       />
       <div className="cardCus__content">
-        <div className="cardCus__main">
+        <div className="cardCus__main hover-border">
           <h2>{title}</h2>
           <span>Có {quantity} địa điểm</span>
           <p>{desc}</p>
-          <button className="cardCus__btn">
+          <Link to={navigateLink} className="cardCus__btn">
             Khám phá ngay <BsFillArrowRightCircleFill />
-          </button>
+          </Link>
         </div>
       </div>
     </div>
