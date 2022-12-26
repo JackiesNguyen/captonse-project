@@ -37,7 +37,6 @@ const Profile = () => {
   const { name, password, cf_password, err, success } = data;
 
   const [avatar, setAvatar] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [callback, setCallback] = useState(false);
 
   const dispatch = useDispatch();
@@ -84,15 +83,12 @@ const Profile = () => {
       let formData = new FormData();
       formData.append("file", file);
 
-      setLoading(true);
       const res = await axios.post("/api/avatar/upload_avatar", formData, {
         headers: {
           "content-type": "multipart/form-data",
           Authorization: token,
         },
       });
-
-      setLoading(false);
       setAvatar(res.data.url);
     } catch (err) {
       setData({ ...data, err: err.response.data.msg, success: "" });
@@ -165,11 +161,9 @@ const Profile = () => {
         confirmButtonText: "Yes, delete it!",
       }).then(async (result) => {
         if (result.isConfirmed) {
-          setLoading(true);
           await axios.delete(`/api/user/delete/${id}`, {
             headers: { Authorization: token },
           });
-          setLoading(false);
           setCallback(!callback);
           Swal.fire("Deleted!", "Your file has been deleted.", "success");
         }
@@ -184,11 +178,20 @@ const Profile = () => {
     toast.success(success);
   }
 
+  const [loading, setLoading] = useState(false);
+  window.scrollTo(0, 0);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <>
       <div className="profile_page">
         {loading ? (
-          <LoadingClient />
+          <LoadingClient loading={loading} />
         ) : (
           <Container>
             <Row>

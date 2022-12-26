@@ -5,23 +5,77 @@
   right: 0;
   top: 40%;
   z-index: 1000;
+  .options {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+    color: gray;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: opacity 0.3s linear;
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+    &__text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    &__counter {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: #000;
+      gap: 10px;
+    }
+    &__counterButton {
+      width: 30px;
+      height: 30px;
+      outline: none;
+      &:hover {
+        border-color: blue;
+      }
+    }
+  }
 
   &__container {
-    max-width: 800px;
-    // margin: 0 auto;
-    background: #ffffff99;
+    max-width: 820px;
+
+    background: rgba(#01dcff, 0.7);
     border-radius: 5px;
-    // padding: 20px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   &__title {
     font-size: 25px;
-    font-weight: 700;
     text-transform: uppercase;
     line-height: 1.5;
-    margin-bottom: 10px;
-    padding: 10px 20px;
+    padding: 0;
     font-family: system-ui;
     color: #000;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+      0px -4px 10px rgba(255, 255, 255, 0.3);
+  }
+  &__desc {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #000;
+    padding: 0 0;
+    margin: 0;
+
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+      0px -4px 10px rgba(255, 255, 255, 0.3);
   }
   .css-heg063-MuiTabs-flexContainer {
     gap: 10px;
@@ -42,7 +96,11 @@
   .box__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
+    .css-nz481w-MuiInputBase-input-MuiInput-input {
+      font-size: 15px;
+    }
   }
   form {
     position: relative;
@@ -103,12 +161,18 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    width: 200px;
+    width: 150px;
     height: 42px;
     outline: none;
     border-radius: 5px;
     color: #fff;
     border: 1px solid;
     background: linear-gradient(to right, #ff6a81, #9a4295);
+  }
+  .date {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    animation: opacity 0.3s linear;
   }
 }

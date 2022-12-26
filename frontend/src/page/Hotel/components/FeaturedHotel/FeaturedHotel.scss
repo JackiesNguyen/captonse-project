@@ -1,0 +1,24 @@
+.featuredHotel {
+  &__container {
+    padding: 20px 0;
+    overflow: hidden;
+  }
+  &__head {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 35px;
+      line-height: 1.5;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+  .swiper {
+    overflow: inherit !important;
+  }
+}

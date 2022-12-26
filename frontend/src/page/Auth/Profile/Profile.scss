@@ -95,11 +95,19 @@
   flex: 1;
   min-width: 300px;
 }
-.profile_page .col-right h2 {
+.col-right h2 {
   font-size: 1.7rem;
   text-transform: uppercase;
   color: #333;
   margin: 10px 0;
+}
+.profile_page .loading {
+  min-height: 100vh;
+  text-align: center;
+  padding: 50px;
+  span {
+    margin: 0 auto;
+  }
 }
 
 /* ------------ Table------------ */

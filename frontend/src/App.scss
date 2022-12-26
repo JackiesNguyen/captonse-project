@@ -61,6 +61,14 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes botToTop {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 
 .placesGlobal__list {
   display: grid;

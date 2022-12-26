@@ -9,6 +9,7 @@ import seedRouter from "./routes/seedRoutes.js";
 import placeRouter from "./routes/placeRoutes.js";
 import userRouter from "./routes/userRoutes.js";
 import uploadRouter from "./routes/uploadRoutes.js";
+import hotelRouter from "./routes/hotelRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -34,6 +35,7 @@ mongoose
 
 app.use("/api/seed", seedRouter);
 app.use("/api/places", placeRouter);
+app.use("/api/hotels", hotelRouter);
 app.use("/api/user", userRouter);
 app.use("/api/avatar", uploadRouter);
 

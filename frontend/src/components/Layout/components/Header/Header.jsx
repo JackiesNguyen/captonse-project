@@ -96,9 +96,9 @@ const Header = () => {
       <div className={!navbar ? "header__bot" : "header__bot sticky"}>
         <Container>
           <div className="header__bot-container">
-            <a href="/" className="header__bot-logo">
+            <Link to="/" className="header__bot-logo">
               <img src={logomain} alt={logomain} />
-            </a>
+            </Link>
             <div className="header__bot-category">
               Chọn khu vực <BsCaretDownFill />
               <ul className="area">
@@ -228,31 +228,72 @@ const Header = () => {
                         Địa điểm check-in hấp dẫn
                       </NavLink>
                     </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="menu-item">
-                <div className="menu-link" style={{ cursor: "pointer" }}>
-                  Trải nghiệm
-                  <ul className="experience">
                     <li>
                       <AiOutlineArrowRight />
-                      <NavLink id="RouterNavLink" to="/trai-nghiem/khach-san">
-                        Khách sạn
-                      </NavLink>
-                    </li>
-                    <li>
-                      <AiOutlineArrowRight />
-                      <NavLink id="RouterNavLink" to="trai-nghiem/tour-du-lich">
-                        Tour du lịch
+                      <NavLink
+                        id="RouterNavLink"
+                        to="diem-du-lich/quan-an-chay"
+                      >
+                        Quán ăn chay
                       </NavLink>
                     </li>
                   </ul>
                 </div>
               </li>
               <li className="menu-item">
-                <NavLink id="RouterNavLink" to="/lien-he" className="menu-link">
-                  Liên hệ
+                <NavLink
+                  id="RouterNavLink"
+                  to="/khach-san"
+                  className="menu-link"
+                >
+                  Khách sạn
+                  <ul className="hotelList">
+                    <li>
+                      <AiOutlineArrowRight />
+                      <NavLink
+                        id="RouterNavLink"
+                        to="khach-san/khach-san-2-sao"
+                      >
+                        Khách sạn 2 sao
+                      </NavLink>
+                    </li>
+                    <li>
+                      <AiOutlineArrowRight />
+                      <NavLink
+                        id="RouterNavLink"
+                        to="khach-san/khach-san-3-sao"
+                      >
+                        Khách sạn 3 sao
+                      </NavLink>
+                    </li>
+                    <li>
+                      <AiOutlineArrowRight />
+                      <NavLink
+                        id="RouterNavLink"
+                        to="khach-san/khach-san-4-sao"
+                      >
+                        Khách sạn 4 sao
+                      </NavLink>
+                    </li>
+                    <li>
+                      <AiOutlineArrowRight />
+                      <NavLink
+                        id="RouterNavLink"
+                        to="khach-san/khach-san-5-sao"
+                      >
+                        Khách sạn 5 sao
+                      </NavLink>
+                    </li>
+                  </ul>
+                </NavLink>
+              </li>
+              <li className="menu-item">
+                <NavLink
+                  id="RouterNavLink"
+                  to="/tour-du-lich"
+                  className="menu-link"
+                >
+                  Tour du lịch
                 </NavLink>
               </li>
             </ul>

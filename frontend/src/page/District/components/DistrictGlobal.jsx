@@ -137,6 +137,20 @@ const DistrictGlobal = (props) => {
                     )}
                   </div>
                 </div>
+                <div className="districtGlobal__item">
+                  <div className="districtGlobal__title">
+                    <i className="fa-solid fa-location-dot"></i>
+                    <h2>Quán ăn chay</h2>
+                  </div>
+                  <div className="districtGlobal__place-list">
+                    {places.map((place) =>
+                      place.district === district &&
+                      place.category === "Quán Ăn Chay" ? (
+                        <Place place={place} key={place.id} />
+                      ) : null
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </Container>

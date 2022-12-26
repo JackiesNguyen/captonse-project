@@ -1,5 +1,16 @@
 import mongoose from "mongoose";
 
+const reviewSchema = new mongoose.Schema(
+  {
+    name: { type: String, required: true },
+    comment: { type: String, required: true },
+    rating: { type: Number, required: true },
+  },
+  {
+    timestamps: true,
+  }
+);
+
 const placeSchema = new mongoose.Schema(
   {
     name: { type: String, require: true, unique: true },
@@ -9,6 +20,9 @@ const placeSchema = new mongoose.Schema(
     image: { type: String, require: true },
     district: { type: String, require: true },
     imageCaption: { type: String, require: true },
+    fromPrice: { type: Number, require: true },
+    toPrice: { type: Number, require: true },
+
     detailDescription: [
       {
         desc: { type: String, require: true },
@@ -18,6 +32,7 @@ const placeSchema = new mongoose.Schema(
     ],
     rating: { type: Number, require: true },
     numReviews: { type: Number, require: true },
+    reviews: [reviewSchema],
     address: { type: String, require: true },
     description: { type: String, require: true },
     mapUrl: { type: String, require: true },

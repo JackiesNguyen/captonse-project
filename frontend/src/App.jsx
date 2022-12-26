@@ -46,6 +46,12 @@ import ThanhKhe from "./page/District/ThanhKhe";
 import CamLe from "./page/District/CamLe";
 import Search from "./page/Search/Search";
 import SearchLayout from "./components/Layout/SearchLayout/SearchLayout";
+import Vegetarian from "./page/TouristAttraction/Vegetarian/Vegetarian";
+import AdminPage from "./AdminPage";
+import HotelLayout from "./components/Layout/HotelLayout/HotelLayout";
+import Hotel from "./page/Hotel/Hotel";
+import HotelDetail from "./page/Hotel/Page/HotelDetail/HotelDetail";
+import SearchHotel from "./page/Hotel/Page/SearchHotel/SearchHotel";
 
 //
 function App() {
@@ -75,17 +81,27 @@ function App() {
       getUser();
     }
   }, [token, dispatch]);
-
   //
-
   return (
     <Router>
       <div className="app">
         <Routes>
+          {isAdmin ? (
+            <Route path="/" element={<AdminPage />}>
+              <Route index element="/admin" />
+            </Route>
+          ) : !isAdmin ? (
+            <Route element={<Layout />}>
+              {" "}
+              <Route path="/" element={<Home />} />
+            </Route>
+          ) : (
+            <NotFound />
+          )}
+          <Route path="/admin" element={<NotFound />} />
           {/* Layout Default */}
           <Route element={<Layout />}>
-            <Route path="/" element={<Home />} />
-
+            <Route path="/khach-san/:slug" element={<HotelDetail />} />
             <Route path="/dia-diem/:slug" element={<PlaceDetail />} />
             {/* Auth  */}
             <Route
@@ -132,13 +148,24 @@ function App() {
               path="/diem-du-lich/dia-diem-checkin-hap-dan"
               element={<Checkin />}
             />
+            <Route path="/diem-du-lich/quan-an-chay" element={<Vegetarian />} />
+            {/* Hotel */}
+            <Route
+              path="/khach-san/khach-san-2-sao"
+              element={<SearchHotel />}
+            />
           </Route>
+
+          {/* Hotel */}
+
+          <Route element={<HotelLayout />}>
+            <Route path="/khach-san" element={<Hotel />} />
+          </Route>
+
+          {/*  */}
+
           <Route element={<SearchLayout />}>
             <Route path="/search/:query" element={<Search />} />
-          </Route>
-          <Route path="/trai-nghiem">
-            <Route path="khack-san" element={<Outlet />} />
-            <Route path="tour-du-lich" element={<Outlet />} />
           </Route>
           <Route path="/lien-he" element={<Outlet />} />
 
@@ -174,6 +201,7 @@ function App() {
           theme="colored"
           draggable
           pauseOnHover
+          style={{ top: "20%" }}
         />
       </div>
     </Router>

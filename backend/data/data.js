@@ -1780,6 +1780,403 @@ const data = {
       mapUrl:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3836.7989095738303!2d108.16189671457248!3d15.919602488973505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314205634ca74b45%3A0x401b98aa8e7179cc!2zUuG7q25nIHRow7RuZyBC4buTIELhu5M!5e0!3m2!1svi!2s!4v1665736611028!5m2!1svi!2s",
     },
+    {
+      //_id: "1",
+      name: "Quán chay Hương Sen",
+      title: "Quán chay Hương Sen",
+      slug: "quan-chay-huong-sen",
+      category: "Quán Ăn Chay",
+      fromPrice: 15000,
+      toPrice: 20000,
+      image:
+        "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-huong-sen-7.jpg",
+      district: "Hải Châu",
+      detailDescription: [
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-huong-sen-7.jpg",
+        },
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-huong-sen-5.jpg",
+        },
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-huong-sen-6.jpg",
+        },
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-huong-sen-6-1.jpg",
+        },
+
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-huong-sen-7-1.jpg",
+        },
+
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-huong-sen-2.jpg",
+        },
+      ],
+      rating: 5,
+      numReviews: "10",
+      address: "K30 Đặng Thai Mai",
+      description: "",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967665.968195833!2d105.33851159952883!3d13.798527617288714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219ea4c8be2b3%3A0x4d44e9b4274bed78!2zUXXDoW4gQ2hheSBIxrDGoW5nIFNlbg!5e0!3m2!1svi!2s!4v1671435607213!5m2!1svi!2s",
+    },
+    {
+      //_id: "1",
+      name: "Quán Chay An Lạc Tâm",
+      title: "Quán Chay An Lạc Tâm",
+      slug: "quan-chay-an-lac-tam",
+      category: "Quán Ăn Chay",
+      fromPrice: 15000,
+      toPrice: 25000,
+      image:
+        "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-an-lac-tam-1-1.jpg",
+      district: "Hải Châu",
+      detailDescription: [
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-an-lac-tam-5.jpg",
+        },
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-an-lac-tam-5.jpg",
+        },
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-an-lac-tam-7.jpg",
+        },
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-an-lac-tam-1.jpg",
+        },
+
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-huong-sen-7-1.jpg",
+        },
+
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/quan-chay-huong-sen-2.jpg",
+        },
+      ],
+      rating: 5,
+      numReviews: "10",
+      address: "41 Đường Lê Quý Đôn, Bình Thuận, Hải Châu,",
+      description: "",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15337.52259866346!2d108.2098701775739!3d16.04572512232588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421937335863bf%3A0xe8a1455377bf9c00!2sChay%20An%20L%E1%BA%A1c%20T%C3%A2m%20(%20An%20Lac%20Tam%20Vegetarian%20)%20CS2!5e0!3m2!1svi!2s!4v1671438873318!5m2!1svi!2s",
+    },
+    {
+      //_id: "1",
+      name: "Ẩm thực Chay Tâm Viên",
+      title: "Ẩm thực Chay Tâm Viên",
+      slug: "am-thuc-chay-tam-viem",
+      category: "Quán Ăn Chay",
+      fromPrice: 15000,
+      toPrice: 25000,
+      image:
+        "https://diadiemdanang.vn/wp-content/uploads/2020/11/am-thuc-chay-tam-vien-7.jpg",
+      district: "Hải Châu",
+      detailDescription: [
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/am-thuc-chay-tam-vien-6.jpg",
+        },
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/am-thuc-chay-tam-vien-6-1.jpg",
+        },
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/am-thuc-chay-tam-vien-1.jpg",
+        },
+        {
+          text: "",
+          img: "https://diadiemdanang.vn/wp-content/uploads/2020/11/am-thuc-chay-tam-vien-9.jpg",
+        },
+      ],
+      rating: 5,
+      numReviews: "10",
+      address: "898 NGÔ QUYỀN",
+      description: "",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7667.833020787506!2d108.22753282434185!3d16.06982170552205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421925b6fb30f3%3A0xe26e1a3c95c48c4c!2zVmVnZXRhcmlhbiByw6l0YXVyYW50IE5ow6JuIFTDom0!5e0!3m2!1svi!2s!4v1671439156099!5m2!1svi!2s",
+    },
+  ],
+  hotels: [
+    {
+      name: "Khách sạn Osaka Đà Nẵng",
+      slug: "khach-san-osaka-da-nang",
+      address: "Lot 37 Trần Bạch Đằng, Ngũ Hành Sơn, Đà Nẵng",
+      district: "Ngũ Hành Sơn",
+      description:
+        "Osaka Hotel Da Nang nằm bên bờ biển ở thành phố Đà Nẵng, cách Bãi biển Mỹ Khê 100 m và Bãi biển Bắc Mỹ An 1 km. Trong số các tiện nghi của khách sạn này có dịch vụ phòng, sảnh khách chung, bếp chung và WiFi miễn phí trong toàn bộ khuôn viên. Chỗ nghỉ cung cấp dịch vụ lễ tân 24 giờ và dịch vụ thu đổi ngoại tệ cho khách.\n Phòng nghỉ tại khách sạn được trang bị máy điều hòa, truyền hình cáp màn hình phẳng, tủ lạnh, ấm đun nước, chậu rửa vệ sinh (bidet), máy sấy tóc và bàn làm việc. Các phòng còn có tủ để quần áo và phòng tắm riêng.\n\n\n Osaka Hotel Da Nang có sân hiên.\nKhách sạn nằm cách Cầu tàu Tình yêu 3,4 km và Công viên Châu Á 4 km. Sân bay gần nhất là sân bay quốc tế Đà Nẵng, nằm trong bán kính 6 km từ Osaka Hotel Da Nang, và chỗ nghỉ cung cấp dịch vụ đưa đón sân bay với một khoản phụ phí",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61349.12211122704!2d108.248075!3d16.048869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa59cd3b3a4951f84!2sOsaka%20Hotel!5e0!3m2!1svi!2sus!4v1671791980813!5m2!1svi!2sus",
+      hotline: "0902 111 898",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1853/medium_210531138%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1853/medium_210531137%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1853/medium_97526938_602467920476586_9024213256582987776_o%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1853/medium_222460795%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1853/medium_76927716_485183435538369_5756091582138810368_n%20(1).jpg",
+      ],
+      type: 2,
+      price: 1000000,
+      rating: 5,
+      numReviews: 1,
+      tags: ["gần biển", "giá rẻ", "view đẹp", "view biển"],
+    },
+    {
+      name: "Khách Sạn Pariat Đà Nẵng",
+      slug: "khach-san-pariat-da-nang",
+      address: "202-204 Bạch Đằng, Quận Hải Châu, Đà Nẵng",
+      district: "Hải Châu",
+      description:
+        "Khách sạn Pariat Đà Nẵng cao 12 tầng gồm 60 phòng nghỉ và căn hộ được thiết kế trang nhã với tầm nhìn hướng thẳng ra sông Hàn hứa hẹn sẽ mang đến cho Quý khách một kỳ nghỉ tuyệt vời. Từ đây, Quý khách có thể ngắm nhìn thành phố nhộn nhịp với những cây cầu độc đáo của Đà Nẵng: Cầu quay sông Hàn nổi tiếng, cầu Rồng phun lửa đầy sắc màu hay cầu dây Trần Thị Lý gắn liền với một phần lịch sử của thành phố năng động này. \nTừ khách sạn Pariat, Quý khách có thể dễ dàng di chuyển đến các trung tâm mua sắm, ăn uống và giải trí nổi tiếng của thành phố Đà Nẵng xinh đẹp.\nQuý khách còn có cơ hội thưởng thức chương trình màn nước nghệ thuật vào mỗi tối. Đây là sự kết hợp độc đáo giữa những giọt nước được lập trình sẵn với ánh sáng lung linh hòa cùng âm thanh du dương, tất cả tạo nên một bức tranh bắt mắt và sinh động.",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61344.0187451272!2d108.224024!3d16.065429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb57a40d03e6cc054!2zUGFyaWF0IFJpdmVyIEZyb250IEhvdGVsIMSQw6AgTuG6tW5n!5e0!3m2!1svi!2sus!4v1671793706272!5m2!1svi!2sus",
+      hotline: "0902 111 898",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1298/medium_medium_Le%20tan%20Pariat%202.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1298/medium_44799157551_fe82fa12b3_o%20(1)%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1298/medium_44799156291_e27e889e2c_o%20(1)%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1298/medium_44765861342_a97da13225_o%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1298/medium_44080043264_856551cd74_o%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1298/medium_medium_69271532_2682366391776610_7301768398352941056_n%20(1).jpg",
+      ],
+      type: 3,
+      price: 1550000,
+      rating: 5,
+      numReviews: 4,
+      tags: [
+        "Trung tâm",
+        "View sông hàn",
+        "Gần cầu rồng",
+        "Có bar pub",
+        "Hồ bơi ngoài trời",
+      ],
+    },
+
+    {
+      name: "Khách Sạn Flower Đà Nẵng",
+      slug: "khach-san-flower-da-nang",
+      address: " Lô 33-34 Đỗ Bá, Quận Ngũ Hành Sơn, Đà Nẵng",
+      district: "Ngũ Hành Sơn",
+      description:
+        "FLOWER HOTEL  với vị trí cách biển Mỹ Khê tầm 5 phút đi bộ, trên trục đường Đỗ Bá. Khách sạn gồm 50 phòng, 12 tầng. Đến với FLOWER HOTEL quý khách sẽ thưởng thức các dịch sản phẩm dịch vụ:\nPhòng rộng rãi, thoáng,sang trọng, view đẹp…\nBể bơi tầng thượng\nNhà hàng tầng 2 với thiết kế sang trọng.  \nĐặc biệt quý khách sẽ được thưởng thức cảnh toàn thành phố về đêm trên Bar sân thượng.\nTừ Flower hotel, quý khách chỉ mất 08 phút đi xe ô tô đến sân bay Đà Nẵng, 07 phút đến trung tâm thành phố và gần các danh thắng như Hội An, Bà Nà hills, Thánh địa Mỹ Sơn, Cố đô Huế",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15337.075986347394!2d108.246081!3d16.051525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa864661022cbfcca!2sFlower%20Hotel%20Da%20Nang!5e0!3m2!1svi!2sus!4v1671794442153!5m2!1svi!2sus",
+      hotline: "0902 111 898",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1358/medium_156029129%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1358/medium_157770006%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1358/medium_156023899%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1358/medium_156023990%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1358/medium_156024114%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1358/medium_78227453_162271528484016_5334246538640097280_o%20(1).jpg",
+      ],
+      type: 3,
+      price: 1100000,
+      rating: 5,
+      numReviews: 4,
+      tags: ["Gần biển", "Sang trọng"],
+    },
+    {
+      name: "Khách sạn Mercury Đà Nẵng",
+      slug: "khach-san-mercury-da-nang",
+      address: "125 Nguyễn Văn Linh, Nam Dương, Hải Châu, Đà Nẵng",
+      district: "Hải Châu",
+      description:
+        "Mercury Boutique Hotel cung cấp chỗ nghỉ 3 sao với xe máy miễn phí, quầy bar và địa điểm ăn uống trong khuôn viên. Khách sạn này cách Cầu Sông Hàn lẫn Cầu Khóa Tình Yêu Đà Nẵng 2,5 km và cung cấp dịch vụ đưa đón sân bay miễn phí.Một số phòng tại khách sạn này có khu vực ghế ngồi. Các phòng đều có phòng tắm riêng và được trang bị máy điều hòa, TV truyền hình cáp màn hình phẳng cũng như bàn cùng ấm đun nước.\nChỗ nghỉ phục vụ bữa sáng tự chọn hàng ngày.\nNhân viên tại quầy lễ tân 24 giờ có thể tư vấn cho khách về khu vực này.\nKhách sạn cách Công viên Châu Á 3,2 km và cách Ngũ Hành Sơn 9 km. Sân bay gần nhất là sân bay quốc tế Đà Nẵng, cách chỗ nghỉ 2 km.",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61345.56262247627!2d108.21586!3d16.060421!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda39f7ba4c204b7f!2sMercury%20Boutique%20Hotel%20Danang!5e0!3m2!1svi!2sus!4v1671851400124!5m2!1svi!2sus",
+      hotline: "0902 111 898",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1573/medium_885109d10e65630b9a846816f4a843e1.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1573/medium_4635931_19051515430074501760.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1573/medium_99484729dbbc2bcd8c4db5d3a58ef0b5.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1573/medium_9dec7a2dee0f8fecf6763c9d5e3518f2.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1573/medium_160480963.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1573/medium_121564511_1435582760165750_9177031808551491396_o.jpg",
+      ],
+      type: 3,
+      price: 1500000,
+      rating: 5,
+      numReviews: 4,
+      tags: ["Gần sân bay", "Giá rẻ", "Trung tâm"],
+    },
+    {
+      name: "Khách Sạn Del Luna Hotel By Luk Global Đà Nẵng",
+      slug: "khach-san-del-luna-hotel-by-lunk-global-da-nang",
+      address: " 138-140 Hồ Nghinh, Q. Sơn Trà, TP. Đà Nẵng",
+      district: "Sơn Trà",
+      description:
+        "Hotel Del Luna sự pha trộn đầy quyến rũ giữa nội thất cổ điển và kiến trúc kiểu Pháp, nơi chúng tôi mang đến cho bạn sự huyền bí của Phương Đông, nơi để tận hưởng trong không gian đầy mê hoặc.\nMang không khí hoài cổ của thời kỳ Pháp thuộc, Hotel Del Luna là một khách sạn kiểu 'boutique', là sự kết hợp tinh tế giữa màu sắc ấn tượng và nội thất đặc trưng kiểu Việt Nam.\nVới 27 phòng sang trọng độc đáo, nhà hàng Luna cùng bể bơi vô cực và phòng xông hơi, sục jacuzzi - Hotel Del Luna là nơi tuyệt vời cho những kỳ nghỉ riêng tư đầy lãng mạn, kỳ nghỉ  gia đình và nhóm bạn thân tràn đầy cảm hứng. \nNhà hàng Luna Cuisine với thiết kế hiện đại và phong cách phục vụ chuyên nghiệp, nhà hàng là nơi khách có thể trải nghiệm ẩm thực đặc sắc mỗi ngày. Nhà hàng phục vụ các món ăn Á – Âu đặc trưng, đặc biệt là những món hải sản tươi ngon với hương vị tuyệt vời và tốt cho sức khỏe.\nĐến với Hotel Del Luna, Quý khách như lạc vào một không gian thư giãn lý tưởng để nghỉ ngơi. Phòng xông hơi và bể sục sẽ giúp khách hàng gạt bỏ những mệt mỏi sau một ngày dài, mang lại cho Quý khách những giây phút thư giãn, nghỉ ngơi tuyệt vời.\nNếu bạn tìm kiếm một thứ gì đó thư giãn đừng quên tự thưởng cho bản thân bằng cách ngâm mình trong chiếc bồn tắm đầy bông bọt và nghe một bản nhạc du dương.",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3833.8549321948994!2d108.242962!3d16.073016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb4edb064f853690d!2zSG90ZWwgRGVsIEx1bmEgLSBLaMOhY2ggc-G6oW4gw4FuaCBUcsSDbmc!5e0!3m2!1svi!2sus!4v1671851731558!5m2!1svi!2sus",
+      hotline: "0902 111 898",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/2053/medium_image_686%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/2053/medium_image_691%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/2053/medium_image_667%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/2053/medium_image_664%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/2053/medium_image_669%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/2053/medium_image_695%20(1).jpg",
+      ],
+      type: 3,
+      price: 1250000,
+      rating: 5,
+      numReviews: 4,
+      tags: [
+        "Ăn sáng ngon",
+        "Có hồ bơi",
+        "Có spa message",
+        "Dành cho cặp đôi",
+        "Giá rẻ",
+        "Hồ bơi vô cực",
+        "Phù hợp gia đình",
+        "Trung tâm",
+        "View biển",
+        "Xe đạp miễn phí",
+      ],
+    },
+    {
+      name: "Khách Sạn Sepon Blue Đà Nẵng",
+      slug: "khach-san-sepon-blue-da-nang",
+      address: "157 - 159 Võ Văn Kiệt, Quận Sơn Trà, Đà Nẵng",
+      district: "Sơn Trà",
+      description:
+        "Khách sạn có 16 tầng bao gồm 60 phòng nghỉ đầy đủ tiện nghi, trang thiết bị hiện đại mang đến không gian sống tinh tế sang trọng và ấm áp cho kì nghỉ của quý khách. Khách sạn Sepon Blue không chỉ nổi bật với phòng ốc sang trọng, tinh tế trong lối bày trí nội ngoại thất mà còn gây ấn tượng mạnh với quầy Bar cạnh hồ bơi, nằm trên tầng thượng mang đến cho Quý khách tầm nhìn tuyệt đẹp của thành phố đà nẵng với những cây cầu nổi tiếng với ánh sáng nghệ thuật, bờ biễn dài và xanh thẳm, hay bán đảo Sơn Trà xanh mát của thành phố.\nTọa lạc tại vị trí hấp dẫn nhất tại thành phố Đà Nẵng, cách Sân bay Quốc tế - Ga Đà Nẵng, chợ Hàn, Viện bảo tàng Chăm trong bán kính 5km:\nSân bay Quốc tế Danang  7 phút  (đi bằng ôtô)          \nNúi Ngũ Hành Sơn 10 phút (đi bằng ôtô)    \nhố Cổ Hội An 30 phút  (đi bằng ôtô)    \nSân Golf  12 phút   ( đi bằng ô tô)\nĐặc biệt khách sạn có hồ bơi ở tầng 17, tại đây ban ngày quý khách có thể ngắm nhìn những bãi biển xanh ngát, ban đêm có thể chiêm ngưỡng những con đường rực rỡ ánh đèn và tận hưởng không khí náo nhiệt của thành phố, vào cuối tuần thứ 7, chủ nhật quý khách còn được xem màn trình diễn vô cùng hấp dẫn của cầu Rồng trên tầng 17 của Sepon Blue.",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15336.284849405492!2d108.23774!3d16.061794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb61c4f5316b30aa0!2sSepon%20Blue%20Hotel!5e0!3m2!1svi!2sus!4v1671852350234!5m2!1svi!2sus",
+      hotline: "0902 111 898",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1355/medium__I5A9293-Edit%20(FILEminimizer).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1355/medium_619;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1355/medium_616;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1355/medium_612;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1355/medium_609;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1355/medium_622;.jpg",
+      ],
+      type: 4,
+      price: 1000000,
+      rating: 5,
+      numReviews: 4,
+      tags: [
+        "Gần biển",
+        "Có hồ bơi",
+        "Gần cầu rồng",
+        "Có bar pub",
+        "Có phòng hội nghị",
+        "Dàn cho cặp đôi",
+      ],
+    },
+    {
+      name: "Khách Sạn Maximilan Đà Nẵng",
+      slug: "khach-san-maximilan-da-nang",
+      address: "222 Võ Nguyên Giáp, Quận Sơn Trà, Đà Nẵng",
+      district: "Sơn Trà",
+      description:
+        "Khách sạn MAXIMILAN biển Đà Nẵng, một trong những khách sạn với cơ sở vật chất cùng dịch vụ tương đương 5 sao được tọa lạc ngay vị trí đắc địa biển Đà Nẵng, trên con đường tỷ đô Võ Nguyên Giáp, tòa nhà 22 tầng được thiết kế công phu, tinh xảo và độc đáo, hoàn hảo đến từng chi tiết với cơ sở vật chất hiện đại, đẳng cấp bậc nhất dành cho du khách đi công vụ hay nghĩ dưỡng khi đến Đà Nẵng.\nKhách sạn được đầu tư theo từng chi tiết nhỏ nhất từ khu vực chung đến khu vực phòng ở. Với công suất 128 phòng ngủ được thiết kế theo phong cách hiện đại, tận dụng ưu thế tối đa của biển, khách sạn có 5 loại phòng chính phục vụ cho những nhu cầu khác nhau của quý khách gồm phòng Deluxe, Premier Deluxe (hướng xéo biển), Beachfront Premier Deluxe (hướng biển trực diện), Family Deluxe (2 phòng Deluxe thông nhau) and Pent-House Beachfront Diamond (căn hộ cao cấp trực diện biển).\nNgoài hệ thống phòng ngủ hiện đại, khách sạn còn được trang bị nhiều dịch vụ khác, khu vực phòng hội nghị có sức chứa hơn 200 khách có thể tổ chức nhiều loại hình họp & tiệc theo mô hình chuyên nghiệp, hồ bơi vô cực hiện đại tầng 22, hệ thống nhà hàng, cafe, bar, mát xa, làm đẹp, thư giãn. Khách sạn Maximilan hứa hẹn sẽ mang đến cho du khách những trải nghiệm khó quên nhất.",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61343.465572813584!2d108.244942!3d16.067223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb26adaa1034f9b59!2sMaximilan%20Danang%20Beach%20Hotel!5e0!3m2!1svi!2sus!4v1671852690911!5m2!1svi!2sus",
+      hotline: "0902 111 898",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1510/medium_820;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1510/medium_828;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1510/medium_821;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1510/medium_819;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1510/medium_822;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1510/medium_827;.jpg",
+      ],
+      type: 4,
+      price: 1800000,
+      rating: 5,
+      numReviews: 4,
+      tags: [
+        "Có bar pub",
+        "Có spa message",
+        "Hồ bơi vô cực",
+        "View biển mỹ khê",
+        "Gần cầu rồng",
+        "Hồ bơi ngoài tròi",
+        "Có hồ bơi",
+      ],
+    },
+    {
+      name: "Khách Sạn Mường Thanh Luxury Sông Hàn",
+      slug: "khach-san-muong-thanh-luxury-song-han",
+      address: "115 Nguyễn Văn Linh, Quận Hải Châu, Đà Nẵng",
+      district: "Hải Châu",
+      description:
+        "Khách sạn Mường Thanh Luxury Sông Hàn Đà Nẵng nằm ngay trung tâm mua sắm, giải trí, thương mại và dịch vụ của thành phố, cách bãi biển Đà Nẵng 2 km (10 phút), cách Ngũ Hành Sơn 2 km (10 phút), cách sân bay quốc tế Đà Nẵng 1km (5 phút), cách Phố cổ Hội An 20 km.\nKhách sạn có Internet miễn phí, hồ bơi ngoài trời và nhà hàng. Các hoạt động tại đây bao gồm karaoke và bida.\nMỗi phòng máy lạnh đều được trang bị truyền hình vệ tinh, minibar và máy pha trà/cà phê. Phòng tắm riêng đi kèm bồn tắm và tiện nghi vòi sen.\nKhách sạn có trung tâm thể dục, sân chơi của trẻ em và tiện nghi. Dịch vụ mát-xa được cung cấp tại spa. Quý khách có thể thưởng thức ẩm thực quốc tế và địa phương tại nhà hàng của khách sạn.\nChỗ nghỉ này cũng được đánh giá là đáng giá tiền nhất ở Đà Nẵng! Khách sẽ tiết kiệm được nhiều hơn so với nghỉ tại những chỗ nghỉ khác ở thành phố này.\nPhòng khách sạn: 206",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61345.61440576422!2d108.216823!3d16.060253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb2bbf7249e27f21!2zS2jDoWNoIHPhuqFuIE3GsOG7nW5nIFRoYW5oIEx1eHVyeSBTw7RuZyBIw6Bu!5e0!3m2!1svi!2sus!4v1671853110022!5m2!1svi!2sus",
+      hotline: "0902 111 898",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/12/medium_-10.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/12/medium_953934e8.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/12/medium_6043eea8.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/12/medium_340ce143.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/12/medium_0d738250.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/12/medium_48b89858.jpg",
+      ],
+      type: 5,
+      price: 2200000,
+      rating: 5,
+      numReviews: 4,
+      tags: [
+        "Gần sân bay",
+        "Trung tâm",
+        "Có spa message",
+        "Hồ bơi ngoài tròi",
+        "Có bar pub",
+        "Có phòng hội nghị",
+        "Gần cầu rồng",
+        "Gần chợ",
+        "Có hồ bơi",
+      ],
+    },
+
+    {
+      name: "Khách Sạn Sel De Mer Đà Nẵng",
+      slug: "khach-san-sel-de-mer-da-nang",
+      address: "92 Võ Nguyên Giáp, Quận Sơn Trà, Đà Nẵng",
+      district: "Sơn Trà",
+      description:
+        "Tất cả các phòng đều có ban công rộng, giúp Quý Khách tận hưởng không khí trong lành. Thêm vào đó, các gam màu dịu nhẹ kết hợp ánh sáng tự nhiên tạo cảm giác khoan khoái và thoải mái giúp bạn nghỉ ngơi trọn vẹn. Không có gì lạ khi hàng ngàn khách đã chọn lựa Sel de Mer Hotel & Suites cho những chuyến đi đáng nhớ ở thành phố Đà Nẵng.\nGóc nhìn toàn cảnh trên bán đảo Sơn Trà và Thành Phố chờ đón Quý Khách tại The Speakeasy Bar & Tapas, nơi Quý Khách có thể thả mình với ly cocktail mát lạnh kết hợp với các món ăn tapas đa dạng và quên đi âu lo ngày dài. Thêm vào đó, nhà hàng Anemoi mang đến những món ăn truyền thống Việt Nam, hòa quyện đồng thời cùng hơi thở đương đại.\nĐến với Sel de Mer Hotel & Suites, Quý Khách còn có thể thả mình vào không gian yên bình tại Annona Spa. Các kĩ thuật viên được đào tạo bởi các chuyên gia Nhật Bản chắc chắn sẽ khiến bạn hài lòng bởi sự trân trọng làn da trong từng xúc chạm. Đặc biệt hồ bơi vô cực tại tầng 5 hướng ra biển xanh cùng các tiện ích khách như phòng tập thể dục được trang bị đầy đủ, khu vui chơi trẻ em, phòng tắm hơi, xông hơi để giải tỏa những căng thẳng trong cuộc sống hằng ngày.",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61339.331220029606!2d108.246817!3d16.080625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1054f22f47f39773!2sSel%20de%20Mer%20Hotel%20%26%20Suites!5e0!3m2!1svi!2sus!4v1671853482168!5m2!1svi!2sus",
+      hotline: "0902 111 898",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1757/medium_-60.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1757/medium_522;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1757/medium_526;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1757/medium_515;%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1757/medium_529;.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1757/medium_528;.jpg",
+      ],
+      type: 5,
+      price: 2350000,
+      rating: 5,
+      numReviews: 4,
+      tags: [
+        "Có bar pub",
+        "Có spa message",
+        "Hồ bơi ngoài trời",
+        "Có phòng hội nghị",
+        "Gần chợ",
+        "View biển Mân Thái",
+        "Có hồ bơi",
+      ],
+    },
   ],
 };
 export default data;

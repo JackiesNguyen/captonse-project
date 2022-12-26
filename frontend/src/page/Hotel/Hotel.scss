@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.hotel {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+
+  &__info {
+    padding: 20px;
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 15px 0;
+      color: #d02245;
+    }
+    span {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    ul {
+      li {
+        list-style: decimal;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.twoStar,
+.threeStar,
+.fourStar,
+.fiveStar {
+  &__title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .cardHotel__name {
+    width: 100%;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 40px;
+  }
+  .cardHotel__img {
+    max-width: 100%;
+    max-height: 280px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    &:hover img {
+      transform: scale(1.05);
+    }
+    &:hover .view__link {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    img {
+      transform: scale(1);
+      transition: transform 0.2s linear;
+      z-index: 2;
+      object-fit: cover;
+    }
+    .view__link {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.2s linear;
+
+      a {
+        display: block;
+        text-decoration: none;
+        background: #0fb76b;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 50px;
+        box-shadow: 0 0 0 4px rgb(255 255 255 / 30%);
+        &:hover {
+          background-color: darkblue;
+        }
+      }
+    }
+  }
+
+  .cardHotel {
+    padding: 0;
+    height: auto;
+    height: 614px;
+    overflow: hidden;
+  }
+  .cardHotel__content {
+    margin: 0;
+    padding: 10px;
+  }
+}
