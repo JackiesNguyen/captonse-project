@@ -247,44 +247,6 @@ const Header = () => {
                   className="menu-link"
                 >
                   Khách sạn
-                  <ul className="hotelList">
-                    <li>
-                      <AiOutlineArrowRight />
-                      <NavLink
-                        id="RouterNavLink"
-                        to="khach-san/khach-san-2-sao"
-                      >
-                        Khách sạn 2 sao
-                      </NavLink>
-                    </li>
-                    <li>
-                      <AiOutlineArrowRight />
-                      <NavLink
-                        id="RouterNavLink"
-                        to="khach-san/khach-san-3-sao"
-                      >
-                        Khách sạn 3 sao
-                      </NavLink>
-                    </li>
-                    <li>
-                      <AiOutlineArrowRight />
-                      <NavLink
-                        id="RouterNavLink"
-                        to="khach-san/khach-san-4-sao"
-                      >
-                        Khách sạn 4 sao
-                      </NavLink>
-                    </li>
-                    <li>
-                      <AiOutlineArrowRight />
-                      <NavLink
-                        id="RouterNavLink"
-                        to="khach-san/khach-san-5-sao"
-                      >
-                        Khách sạn 5 sao
-                      </NavLink>
-                    </li>
-                  </ul>
                 </NavLink>
               </li>
               <li className="menu-item">

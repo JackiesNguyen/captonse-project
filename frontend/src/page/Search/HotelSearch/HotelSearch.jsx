@@ -2,17 +2,17 @@ import { Box } from "@mui/material";
 import React, { useEffect, useReducer } from "react";
 import Container from "react-bootstrap/esm/Container";
 import { useParams } from "react-router-dom";
-import "./Search.scss";
-import LoadingClient from "../../components/LoadingClient/LoadingClient";
+import "../Search.scss";
 import axios from "axios";
-import Place from "../../components/Place/Place";
+import Place from "../../../components/Place/Place";
+import LoadingClient from "../../../components/LoadingClient/LoadingClient";
 
 const reducer = (state, action) => {
   switch (action.type) {
     case "FETCH_REQUEST":
       return { ...state };
     case "FETCH_SUCCESS":
-      return { ...state, places: action.payload, loading: false };
+      return { ...state, hotels: action.payload, loading: false };
     case "FETCH_FAIL":
       return { ...state, loading: false, error: action.payload };
     default:
@@ -20,10 +20,10 @@ const reducer = (state, action) => {
   }
 };
 
-const Search = () => {
+const HotelSearch = () => {
   const { query } = useParams();
-  const [{ loading, error, places }, dispatch] = useReducer(reducer, {
-    places: [],
+  const [{ loading, error, hotels }, dispatch] = useReducer(reducer, {
+    hotels: [],
     loading: true,
     error: "",
   });
@@ -32,7 +32,7 @@ const Search = () => {
       dispatch({ type: "FETCH_REQUEST" });
       try {
         const result = await axios.get(
-          `/api/places/search?keyword=${encodeURIComponent(query)}`
+          `/api/hotels/search?keyword=${encodeURIComponent(query)}`
         );
         dispatch({ type: "FETCH_SUCCESS", payload: result.data });
       } catch (err) {
@@ -41,6 +41,7 @@ const Search = () => {
     };
     fetchData();
   }, [query]);
+  console.log(hotels);
   return (
     <div className="searchPg">
       <div className="searchPg__container">
@@ -59,14 +60,14 @@ const Search = () => {
             <div>{error}</div>
           ) : (
             <div className="searchPg__body">
-              {places.places.length > 0 ? (
+              {hotels.hotels.length > 0 ? (
                 <div className="searchPg__list">
-                  {places.places.map((place) => (
-                    <Place place={place} key={place._id} />
+                  {hotels.hotels.map((place) => (
+                    <Place place={place} key={place._id} hotel />
                   ))}
                 </div>
               ) : (
-                <p className="no-data">Không có điạ điểm cần tìm</p>
+                <p className="no-data">Không có khách sạn cần tìm</p>
               )}
             </div>
           )}
@@ -76,4 +77,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default HotelSearch;

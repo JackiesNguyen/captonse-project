@@ -2,8 +2,7 @@ import axios from "axios";
 import React, { useEffect, useReducer, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import LoadingClient from "../../../../components/LoadingClient/LoadingClient";
-import "./HotelDetail.scss";
+
 import Box from "@mui/material/Box";
 import Form from "react-bootstrap/Form";
 
@@ -17,18 +16,19 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Navigation, Pagination, Autoplay } from "swiper";
-import Rating from "../../../../components/Rating/Rating";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import FloatingLabel from "react-bootstrap/esm/FloatingLabel";
 import Button from "react-bootstrap/esm/Button";
-import HotelSame from "../../components/HotelSame/HotelSame";
+import Rating from "../../../components/Rating/Rating";
+import LoadingClient from "../../../components/LoadingClient/LoadingClient";
+import "./TourDetail.scss";
 //
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "REFRESH_HOTEL":
-      return { ...state, hotel: action.payload };
+    case "REFRESH_tour":
+      return { ...state, tour: action.payload };
     case "CREATE_REQUEST":
       return { ...state, loadingCreateReview: true };
     case "CREATE_SUCCESS":
@@ -38,7 +38,7 @@ const reducer = (state, action) => {
     case "FETCH_REQUEST":
       return { ...state, loading: true };
     case "FETCH_SUCCESS":
-      return { ...state, hotel: action.payload, loading: false };
+      return { ...state, tour: action.payload, loading: false };
     case "FETCH_FAIL":
       return { ...state, loading: false, error: action.payload };
     default:
@@ -46,16 +46,16 @@ const reducer = (state, action) => {
   }
 };
 
-const HotelDetail = () => {
+const TourDetail = () => {
   let reviewsRef = useRef();
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const params = useParams();
   const { slug } = params;
-  const [{ loading, error, hotel, loadingCreateReview }, dispatch] = useReducer(
+  const [{ loading, error, tour, loadingCreateReview }, dispatch] = useReducer(
     reducer,
     {
-      hotel: [],
+      tour: [],
       loading: true,
       error: "",
     }
@@ -64,7 +64,7 @@ const HotelDetail = () => {
     const fetchData = async () => {
       dispatch({ type: "FETCH_REQUEST" });
       try {
-        const result = await axios.get(`/api/hotels/slug/${slug}`);
+        const result = await axios.get(`/api/tours/slug/${slug}`);
         dispatch({ type: "FETCH_SUCCESS", payload: result.data });
       } catch (err) {
         dispatch({ type: "FETCH_FAIL", payload: err.message });
@@ -85,7 +85,7 @@ const HotelDetail = () => {
     }
     try {
       const { data } = await axios.post(
-        `/api/hotels/${hotel._id}/reviews`,
+        `/api/tours/${tour._id}/reviews`,
         { rating, comment, name: user.name },
         {
           headers: { Authorization: token },
@@ -95,10 +95,10 @@ const HotelDetail = () => {
         type: "CREATE_SUCCESS",
       });
       toast.success("Review submitted successfully");
-      hotel.reviews.unshift(data.review);
-      hotel.numReviews = data.numReviews;
-      hotel.rating = data.rating;
-      dispatch({ type: "REFRESH_PRODUCT", payload: hotel });
+      tour.reviews.unshift(data.review);
+      tour.numReviews = data.numReviews;
+      tour.rating = data.rating;
+      dispatch({ type: "REFRESH_PRODUCT", payload: tour });
       window.scrollTo({
         behavior: "smooth",
         top: reviewsRef.current.offsetTop,
@@ -114,43 +114,42 @@ const HotelDetail = () => {
     const format = stringNum.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     return format;
   };
-  function replaceWithBr() {
-    return hotel.description.replace(/\n/g, "<br />");
+  function replaceWithBr(text) {
+    return text.replace(/\n/g, "<br />");
   }
 
   return (
-    <div className="hotelDetail">
+    <div className="tourDetail">
       <Container>
         {loading ? (
           <LoadingClient />
         ) : error ? (
           <div>{error}</div>
         ) : (
-          <div className="hotelDetail__container">
-            <div className="hotelDetail__head">
+          <div className="tourDetail__container">
+            <div className="tourDetail__head">
               <Link to="/">Trang chủ</Link>
               {">>"}
-              <Link to="/khach-san">Khách sạn Đà Nẵng</Link>
+              <Link to="/tour-du-lich">Tour du lịch Đà Nẵng</Link>
               {">>"}
-              <p>{hotel.name}</p>
+              <p>{tour.name}</p>
             </div>
-            <div className="hotelDetail__body">
-              <div className="hotelDetail__name">
-                <h2>{hotel.name}</h2>
-                <p className="hotelDetail__price">
-                  Giá phòng trung bình:{" "}
-                  <span>{formatPrice(hotel.price)} đ</span>
+            <div className="tourDetail__body">
+              <div className="tourDetail__name">
+                <h2>{tour.name}</h2>
+                <p className="tourDetail__price">
+                  Giá tour: <span>{formatPrice(tour.price)} đ</span>
                 </p>
                 <p>
                   <i
                     className="fa-solid fa-location-dot"
                     style={{ marginRight: "10px" }}
                   ></i>
-                  {hotel.address}
+                  {tour.address}
                 </p>
               </div>
               <Box style={{ display: "flex", gap: "40px", padding: "10px 0" }}>
-                <div className="hotelDetail__left">
+                <div className="tourDetail__left">
                   <Swiper
                     pagination={true}
                     slidesPerView={1}
@@ -163,37 +162,113 @@ const HotelDetail = () => {
                     }}
                     modules={[Navigation, Autoplay, Pagination]}
                   >
-                    {hotel.images.map((image, index) => (
+                    {tour.images.map((image, index) => (
                       <SwiperSlide key={index}>
                         <img src={image} alt={image} key={index} />
                       </SwiperSlide>
                     ))}
                   </Swiper>
-                  <div className="hotelDetail__intro">
-                    Giới thiệu về {hotel.name}
-                  </div>
-                  {/* <p className="hotelDetail__desc">{hotel.description}</p> */}
-                  <p
-                    className="hotelDetail__desc"
-                    dangerouslySetInnerHTML={{ __html: replaceWithBr() }}
-                  />
+                  {/*  */}
 
-                  <div className="hotelDetail__ggmap">Vị trí Google Map</div>
-                  <iframe
-                    src={hotel.mapUrl}
-                    title={hotel.name}
-                    style={{ width: "100%", height: "400px", padding: "20px" }}
-                  ></iframe>
+                  <div className="tourDetail__title">
+                    <span>Bao gồm</span>
+                    <p>Giá {formatPrice(tour.price)} đ</p>
+                  </div>
+                  <ul className="tourDetail__service-list">
+                    <li className="tourDetail__service-item">
+                      <span>Dịch vụ bao gồm: </span>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: replaceWithBr(tour.serviceIncludes),
+                        }}
+                      />
+                    </li>
+                    <li className="tourDetail__service-item">
+                      <span>Dịch vụ không bao gồm: </span>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: replaceWithBr(tour.serviceNotIncludes),
+                        }}
+                      />
+                    </li>
+                    <li className="tourDetail__service-item">
+                      <span>Chính sách trẻ em:</span>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: replaceWithBr(tour.childrenPolicy),
+                        }}
+                      />
+                    </li>
+                  </ul>
+                  <div className="tourDetail__title">
+                    <span>Chi tiết</span>
+                    <p>Chương trình tour</p>
+                  </div>
+                  <div className="tourDetail__content">
+                    <div className="tourDetail__content-head">{tour.title}</div>
+                    <p
+                      className="tourDetail__desc"
+                      dangerouslySetInnerHTML={{
+                        __html: replaceWithBr(tour.description),
+                      }}
+                    />
+                    <div className="tourDetail__schedule">
+                      <h3>Lịch trình tour: </h3>
+                      <div className="tourDetail__schedule-list">
+                        {tour.tourSchedule.map((sh, index) => (
+                          <div
+                            key={index}
+                            className="tourDetail__schedule-item"
+                          >
+                            <div className="tourDetail__schedule-day">
+                              {`NGÀY ${sh.day}: ${sh.title} `}
+                            </div>
+                            <div className="tourDetail__schedule-details">
+                              {sh.details.map((detail, index) => (
+                                <div
+                                  className="tourDetail__schedule-detail"
+                                  key={index}
+                                >
+                                  <h5>{`${detail.timeSchedule} ${
+                                    detail.timeSchedule ? ":" : ""
+                                  }`}</h5>
+                                  <p>{detail.desc}</p>
+                                  <div className="tourDetail__schedule-images">
+                                    {detail.img.map((image, index) => (
+                                      <img
+                                        src={image}
+                                        key={index}
+                                        alt=""
+                                        style={{
+                                          width: "100%",
+                                          height: "100%",
+                                          objectFit: "cover",
+                                          marginBottom: "10px",
+                                        }}
+                                      />
+                                    ))}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="hotelDetail__right">
-                  <div className="hotelDetail__reviews">
-                    <div className="hotelDetail__reviews-head">
+
+                {/*  */}
+                <div className="tourDetail__right">
+                  <div className="tourDetail__reviews">
+                    <div className="tourDetail__reviews-head">
                       <i className="fa-solid fa-comment"></i>
+
                       <h2>Đánh giá khách sạn</h2>
                     </div>
-                    <div className="hotelDetail__reviews-body">
+                    <div className="tourDetail__reviews-body">
                       <h2 ref={reviewsRef}>Bình luận</h2>
-                      {hotel.reviews.length === 0 ? (
+                      {tour.reviews.length === 0 ? (
                         <p
                           style={{
                             color: "#e61b23",
@@ -205,7 +280,7 @@ const HotelDetail = () => {
                         </p>
                       ) : (
                         <ul className="reviews__list">
-                          {hotel.reviews.map((review, index) => (
+                          {tour.reviews.map((review, index) => (
                             <li className="reviews__item" key={index}>
                               <h4 className="reviews__name">{review.name}</h4>
                               <Rating
@@ -270,7 +345,7 @@ const HotelDetail = () => {
                       ) : (
                         <div className="signInwithComment">
                           Vui lòng{" "}
-                          <Link to={`/signin?redirect=/dia-diem/${hotel.slug}`}>
+                          <Link to={`/signin?redirect=/dia-diem/${tour.slug}`}>
                             đăng nhập
                           </Link>{" "}
                           để đánh giá khách sạn
@@ -278,19 +353,19 @@ const HotelDetail = () => {
                       )}
                     </div>
                   </div>
-                  <div className="hotelDetail__contact">
-                    <div className="hotelDetail__contact-head">
+                  <div className="tourDetail__contact">
+                    <div className="tourDetail__contact-head">
                       <i className="fa-solid fa-phone"></i>
                       <h2>LIÊN HỆ</h2>
                     </div>
-                    <div className="hotelDetail__contact-content">
-                      <h2>{hotel.name}</h2>
+                    <div className="tourDetail__contact-content">
+                      <h2>{tour.name}</h2>
                       <p>
                         <i
                           className="fa-solid fa-location-dot"
                           style={{ marginRight: "10px" }}
                         ></i>
-                        {hotel.address}
+                        {tour.address}
                       </p>
                       <p>
                         <i
@@ -298,14 +373,9 @@ const HotelDetail = () => {
                           style={{ marginRight: "10px" }}
                         ></i>
                         One Đà Nẵng tư vấn:{" "}
-                        <span style={{ color: "#e61b23" }}>
-                          {hotel.hotline}
-                        </span>
+                        <span style={{ color: "#e61b23" }}>{tour.hotline}</span>
                       </p>
                     </div>
-                  </div>
-                  <div className="hotelDetail__same">
-                    <HotelSame type={hotel.type} name={hotel.name} />
                   </div>
                 </div>
               </Box>
@@ -317,4 +387,4 @@ const HotelDetail = () => {
   );
 };
 
-export default HotelDetail;
+export default TourDetail;

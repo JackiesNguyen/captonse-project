@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Outlet,
+  Navigate,
 } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./page/Home/Home";
@@ -51,7 +51,10 @@ import AdminPage from "./AdminPage";
 import HotelLayout from "./components/Layout/HotelLayout/HotelLayout";
 import Hotel from "./page/Hotel/Hotel";
 import HotelDetail from "./page/Hotel/Page/HotelDetail/HotelDetail";
-import SearchHotel from "./page/Hotel/Page/SearchHotel/SearchHotel";
+import HotelSearch from "./page/Search/HotelSearch/HotelSearch";
+import Tour from "./page/Tour/Tour";
+import TourLayout from "./components/Layout/TourLayout/TourLayout";
+import TourDetail from "./page/Tour/page/TourDetail";
 
 //
 function App() {
@@ -88,7 +91,7 @@ function App() {
         <Routes>
           {isAdmin ? (
             <Route path="/" element={<AdminPage />}>
-              <Route index element="/admin" />
+              <Route index element={<Navigate to="/admin" />} />
             </Route>
           ) : !isAdmin ? (
             <Route element={<Layout />}>
@@ -101,8 +104,9 @@ function App() {
           <Route path="/admin" element={<NotFound />} />
           {/* Layout Default */}
           <Route element={<Layout />}>
-            <Route path="/khach-san/:slug" element={<HotelDetail />} />
             <Route path="/dia-diem/:slug" element={<PlaceDetail />} />
+            <Route path="/khach-san/:slug" element={<HotelDetail />} />
+            <Route path="/tour-du-lich/:slug" element={<TourDetail />} />
             {/* Auth  */}
             <Route
               path="/profile"
@@ -149,11 +153,11 @@ function App() {
               element={<Checkin />}
             />
             <Route path="/diem-du-lich/quan-an-chay" element={<Vegetarian />} />
-            {/* Hotel */}
-            <Route
-              path="/khach-san/khach-san-2-sao"
-              element={<SearchHotel />}
-            />
+          </Route>
+
+          {/* Tour */}
+          <Route element={<TourLayout />}>
+            <Route path="/tour-du-lich" element={<Tour />} />
           </Route>
 
           {/* Hotel */}
@@ -166,8 +170,9 @@ function App() {
 
           <Route element={<SearchLayout />}>
             <Route path="/search/:query" element={<Search />} />
+            <Route path="/hotel/search/:query" element={<HotelSearch />} />
           </Route>
-          <Route path="/lien-he" element={<Outlet />} />
+          {/*  */}
 
           <Route
             path="/signin"

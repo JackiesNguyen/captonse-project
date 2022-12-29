@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useReducer } from "react";
 import Rating from "../../../../components/Rating/Rating";
+import { Link } from "react-router-dom";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -46,32 +47,34 @@ const HotelSame = ({ type, name }) => {
         <h2>Khách sạn cùng loại</h2>
       </div>
       <div className="hotelDetail__same-body">
-        {hotels.map(
-          (hotel) =>
-            hotel.type === type &&
-            hotel.name !== name && (
-              <ul className="hotelDetail__same-list">
-                <li className="hotelDetail__same-item">
-                  <img
-                    src={hotel.images[1]}
-                    alt=""
-                    className="hotelDetail__same-img"
-                  />
-                  <div className="hotelDetail__same-content">
-                    <h3 className="hotelDetail__same-name">{hotel.name}</h3>
-                    <Rating
-                      numReviews={hotel.numReviews}
-                      rating={hotel.rating}
-                      setColor
+        <ul className="hotelDetail__same-list">
+          {hotels.map(
+            (hotel) =>
+              hotel.type === type &&
+              hotel.name !== name && (
+                <li className="hotelDetail__same-item" key={hotel._id}>
+                  <Link to={`/khach-san/${hotel.slug}`}>
+                    <img
+                      src={hotel.images[1]}
+                      alt=""
+                      className="hotelDetail__same-img"
                     />
-                    <h3 className="hotelDetail__same-price">
-                      Giá trung bình: <span>{formatPrice(hotel.price)}đ</span>
-                    </h3>
-                  </div>
+                    <div className="hotelDetail__same-content">
+                      <h3 className="hotelDetail__same-name">{hotel.name}</h3>
+                      <Rating
+                        numReviews={hotel.numReviews}
+                        rating={hotel.rating}
+                        setColor
+                      />
+                      <h3 className="hotelDetail__same-price">
+                        Giá trung bình: <span>{formatPrice(hotel.price)}đ</span>
+                      </h3>
+                    </div>
+                  </Link>
                 </li>
-              </ul>
-            )
-        )}
+              )
+          )}
+        </ul>
       </div>
     </>
   );

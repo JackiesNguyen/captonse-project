@@ -4,7 +4,7 @@
   width: 100%;
   position: relative;
   &__video {
-    background-size: cover;
+    background-size: contain;
     object-fit: cover;
     height: 500px;
     width: 100%;

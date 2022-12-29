@@ -38,8 +38,8 @@ const FeaturedHotel = (props) => {
           >
             {hotels.map((hotel) =>
               hotel.rating >= 4 ? (
-                <SwiperSlide>
-                  <CardHotel hotel={hotel} />
+                <SwiperSlide key={hotel._id}>
+                  <CardHotel hotel={hotel} key={hotel._id} />
                 </SwiperSlide>
               ) : null
             )}

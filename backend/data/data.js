@@ -1916,7 +1916,7 @@ const data = {
       address: "Lot 37 Trần Bạch Đằng, Ngũ Hành Sơn, Đà Nẵng",
       district: "Ngũ Hành Sơn",
       description:
-        "Osaka Hotel Da Nang nằm bên bờ biển ở thành phố Đà Nẵng, cách Bãi biển Mỹ Khê 100 m và Bãi biển Bắc Mỹ An 1 km. Trong số các tiện nghi của khách sạn này có dịch vụ phòng, sảnh khách chung, bếp chung và WiFi miễn phí trong toàn bộ khuôn viên. Chỗ nghỉ cung cấp dịch vụ lễ tân 24 giờ và dịch vụ thu đổi ngoại tệ cho khách.\n Phòng nghỉ tại khách sạn được trang bị máy điều hòa, truyền hình cáp màn hình phẳng, tủ lạnh, ấm đun nước, chậu rửa vệ sinh (bidet), máy sấy tóc và bàn làm việc. Các phòng còn có tủ để quần áo và phòng tắm riêng.\n\n\n Osaka Hotel Da Nang có sân hiên.\nKhách sạn nằm cách Cầu tàu Tình yêu 3,4 km và Công viên Châu Á 4 km. Sân bay gần nhất là sân bay quốc tế Đà Nẵng, nằm trong bán kính 6 km từ Osaka Hotel Da Nang, và chỗ nghỉ cung cấp dịch vụ đưa đón sân bay với một khoản phụ phí",
+        "Osaka Hotel Da Nang nằm bên bờ biển ở thành phố Đà Nẵng, cách Bãi biển Mỹ Khê 100 m và Bãi biển Bắc Mỹ An 1 km. Trong số các tiện nghi của khách sạn này có dịch vụ phòng, sảnh khách chung, bếp chung và WiFi miễn phí trong toàn bộ khuôn viên. Chỗ nghỉ cung cấp dịch vụ lễ tân 24 giờ và dịch vụ thu đổi ngoại tệ cho khách.\n Phòng nghỉ tại khách sạn được trang bị máy điều hòa, truyền hình cáp màn hình phẳng, tủ lạnh, ấm đun nước, chậu rửa vệ sinh (bidet), máy sấy tóc và bàn làm việc. Các phòng còn có tủ để quần áo và phòng tắm riêng.\n Osaka Hotel Da Nang có sân hiên.\nKhách sạn nằm cách Cầu tàu Tình yêu 3,4 km và Công viên Châu Á 4 km. Sân bay gần nhất là sân bay quốc tế Đà Nẵng, nằm trong bán kính 6 km từ Osaka Hotel Da Nang, và chỗ nghỉ cung cấp dịch vụ đưa đón sân bay với một khoản phụ phí",
       mapUrl:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61349.12211122704!2d108.248075!3d16.048869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa59cd3b3a4951f84!2sOsaka%20Hotel!5e0!3m2!1svi!2sus!4v1671791980813!5m2!1svi!2sus",
       hotline: "0902 111 898",
@@ -2176,6 +2176,1335 @@ const data = {
         "View biển Mân Thái",
         "Có hồ bơi",
       ],
+    },
+  ],
+  tours: [
+    {
+      name: "Tour du lịch bà nà 1 ngày",
+      title: "TOUR DU LỊCH BÀ NÀ 1 NGÀY KHÁM PHÁ NEW SUN WORLD BA NA HILLS",
+      slug: "tour-du-lich-ba-na-1-ngay",
+      time: "1 ngày",
+      price: 1390000,
+      address: "Đà Nẵng - Bà Nà Hills",
+      route:
+        "khám phá cổng thời gian - cầu vàng, show diễn “trận chiến ở vương quốc mặt trăng”, thác thần mặt trời, lễ hội ẩm thực & bia",
+      hotline: "0902 111 898",
+      serviceIncludes:
+        "- Xe đời mới 2018-2019, máy lạnh, lái xe vui vẻ, thân thiện.\nHướng dẫn viên du lịch chuyên nghiệp, nhiệt tình.\nĂn buffet Bà nà 255.000/ người\nVé cáp treo Bà Nà khứ hồi 850.000/người\nVé vào cổng tham gia khu vui chơi giải trí Fantasy Park.\nBảo hiểm du lịch ( mức bồi thường 10.000.000 đồng/1người)\nNước uống: chai ½lít/ người",
+      serviceNotIncludes:
+        "- Chi phí cá nhân, thức uống trong bữa ăn.\n- Không bao gồm tham quan bảo tàng Sáp giá 100.000/người, gắp thú bông và trò chơi kỹ năng Carnival tại Fantasy Park\n- Các chi phí khác không nêu trong chương trình.\n- Tiền tip HDV, lái xe",
+      childrenPolicy:
+        "- Trẻ em dưới 1m: miễn phí     \n- Trẻ em từ 1-1,4m: 80%NL\n- Trẻ em trên 1.4m là tính như người lớn\n- Đối với trẻ em công ty sẽ xác nhận thực tế ngay tại cổng soát vé để nhân viên kiểm tra chiều cao, nếu cháu nằm trong mức nào công ty sẽ áp dụng như bảng giá trẻ em trên. ",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/13/medium_ba-na-canh-01.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/13/medium_image13-1%20(1).png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/13/medium_ba-na-hills-mercure-hotel-khach-san-da-nang-dulichchat-20%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/13/medium_exba-na-cap-treo-01.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/13/medium_Skype_Picture_2022_05_09T08_43_37_907Z.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/13/medium_exSkype_Picture_2022_05_09T08_43_39_202Z.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/13/medium_Skype_Picture_2022_05_09T08_38_11_402Z.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/13/medium_Skype_Picture_2022_05_09T08_38_07_668Z.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/13/medium_anh-ba-na-hills-2.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/13/medium_278079849_4850878245041657_3157707318107817182_n.jpg",
+      ],
+      rating: 5,
+      numReviews: 4,
+      reviews: [],
+      description:
+        "Tour Bà Nà Hills 1 ngày của One Đà Nẵng (OneLocal) sẽ đưa quý khách tham quan nhiều địa điểm, tham gia nhiều trải nghiệm thú vị với chất lượng dịch vụ đảm bảo nhất. Hứa hẹn sẽ cho quý khách một chuyến du lịch hoàn hảo và đáng nhớ bên người thân, bạn bè, xứng đáng với chi phí mà bạn bỏ ra.\n Khám phá Cổng thời gian – công trình với kiến trúc độc đáo, mở lối hành trình phiêu lưu đến với xứ sở diệu kỳ trên đỉnh núi Chúa\n1. Du hành cùng chuyến tàu hỏa leo núi số 02, ngắm thiên nhiên hùng vĩ để tiến vào Lâu đài Mặt Trăng kỳ ảo.\n2. Trải nghiệm công nghệ thực tế ảo hiện đại cùng rạp chiếu phim Airship “Mắt Bay”  ngắm nhìn Vương quốc Mặt Trăng qua góc nhìn hoàn toàn mới lạ\n3. Thưởng thức show diễn chủ đề đẳng cấp “Trận chiến ở Vương quốc Mặt Trăng”\n4. Du ngoạn trong thế giới nghệ thuật cùng Thác Thần Mặt Trời – công trình độc bản tại Việt Nam từ Frilli Galery\n5. Cùng chờ đón sự trở lại đầy hứng khởi của Lễ hội Ẩm thực & Bia – Bestival Cuộc vui không khoảng cách 2022.Tour Bà Nà Hill 1 ngày du khách sẽ được trải nghiệm khí hậu bốn mùa trong một ngày, chu du trên những tuyến cáp treo, đắm chìm trong cảnh quan thiên nhiên của những cánh rừng nguyên sinh nối tiếp ở Bà Nà Núi Chúa, thưởng thức ẩm thực đa dạng và tận hưởng không khí lễ hội ngập tràn.",
+      tourSchedule: [
+        {
+          day: "1",
+          title: "",
+          details: [
+            {
+              timeSchedule: "8h00",
+              desc: "Xe và Hướng dẫn viên ONE ĐÀ NẴNG đón khách tại điểm hẹn, khởi hành đi tham quan khu du lịch Cáp Treo Bà Nà với độ cao 1487m so với mực nước biển.",
+              img: [],
+            },
+            {
+              timeSchedule: "08h45",
+              desc: "Du khách có mặt tại khu du lịch Bà Nà, làm thủ tục lên cáp treo Bà Nà, ngắm cảnh núi rừng Bà Nà đẹp như một bức tranh từ trên cao, sau 15 phút cáp treo sẽ đưa du khách lên đỉnh Bà Nà.\nHDV đưa đoàn lên cáp treo khởi hành lên đỉnh Bà Nà.\nNgồi trong những carbin bằng kính chiêm ngưỡng toàn bộ cảnh đẹp hoang vu của núi rừng.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exba-na-cap-treo-01.jpg",
+              ],
+            },
+            {
+              timeSchedule: "09h15",
+              desc: "Tới khu debay, HDV đưa đoàn Tham quan khu ByNight bằng Tàu Hỏa Leo Núi (miễn phí), Hầm Rượu Debay được người Pháp xây dựng năm 1923, Cây Bưởi gần 100 năm tuổi . Vườn Hoa Le Jardin D’amour, Chùa Linh Ứng, tượng Phật Thích Ca, Vườn Lộc Uyển, Quan Âm Các…Con đường bích họa hơn 1 km bậc thang dẫn đến Vườn Thiêng rực rỡ muôn sắc màu​",
+              img: [],
+            },
+            {
+              timeSchedule: "11h00",
+              desc: "Du khách tản bộ tham quan và chụp hình tại Cầu Vàng Bà Nà, một địa điểm check-in đẹp được yêu thích nhất khi đi du lịch Bà Nà Hills, đây cũng là điểm nổi bật của Sunword với nhiều review nhất trên mạng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex53735664_2254305451474695_716273444005609472_n.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex10-8-201848-417893434-w500-2132-1533889853%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/eximage13-1%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/chiec-Cau-Vang-noi-tieng-the-gioi-o-Ba-Na-Hills-1024x538%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "12h00",
+              desc: "HDV đưa đoàn lên cáp treo lên khu làng pháp dùng cơm trưa buffet tại nhà hàng trên đỉnh Bà Nà ở độ cao 1489m với thực đơn buffet gần 88 món theo phong cách 3 miền, có soup dành cho em bé tại nhà hàng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279049823_4878893028906845_6519916344330452904_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279045933_4878891698906978_2317462251045767666_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "13h30",
+              desc: "KHÁM PHÁ THÁC THẦN MẶT TRỜI\nThác Thần Mặt Trời là công trình độc bản do Frilli Gallery tạo tác- Studio điêu khắc lừng danh tại Florence Italy từ những năm 1860.\nĐây là dự án đầu tiên của Frilli Gallery tại Việt Nam, mang đến cho du khách những trải nghiệm nền văn hóa Hi-La cổ đại khi được tận mắt chứng kiến những bức tượng kinh điển như: Thần mặt trời Helios, Thần Ánh Sáng Apollo, Thần tình yêu Venus, nữ thần chiến tranh Athena.\nCùng ngắm nhìn những khung hình ấn tượng công trình “Thác thần Mặt Trời” để có thêm niềm cảm hứng cho chuyến du lịch sắp tới tại Sun World Ba Na Hills bạn nhé! ​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_07_668Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_11_402Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_43_37_907Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/exSkype_Picture_2022_05_09T08_43_39_202Z.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "14h30",
+              desc: "Du khách tự do tham quan và thoả sức vui chơi không giới hạn tại công viên trò Fantasy Park với hơn 105 trò chơi miễn phí, trải nghiệm trò chơi trượt máng mạo hiểm, Tháp rơi tự do, công viên khủng long, Đường đua rực lửa, Mê cung, .....​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhe-lo-9-khu-vui-choi-hap-dan-nhat-da-thanh-10%20(1).jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exthap-roi-tu-do-da-nang%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "16h00",
+              desc: "Quý khách trở lại cáp treo lên Cabin đạt 4 kỷ lục thế giới của Bà Nà, xuống núi. Tạm biệt Bà Nà.​",
+              img: [],
+            },
+            {
+              timeSchedule: "17h30",
+              desc: "Xe đưa khách về lại điểm đón ban đầu, thân ái chào tạm biệt quý khách.​",
+              img: [],
+            },
+          ],
+        },
+      ],
+      note: "- Nên sử dụng giày thể thao, dép thấp\n- Chuẩn bị nón mũ che nắng hoặc che sương\n- Máy chụp hình sạc pin đầy đủ\n- Du khách nên chuẩn bị áo khoác nhẹ\n- Đối với trẻ em nhỏ nên chuẩn bị áo ấm, khẩu trang, sữa",
+    },
+
+    {
+      name: "Tour núi thần tài 1 ngày",
+      title: "Tour núi thần tài 1 ngày",
+      slug: "tour-nui-than-tai-1-ngay",
+      time: "1 ngày",
+      price: 790000,
+      address: "Đà nẵng - núi thần tài",
+      route: "Đà nẵng - núi thần tài",
+      hotline: "0902 111 898",
+      serviceIncludes:
+        "- Xe đời mới, máy lạnh, lái xe vui vẻ, thân thiện.\n- Hướng dẫn viên du lịch chuyên nghiệp, nhiệt tình.\n- Phí vào cổng Công Viên Suối Khoáng Thần Tài \n- Ăn theo chương trình 1 bữa trưa tại Núi Thần Tài ( Set Menu hoặc Buffet )\n- Nước uống, khăn lạnh. ",
+      serviceNotIncludes:
+        "- Chi phí cá nhân, thức uống trong bữa ăn.\n- Không bao gồm tham quan bảo tàng Sáp giá 100.000/người, gắp thú bông và trò chơi kỹ năng Carnival tại Fantasy Park\n- Các chi phí khác không nêu trong chương trình.\n- Tiền tip HDV, lái xe",
+      childrenPolicy:
+        "- Trẻ em dưới 1m: miễn phí     \n- Trẻ em từ 1-1,4m: 80%NL\n- Trẻ em trên 1.4m là tính như người lớn\n- Đối với trẻ em công ty sẽ xác nhận thực tế ngay tại cổng soát vé để nhân viên kiểm tra chiều cao, nếu cháu nằm trong mức nào công ty sẽ áp dụng như bảng giá trẻ em trên. ",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/71/medium_126516235_1326340121052283_8101570499633871185_n.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/71/medium_127174541_1330824133937215_4265355307288931878_n.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/71/medium_272716494_1624222424597383_28712621444399285_n.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/71/medium_189239173_1466880416998252_1776236189054371524_n.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/71/medium_280476158_1697008290652129_7460207640250517934_n.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/71/medium_273663262_1635402360146056_5206569144823187112_n.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/71/medium_278570120_1684021258617499_4720034458453987223_n.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/71/medium_273536972_1634112196941739_4264599355934487921_n.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/71/medium_279478315_1688760591476899_6084955235812539784_n.jpeg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/71/medium_273566214_1633916390294653_4035130104480970884_n.jpeg",
+      ],
+      rating: 5,
+      numReviews: 4,
+      reviews: [],
+      description:
+        "Tour Núi Thần Tài 1 ngày của One Đà Nẵng (OneLocal) sẽ đưa quý khách tham quan nhiều địa điểm, tham gia nhiều trải nghiệm thú vị với chất lượng dịch vụ đảm bảo nhất. Hứa hẹn sẽ cho quý khách một chuyến du lịch hoàn hảo và đáng nhớ bên người thân, bạn bè, xứng đáng với chi phí mà bạn bỏ ra.\n Khám phá Cổng thời gian – công trình với kiến trúc độc đáo, mở lối hành trình phiêu lưu đến với xứ sở diệu kỳ trên đỉnh núi Chúa\n1. Du hành cùng chuyến tàu hỏa leo núi số 02, ngắm thiên nhiên hùng vĩ để tiến vào Lâu đài Mặt Trăng kỳ ảo.\n2. Trải nghiệm công nghệ thực tế ảo hiện đại cùng rạp chiếu phim Airship “Mắt Bay”  ngắm nhìn Vương quốc Mặt Trăng qua góc nhìn hoàn toàn mới lạ\n3. Thưởng thức show diễn chủ đề đẳng cấp “Trận chiến ở Vương quốc Mặt Trăng”\n4. Du ngoạn trong thế giới nghệ thuật cùng Thác Thần Mặt Trời – công trình độc bản tại Việt Nam từ Frilli Galery\n5. Cùng chờ đón sự trở lại đầy hứng khởi của Lễ hội Ẩm thực & Bia – Bestival Cuộc vui không khoảng cách 2022.Tour Bà Nà Hill 1 ngày du khách sẽ được trải nghiệm khí hậu bốn mùa trong một ngày, chu du trên những tuyến cáp treo, đắm chìm trong cảnh quan thiên nhiên của những cánh rừng nguyên sinh nối tiếp ở Bà Nà Núi Chúa, thưởng thức ẩm thực đa dạng và tận hưởng không khí lễ hội ngập tràn.",
+      tourSchedule: [
+        {
+          day: "1",
+          title: "",
+          details: [
+            {
+              timeSchedule: "8h00",
+              desc: "Xe và Hướng dẫn viên ONE ĐÀ NẴNG đón khách tại điểm hẹn, khởi hành đi tham quan khu du lịch Cáp Treo Bà Nà với độ cao 1487m so với mực nước biển.",
+              img: [],
+            },
+            {
+              timeSchedule: "08h45",
+              desc: "Du khách có mặt tại khu du lịch Bà Nà, làm thủ tục lên cáp treo Bà Nà, ngắm cảnh núi rừng Bà Nà đẹp như một bức tranh từ trên cao, sau 15 phút cáp treo sẽ đưa du khách lên đỉnh Bà Nà.\nHDV đưa đoàn lên cáp treo khởi hành lên đỉnh Bà Nà.\nNgồi trong những carbin bằng kính chiêm ngưỡng toàn bộ cảnh đẹp hoang vu của núi rừng.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exba-na-cap-treo-01.jpg",
+              ],
+            },
+            {
+              timeSchedule: "09h15",
+              desc: "Tới khu debay, HDV đưa đoàn Tham quan khu ByNight bằng Tàu Hỏa Leo Núi (miễn phí), Hầm Rượu Debay được người Pháp xây dựng năm 1923, Cây Bưởi gần 100 năm tuổi . Vườn Hoa Le Jardin D’amour, Chùa Linh Ứng, tượng Phật Thích Ca, Vườn Lộc Uyển, Quan Âm Các…Con đường bích họa hơn 1 km bậc thang dẫn đến Vườn Thiêng rực rỡ muôn sắc màu​",
+              img: [],
+            },
+            {
+              timeSchedule: "11h00",
+              desc: "Du khách tản bộ tham quan và chụp hình tại Cầu Vàng Bà Nà, một địa điểm check-in đẹp được yêu thích nhất khi đi du lịch Bà Nà Hills, đây cũng là điểm nổi bật của Sunword với nhiều review nhất trên mạng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex53735664_2254305451474695_716273444005609472_n.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex10-8-201848-417893434-w500-2132-1533889853%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/eximage13-1%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/chiec-Cau-Vang-noi-tieng-the-gioi-o-Ba-Na-Hills-1024x538%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "12h00",
+              desc: "HDV đưa đoàn lên cáp treo lên khu làng pháp dùng cơm trưa buffet tại nhà hàng trên đỉnh Bà Nà ở độ cao 1489m với thực đơn buffet gần 88 món theo phong cách 3 miền, có soup dành cho em bé tại nhà hàng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279049823_4878893028906845_6519916344330452904_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279045933_4878891698906978_2317462251045767666_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "13h30",
+              desc: "KHÁM PHÁ THÁC THẦN MẶT TRỜI\nThác Thần Mặt Trời là công trình độc bản do Frilli Gallery tạo tác- Studio điêu khắc lừng danh tại Florence Italy từ những năm 1860.\nĐây là dự án đầu tiên của Frilli Gallery tại Việt Nam, mang đến cho du khách những trải nghiệm nền văn hóa Hi-La cổ đại khi được tận mắt chứng kiến những bức tượng kinh điển như: Thần mặt trời Helios, Thần Ánh Sáng Apollo, Thần tình yêu Venus, nữ thần chiến tranh Athena.\nCùng ngắm nhìn những khung hình ấn tượng công trình “Thác thần Mặt Trời” để có thêm niềm cảm hứng cho chuyến du lịch sắp tới tại Sun World Ba Na Hills bạn nhé! ​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_07_668Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_11_402Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_43_37_907Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/exSkype_Picture_2022_05_09T08_43_39_202Z.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "14h30",
+              desc: "Du khách tự do tham quan và thoả sức vui chơi không giới hạn tại công viên trò Fantasy Park với hơn 105 trò chơi miễn phí, trải nghiệm trò chơi trượt máng mạo hiểm, Tháp rơi tự do, công viên khủng long, Đường đua rực lửa, Mê cung, .....​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhe-lo-9-khu-vui-choi-hap-dan-nhat-da-thanh-10%20(1).jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exthap-roi-tu-do-da-nang%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "16h00",
+              desc: "Quý khách trở lại cáp treo lên Cabin đạt 4 kỷ lục thế giới của Bà Nà, xuống núi. Tạm biệt Bà Nà.​",
+              img: [],
+            },
+            {
+              timeSchedule: "17h30",
+              desc: "Xe đưa khách về lại điểm đón ban đầu, thân ái chào tạm biệt quý khách.​",
+              img: [],
+            },
+          ],
+        },
+      ],
+      note: "- Nên sử dụng giày thể thao, dép thấp\n- Chuẩn bị nón mũ che nắng hoặc che sương\n- Máy chụp hình sạc pin đầy đủ\n- Du khách nên chuẩn bị áo khoác nhẹ\n- Đối với trẻ em nhỏ nên chuẩn bị áo ấm, khẩu trang, sữa",
+    },
+
+    {
+      name: "Tour Sơn Trà - Ngũ Hành Sơn - Hội An - Núi Thần Tài 2 ngày 1 đêm",
+      title: "Tour Sơn Trà - Ngũ Hành Sơn - Hội An - Núi Thần Tài 2 ngày 1 đêm",
+      slug: "tour-son-tra-ngu-hanh-son-hoi-an-nui-than-tai-2-ngay-1-dem",
+      time: "2 ngày 1 đêm",
+      price: 2100000,
+      address: "Đà nẵng - núi thần tài",
+      route: " Đà nẵng - sơn trà - ngũ hành sơn - hội an - núi thần tài",
+      hotline: "0902 111 898",
+      serviceIncludes:
+        "- Xe đời mới, máy lạnh, lái xe vui vẻ, thân thiện.\n- Hướng dẫn viên du lịch chuyên nghiệp, nhiệt tình.\n- Phí vào cổng Công Viên Suối Khoáng Thần Tài \n- Ăn theo chương trình 1 bữa trưa tại Núi Thần Tài ( Set Menu hoặc Buffet )\n- Nước uống, khăn lạnh. ",
+      serviceNotIncludes:
+        "- Chi phí cá nhân, thức uống trong bữa ăn.\n- Không bao gồm tham quan bảo tàng Sáp giá 100.000/người, gắp thú bông và trò chơi kỹ năng Carnival tại Fantasy Park\n- Các chi phí khác không nêu trong chương trình.\n- Tiền tip HDV, lái xe",
+      childrenPolicy:
+        "- Trẻ em dưới 1m: miễn phí     \n- Trẻ em từ 1-1,4m: 80%NL\n- Trẻ em trên 1.4m là tính như người lớn\n- Đối với trẻ em công ty sẽ xác nhận thực tế ngay tại cổng soát vé để nhân viên kiểm tra chiều cao, nếu cháu nằm trong mức nào công ty sẽ áp dụng như bảng giá trẻ em trên. ",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/25/medium_da-nang-ban-dao-son-tra-01.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/25/medium_da-nang-ngu-hanh-son-01.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/25/medium_da-nang-ngu-hanh-son-02.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/25/medium_da-nang-lang-%C4%91a-02.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/25/medium_hoi-an-bai-choi.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/25/medium_hoi-an-01.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/25/medium_hoi-an-02.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/25/medium_ba-na-cap-treo-01.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/25/medium_ba-na-cau-vang-03%20(1).jpg",
+      ],
+      rating: 5,
+      numReviews: 4,
+      reviews: [],
+      description:
+        "Tour Núi Thần Tài 1 ngày của One Đà Nẵng (OneLocal) sẽ đưa quý khách tham quan nhiều địa điểm, tham gia nhiều trải nghiệm thú vị với chất lượng dịch vụ đảm bảo nhất. Hứa hẹn sẽ cho quý khách một chuyến du lịch hoàn hảo và đáng nhớ bên người thân, bạn bè, xứng đáng với chi phí mà bạn bỏ ra.\n Khám phá Cổng thời gian – công trình với kiến trúc độc đáo, mở lối hành trình phiêu lưu đến với xứ sở diệu kỳ trên đỉnh núi Chúa\n1. Du hành cùng chuyến tàu hỏa leo núi số 02, ngắm thiên nhiên hùng vĩ để tiến vào Lâu đài Mặt Trăng kỳ ảo.\n2. Trải nghiệm công nghệ thực tế ảo hiện đại cùng rạp chiếu phim Airship “Mắt Bay”  ngắm nhìn Vương quốc Mặt Trăng qua góc nhìn hoàn toàn mới lạ\n3. Thưởng thức show diễn chủ đề đẳng cấp “Trận chiến ở Vương quốc Mặt Trăng”\n4. Du ngoạn trong thế giới nghệ thuật cùng Thác Thần Mặt Trời – công trình độc bản tại Việt Nam từ Frilli Galery\n5. Cùng chờ đón sự trở lại đầy hứng khởi của Lễ hội Ẩm thực & Bia – Bestival Cuộc vui không khoảng cách 2022.Tour Bà Nà Hill 1 ngày du khách sẽ được trải nghiệm khí hậu bốn mùa trong một ngày, chu du trên những tuyến cáp treo, đắm chìm trong cảnh quan thiên nhiên của những cánh rừng nguyên sinh nối tiếp ở Bà Nà Núi Chúa, thưởng thức ẩm thực đa dạng và tận hưởng không khí lễ hội ngập tràn.",
+      tourSchedule: [
+        {
+          day: "1",
+          title:
+            "ĐÓN BAY - SƠN TRÀ - CHÙA LINH ỨNG - NGŨ HÀNH SƠN - HỘI AN (ăn tối)",
+          details: [
+            {
+              timeSchedule: "... - 14h",
+              desc: "Xe và HDV đón khách tại Sân bay theo lịch bay, đưa Quý khách về nhận phòng khách sạn. Quý khách nhận phòng, nghỉ ngơi để chiều bắt đầu tham quan từ 14h.\nTHAM QUAN SƠN TRÀ - CHÙA LINH ỨNG",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8328.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8327.JPG",
+              ],
+            },
+            {
+              timeSchedule: "14h00",
+              desc: "Xe và Hướng Dẫn Viên của ONEDANANG đón quý khách tại điểm đón, đưa đoàn đi Bán Đảo Sơn Trà, đến tham quan chùa Linh Ứng Sơn Trà, thập bát La Hán, Chánh Điện,  tượng Phật Bà Quan Âm cao nhất Việt Nam 67m …",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8321.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8330.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8329.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8334.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8337.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8333.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8335.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8331.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8332.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8322.JPG",
+              ],
+            },
+            {
+              timeSchedule: "15h30",
+              desc: "KHÁM PHÁ NGŨ HÀNH SƠN - ĐÀ NẴNG\nXe và Hướng Dẫn Viên đón khách tại điểm đón, Quý khách khởi hành đi Ngũ Hành Sơn - được mệnh danh là Nam Thiêng Danh Thắng. Đây là danh thắng nổi tiếng với 5 ngọn núi được nằm theo hệ ngũ hành. Đến đây qúy khách sẽ cảm nhận ngay không gian trầm lắng huyền ảo và đầy thơ mộng.\nDu khách sẽ tham quan chùa Non Nước linh thiêng nhất Đà Nẵng. Ngôi chùa nằm trên lưng chừng núi, thi thoảng nghe tiếng chuông vang vọng khi du khách di chuyển bên cạnh hang. Nói đúng hơn thì Ngũ Hành Sơn là cõi thiên thai kích thích mọi người cố gắng khám phá hết vẻ đẹp của nó.\nChinh phục 108 bậc tam cấp của ngọn núi Thủy Sơn để đến tham quan ngôi chùa Linh Ứng 1, Bảo Tháp Xá Lợi, Chùa Tam Thai, khám phá động Tàng Chơn, động Hoa Nghiêm, động Huyền Không… Từ Vọng Hải Đài, Vọng Giang Đài ngắm nhìn 4 ngọn núi còn lại Kim, Mộc, Hỏa, Thổ",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8341.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8325.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/da-nang-ngu-hanh-son-02.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8342.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8343.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8345.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_5864%202.JPG",
+              ],
+            },
+            {
+              timeSchedule: "",
+              desc: "THAM QUAN PHỐ CỔ HỘI AN",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9109.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9099.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9099.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_3302.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhoi-an-bai-choi.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_5864%202.JPG",
+              ],
+            },
+          ],
+        },
+        {
+          day: "2",
+          title: " BÀ NÀ HILLS - ĐÀ NẴNG VỀ ĐÊM (Ăn sáng, trưa, tối)",
+          details: [
+            {
+              timeSchedule: "8h00",
+              desc: "Xe và Hướng dẫn viên ONE ĐÀ NẴNG đón khách tại điểm hẹn, khởi hành đi tham quan khu du lịch Cáp Treo Bà Nà với độ cao 1487m so với mực nước biển.",
+              img: [],
+            },
+            {
+              timeSchedule: "08h45",
+              desc: "Du khách có mặt tại khu du lịch Bà Nà, làm thủ tục lên cáp treo Bà Nà, ngắm cảnh núi rừng Bà Nà đẹp như một bức tranh từ trên cao, sau 15 phút cáp treo sẽ đưa du khách lên đỉnh Bà Nà.\nHDV đưa đoàn lên cáp treo khởi hành lên đỉnh Bà Nà.\nNgồi trong những carbin bằng kính chiêm ngưỡng toàn bộ cảnh đẹp hoang vu của núi rừng.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exba-na-cap-treo-01.jpg",
+              ],
+            },
+            {
+              timeSchedule: "09h15",
+              desc: "Tới khu debay, HDV đưa đoàn Tham quan khu ByNight bằng Tàu Hỏa Leo Núi (miễn phí), Hầm Rượu Debay được người Pháp xây dựng năm 1923, Cây Bưởi gần 100 năm tuổi . Vườn Hoa Le Jardin D’amour, Chùa Linh Ứng, tượng Phật Thích Ca, Vườn Lộc Uyển, Quan Âm Các…Con đường bích họa hơn 1 km bậc thang dẫn đến Vườn Thiêng rực rỡ muôn sắc màu​",
+              img: [],
+            },
+            {
+              timeSchedule: "11h00",
+              desc: "Du khách tản bộ tham quan và chụp hình tại Cầu Vàng Bà Nà, một địa điểm check-in đẹp được yêu thích nhất khi đi du lịch Bà Nà Hills, đây cũng là điểm nổi bật của Sunword với nhiều review nhất trên mạng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex53735664_2254305451474695_716273444005609472_n.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex10-8-201848-417893434-w500-2132-1533889853%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/eximage13-1%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/chiec-Cau-Vang-noi-tieng-the-gioi-o-Ba-Na-Hills-1024x538%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "12h00",
+              desc: "HDV đưa đoàn lên cáp treo lên khu làng pháp dùng cơm trưa buffet tại nhà hàng trên đỉnh Bà Nà ở độ cao 1489m với thực đơn buffet gần 88 món theo phong cách 3 miền, có soup dành cho em bé tại nhà hàng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279049823_4878893028906845_6519916344330452904_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279045933_4878891698906978_2317462251045767666_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "13h30",
+              desc: "KHÁM PHÁ THÁC THẦN MẶT TRỜI\nThác Thần Mặt Trời là công trình độc bản do Frilli Gallery tạo tác- Studio điêu khắc lừng danh tại Florence Italy từ những năm 1860.\nĐây là dự án đầu tiên của Frilli Gallery tại Việt Nam, mang đến cho du khách những trải nghiệm nền văn hóa Hi-La cổ đại khi được tận mắt chứng kiến những bức tượng kinh điển như: Thần mặt trời Helios, Thần Ánh Sáng Apollo, Thần tình yêu Venus, nữ thần chiến tranh Athena.\nCùng ngắm nhìn những khung hình ấn tượng công trình “Thác thần Mặt Trời” để có thêm niềm cảm hứng cho chuyến du lịch sắp tới tại Sun World Ba Na Hills bạn nhé! ​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_07_668Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_11_402Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_43_37_907Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/exSkype_Picture_2022_05_09T08_43_39_202Z.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "14h30",
+              desc: "Du khách tự do tham quan và thoả sức vui chơi không giới hạn tại công viên trò Fantasy Park với hơn 105 trò chơi miễn phí, trải nghiệm trò chơi trượt máng mạo hiểm, Tháp rơi tự do, công viên khủng long, Đường đua rực lửa, Mê cung, .....​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhe-lo-9-khu-vui-choi-hap-dan-nhat-da-thanh-10%20(1).jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exthap-roi-tu-do-da-nang%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "16h00",
+              desc: "Quý khách trở lại cáp treo lên Cabin đạt 4 kỷ lục thế giới của Bà Nà, xuống núi. Tạm biệt Bà Nà.​",
+              img: [],
+            },
+            {
+              timeSchedule: "17h30",
+              desc: "Xe đưa khách về lại điểm đón ban đầu, thân ái chào tạm biệt quý khách.​",
+              img: [],
+            },
+          ],
+        },
+      ],
+      note: "- Nên sử dụng giày thể thao, dép thấp\n- Chuẩn bị nón mũ che nắng hoặc che sương\n- Máy chụp hình sạc pin đầy đủ\n- Du khách nên chuẩn bị áo khoác nhẹ\n- Đối với trẻ em nhỏ nên chuẩn bị áo ấm, khẩu trang, sữa",
+    },
+
+    {
+      name: "Tour Sơn Trà - Ngũ Hành Sơn - Hội An - Bà Nà 2 ngày 1 đêm",
+      title: "Tour Sơn Trà - Ngũ Hành Sơn - Hội An - Bà Nà 2 ngày 1 đêm",
+      slug: "tour-son-tra-ngu-hanh-son-hoi-an-ba-na-2-ngay-1-dem",
+      time: "2 ngày 1 đêm",
+      price: 2360000,
+      address: "Đà nẵng - núi thần tài",
+      route: " Đà nẵng - sơn trà - ngũ hành sơn - hội an - Bà Nà",
+      hotline: "0902 111 898",
+      serviceIncludes:
+        "- Xe đời mới, máy lạnh, lái xe vui vẻ, thân thiện.\n- Hướng dẫn viên du lịch chuyên nghiệp, nhiệt tình.\n- Phí vào cổng Công Viên Suối Khoáng Thần Tài \n- Ăn theo chương trình 1 bữa trưa tại Núi Thần Tài ( Set Menu hoặc Buffet )\n- Nước uống, khăn lạnh. ",
+      serviceNotIncludes:
+        "- Chi phí cá nhân, thức uống trong bữa ăn.\n- Không bao gồm tham quan bảo tàng Sáp giá 100.000/người, gắp thú bông và trò chơi kỹ năng Carnival tại Fantasy Park\n- Các chi phí khác không nêu trong chương trình.\n- Tiền tip HDV, lái xe",
+      childrenPolicy:
+        "- Trẻ em dưới 1m: miễn phí     \n- Trẻ em từ 1-1,4m: 80%NL\n- Trẻ em trên 1.4m là tính như người lớn\n- Đối với trẻ em công ty sẽ xác nhận thực tế ngay tại cổng soát vé để nhân viên kiểm tra chiều cao, nếu cháu nằm trong mức nào công ty sẽ áp dụng như bảng giá trẻ em trên. ",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/50/medium_z2350516409746_7d3cce3179f5f1144fe8a25fb07a181f%20(1).jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/50/medium_da-nang-ngu-hanh-son-02.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/50/medium_IMG_8341.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/50/medium_f.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/50/medium_%C4%83.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/50/medium_a%20x.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/50/medium_a%20x.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/50/medium_exhoi-an-bai-choi.jpg",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/50/medium_IMG_9099.jpg",
+      ],
+      rating: 5,
+      numReviews: 4,
+      reviews: [],
+      description:
+        "Tour Núi Thần Tài 1 ngày của One Đà Nẵng (OneLocal) sẽ đưa quý khách tham quan nhiều địa điểm, tham gia nhiều trải nghiệm thú vị với chất lượng dịch vụ đảm bảo nhất. Hứa hẹn sẽ cho quý khách một chuyến du lịch hoàn hảo và đáng nhớ bên người thân, bạn bè, xứng đáng với chi phí mà bạn bỏ ra.\n Khám phá Cổng thời gian – công trình với kiến trúc độc đáo, mở lối hành trình phiêu lưu đến với xứ sở diệu kỳ trên đỉnh núi Chúa\n1. Du hành cùng chuyến tàu hỏa leo núi số 02, ngắm thiên nhiên hùng vĩ để tiến vào Lâu đài Mặt Trăng kỳ ảo.\n2. Trải nghiệm công nghệ thực tế ảo hiện đại cùng rạp chiếu phim Airship “Mắt Bay”  ngắm nhìn Vương quốc Mặt Trăng qua góc nhìn hoàn toàn mới lạ\n3. Thưởng thức show diễn chủ đề đẳng cấp “Trận chiến ở Vương quốc Mặt Trăng”\n4. Du ngoạn trong thế giới nghệ thuật cùng Thác Thần Mặt Trời – công trình độc bản tại Việt Nam từ Frilli Galery\n5. Cùng chờ đón sự trở lại đầy hứng khởi của Lễ hội Ẩm thực & Bia – Bestival Cuộc vui không khoảng cách 2022.Tour Bà Nà Hill 1 ngày du khách sẽ được trải nghiệm khí hậu bốn mùa trong một ngày, chu du trên những tuyến cáp treo, đắm chìm trong cảnh quan thiên nhiên của những cánh rừng nguyên sinh nối tiếp ở Bà Nà Núi Chúa, thưởng thức ẩm thực đa dạng và tận hưởng không khí lễ hội ngập tràn.",
+      tourSchedule: [
+        {
+          day: "1",
+          title:
+            "ĐÓN BAY - SƠN TRÀ - CHÙA LINH ỨNG - NGŨ HÀNH SƠN - HỘI AN (ăn tối)",
+          details: [
+            {
+              timeSchedule: "... - 14h",
+              desc: "Xe và HDV đón khách tại Sân bay theo lịch bay, đưa Quý khách về nhận phòng khách sạn. Quý khách nhận phòng, nghỉ ngơi để chiều bắt đầu tham quan từ 14h.\nTHAM QUAN SƠN TRÀ - CHÙA LINH ỨNG",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8328.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8327.JPG",
+              ],
+            },
+            {
+              timeSchedule: "14h00",
+              desc: "Xe và Hướng Dẫn Viên của ONEDANANG đón quý khách tại điểm đón, đưa đoàn đi Bán Đảo Sơn Trà, đến tham quan chùa Linh Ứng Sơn Trà, thập bát La Hán, Chánh Điện,  tượng Phật Bà Quan Âm cao nhất Việt Nam 67m …",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8321.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8330.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8329.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8334.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8337.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8333.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8335.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8331.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8332.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8322.JPG",
+              ],
+            },
+            {
+              timeSchedule: "15h30",
+              desc: "KHÁM PHÁ NGŨ HÀNH SƠN - ĐÀ NẴNG\nXe và Hướng Dẫn Viên đón khách tại điểm đón, Quý khách khởi hành đi Ngũ Hành Sơn - được mệnh danh là Nam Thiêng Danh Thắng. Đây là danh thắng nổi tiếng với 5 ngọn núi được nằm theo hệ ngũ hành. Đến đây qúy khách sẽ cảm nhận ngay không gian trầm lắng huyền ảo và đầy thơ mộng.\nDu khách sẽ tham quan chùa Non Nước linh thiêng nhất Đà Nẵng. Ngôi chùa nằm trên lưng chừng núi, thi thoảng nghe tiếng chuông vang vọng khi du khách di chuyển bên cạnh hang. Nói đúng hơn thì Ngũ Hành Sơn là cõi thiên thai kích thích mọi người cố gắng khám phá hết vẻ đẹp của nó.\nChinh phục 108 bậc tam cấp của ngọn núi Thủy Sơn để đến tham quan ngôi chùa Linh Ứng 1, Bảo Tháp Xá Lợi, Chùa Tam Thai, khám phá động Tàng Chơn, động Hoa Nghiêm, động Huyền Không… Từ Vọng Hải Đài, Vọng Giang Đài ngắm nhìn 4 ngọn núi còn lại Kim, Mộc, Hỏa, Thổ",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8341.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8325.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/da-nang-ngu-hanh-son-02.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8342.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8343.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8345.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_5864%202.JPG",
+              ],
+            },
+            {
+              timeSchedule: "",
+              desc: "THAM QUAN PHỐ CỔ HỘI AN",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9109.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9099.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9099.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_3302.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhoi-an-bai-choi.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_5864%202.JPG",
+              ],
+            },
+          ],
+        },
+        {
+          day: "2",
+          title: " BÀ NÀ HILLS - ĐÀ NẴNG VỀ ĐÊM (Ăn sáng, trưa, tối)",
+          details: [
+            {
+              timeSchedule: "8h00",
+              desc: "Xe và Hướng dẫn viên ONE ĐÀ NẴNG đón khách tại điểm hẹn, khởi hành đi tham quan khu du lịch Cáp Treo Bà Nà với độ cao 1487m so với mực nước biển.",
+              img: [],
+            },
+            {
+              timeSchedule: "08h45",
+              desc: "Du khách có mặt tại khu du lịch Bà Nà, làm thủ tục lên cáp treo Bà Nà, ngắm cảnh núi rừng Bà Nà đẹp như một bức tranh từ trên cao, sau 15 phút cáp treo sẽ đưa du khách lên đỉnh Bà Nà.\nHDV đưa đoàn lên cáp treo khởi hành lên đỉnh Bà Nà.\nNgồi trong những carbin bằng kính chiêm ngưỡng toàn bộ cảnh đẹp hoang vu của núi rừng.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exba-na-cap-treo-01.jpg",
+              ],
+            },
+            {
+              timeSchedule: "09h15",
+              desc: "Tới khu debay, HDV đưa đoàn Tham quan khu ByNight bằng Tàu Hỏa Leo Núi (miễn phí), Hầm Rượu Debay được người Pháp xây dựng năm 1923, Cây Bưởi gần 100 năm tuổi . Vườn Hoa Le Jardin D’amour, Chùa Linh Ứng, tượng Phật Thích Ca, Vườn Lộc Uyển, Quan Âm Các…Con đường bích họa hơn 1 km bậc thang dẫn đến Vườn Thiêng rực rỡ muôn sắc màu​",
+              img: [],
+            },
+            {
+              timeSchedule: "11h00",
+              desc: "Du khách tản bộ tham quan và chụp hình tại Cầu Vàng Bà Nà, một địa điểm check-in đẹp được yêu thích nhất khi đi du lịch Bà Nà Hills, đây cũng là điểm nổi bật của Sunword với nhiều review nhất trên mạng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex53735664_2254305451474695_716273444005609472_n.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex10-8-201848-417893434-w500-2132-1533889853%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/eximage13-1%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/chiec-Cau-Vang-noi-tieng-the-gioi-o-Ba-Na-Hills-1024x538%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "12h00",
+              desc: "HDV đưa đoàn lên cáp treo lên khu làng pháp dùng cơm trưa buffet tại nhà hàng trên đỉnh Bà Nà ở độ cao 1489m với thực đơn buffet gần 88 món theo phong cách 3 miền, có soup dành cho em bé tại nhà hàng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279049823_4878893028906845_6519916344330452904_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279045933_4878891698906978_2317462251045767666_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "13h30",
+              desc: "KHÁM PHÁ THÁC THẦN MẶT TRỜI\nThác Thần Mặt Trời là công trình độc bản do Frilli Gallery tạo tác- Studio điêu khắc lừng danh tại Florence Italy từ những năm 1860.\nĐây là dự án đầu tiên của Frilli Gallery tại Việt Nam, mang đến cho du khách những trải nghiệm nền văn hóa Hi-La cổ đại khi được tận mắt chứng kiến những bức tượng kinh điển như: Thần mặt trời Helios, Thần Ánh Sáng Apollo, Thần tình yêu Venus, nữ thần chiến tranh Athena.\nCùng ngắm nhìn những khung hình ấn tượng công trình “Thác thần Mặt Trời” để có thêm niềm cảm hứng cho chuyến du lịch sắp tới tại Sun World Ba Na Hills bạn nhé! ​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_07_668Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_11_402Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_43_37_907Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/exSkype_Picture_2022_05_09T08_43_39_202Z.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "14h30",
+              desc: "Du khách tự do tham quan và thoả sức vui chơi không giới hạn tại công viên trò Fantasy Park với hơn 105 trò chơi miễn phí, trải nghiệm trò chơi trượt máng mạo hiểm, Tháp rơi tự do, công viên khủng long, Đường đua rực lửa, Mê cung, .....​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhe-lo-9-khu-vui-choi-hap-dan-nhat-da-thanh-10%20(1).jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exthap-roi-tu-do-da-nang%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "16h00",
+              desc: "Quý khách trở lại cáp treo lên Cabin đạt 4 kỷ lục thế giới của Bà Nà, xuống núi. Tạm biệt Bà Nà.​",
+              img: [],
+            },
+            {
+              timeSchedule: "17h30",
+              desc: "Xe đưa khách về lại điểm đón ban đầu, thân ái chào tạm biệt quý khách.​",
+              img: [],
+            },
+          ],
+        },
+      ],
+      note: "- Nên sử dụng giày thể thao, dép thấp\n- Chuẩn bị nón mũ che nắng hoặc che sương\n- Máy chụp hình sạc pin đầy đủ\n- Du khách nên chuẩn bị áo khoác nhẹ\n- Đối với trẻ em nhỏ nên chuẩn bị áo ấm, khẩu trang, sữa",
+    },
+
+    {
+      name: "Tour Ngũ Hành Sơn - Hội An - Núi Thần Tài - Sơn Trà 3 ngày 2 đêm",
+      title: "Tour Ngũ Hành Sơn - Hội An - Núi Thần Tài - Sơn Trà 3 ngày 2 đêm",
+      slug: "tour-ngu-hanh-son-hoi-an-nui-than-tai-son-tra-3-ngay-2-dem",
+      time: "3 ngày 2 đêm",
+      price: 2480000,
+      address: "Đà Nẵng - Núi Thần Tài",
+      route:
+        "đà nẵng - ngũ hành sơn - hội an - núi thần tài - sơn trà - linh ứng",
+      hotline: "0902 111 898",
+      serviceIncludes:
+        "-  Xe đời mới, máy lạnh, lái xe vui vẻ, thân thiện \n-  Hướng dẫn viên du lịch chuyên nghiệp, nhiệt tình \n-  Khách sạn chuẩn 3 sao đẹp có ăn sáng (view biển/sông hàn/trung tâm, có hồ bơi)\n-  Vé tham quan theo chương trình ( Ngũ Hành Sơn - Hội An -  Bà Nà - Cù Lao Chàm - Núi Thần Tài)\n-  Ăn theo chương trình ( ăn suất 150k, ăn buffet Bà Nà suất 255k, ăn buffet Núi Thần Tài suất 230k)\n-  Bảo hiểm du lịch ( mức bồi thường 10.000.000 đồng/1người)\n-  Nước uống: chai ½lít/ người ",
+      serviceNotIncludes:
+        "- Thuế VAT 10%\n- Các chi phí cá nhân, thức uống trong bữa ăn \n- Các chi phí khác không nêu trong chương trình \n- Tiền tip HDV, lái xe\n- Vé đi thang máy Ngũ Hành Sơn",
+      childrenPolicy:
+        "- Từ 1-4 tuổi: 60% người lớn.\n- Từ 5-9 tuổi: 70% người lớn.\n- Từ 10 tuổi trở lên tính như người lớn",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_medium_ba-na-2-ngay-1-dem-7.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_hoi-an-onedanang-6.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-2.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-4.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-6.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-3.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_ngu-hanh-son-1.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_ngu-hanh-son-4.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_tour-nui-than-tai-8%20(11).png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_tour-nui-than-tai-8%20(7).png",
+      ],
+      rating: 5,
+      numReviews: 4,
+      reviews: [],
+      description:
+        "One Đà Nẵng là đơn vị chuyên tổ chức các tour hàng ngày chất lượng cao khởi hành từ Đà Nẵng đi đến các điểm tham quan nổi tiếng như: Bà Nà, Núi Thần Tài, Chùa Linh Ứng (Sơn Trà) - Ngũ Hành Sơn - Hội An, Cù Lao Chàm, Đèo Hải Vân - Lăng Cô...\nOneDaNang xin gửi đến Quý khách chương trình TOUR SƠN TRÀ - CHÙA LINH ỨNG - NGŨ HÀNH SƠN - HỘI AN -  BÀ NÀ HILLS - CÙ LAO CHÀM - NÚI THẦN TÀI 4 NGÀY 3 ĐÊM  chi tiết như sau",
+      tourSchedule: [
+        {
+          day: "1",
+          title:
+            "ĐÓN BAY - SƠN TRÀ - CHÙA LINH ỨNG - NGŨ HÀNH SƠN - HỘI AN (ăn tối)",
+          details: [
+            {
+              timeSchedule: "... - 14h",
+              desc: "Xe và HDV đón khách tại Sân bay theo lịch bay, đưa Quý khách về nhận phòng khách sạn. Quý khách nhận phòng, nghỉ ngơi để chiều bắt đầu tham quan từ 14h.\nTHAM QUAN SƠN TRÀ - CHÙA LINH ỨNG",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8328.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8327.JPG",
+              ],
+            },
+            {
+              timeSchedule: "14h00",
+              desc: "Xe và Hướng Dẫn Viên của ONEDANANG đón quý khách tại điểm đón, đưa đoàn đi Bán Đảo Sơn Trà, đến tham quan chùa Linh Ứng Sơn Trà, thập bát La Hán, Chánh Điện,  tượng Phật Bà Quan Âm cao nhất Việt Nam 67m …",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8321.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8330.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8329.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8334.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8337.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8333.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8335.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8331.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8332.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8322.JPG",
+              ],
+            },
+            {
+              timeSchedule: "15h30",
+              desc: "KHÁM PHÁ NGŨ HÀNH SƠN - ĐÀ NẴNG\nXe và Hướng Dẫn Viên đón khách tại điểm đón, Quý khách khởi hành đi Ngũ Hành Sơn - được mệnh danh là Nam Thiêng Danh Thắng. Đây là danh thắng nổi tiếng với 5 ngọn núi được nằm theo hệ ngũ hành. Đến đây qúy khách sẽ cảm nhận ngay không gian trầm lắng huyền ảo và đầy thơ mộng.\nDu khách sẽ tham quan chùa Non Nước linh thiêng nhất Đà Nẵng. Ngôi chùa nằm trên lưng chừng núi, thi thoảng nghe tiếng chuông vang vọng khi du khách di chuyển bên cạnh hang. Nói đúng hơn thì Ngũ Hành Sơn là cõi thiên thai kích thích mọi người cố gắng khám phá hết vẻ đẹp của nó.\nChinh phục 108 bậc tam cấp của ngọn núi Thủy Sơn để đến tham quan ngôi chùa Linh Ứng 1, Bảo Tháp Xá Lợi, Chùa Tam Thai, khám phá động Tàng Chơn, động Hoa Nghiêm, động Huyền Không… Từ Vọng Hải Đài, Vọng Giang Đài ngắm nhìn 4 ngọn núi còn lại Kim, Mộc, Hỏa, Thổ",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8341.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8325.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/da-nang-ngu-hanh-son-02.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8342.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8343.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8345.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_5864%202.JPG",
+              ],
+            },
+            {
+              timeSchedule: "",
+              desc: "THAM QUAN PHỐ CỔ HỘI AN",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9109.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9099.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9099.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_3302.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhoi-an-bai-choi.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_5864%202.JPG",
+              ],
+            },
+          ],
+        },
+        {
+          day: "2",
+          title: " BÀ NÀ HILLS - ĐÀ NẴNG VỀ ĐÊM (Ăn sáng, trưa, tối)",
+          details: [
+            {
+              timeSchedule: "8h00",
+              desc: "Xe và Hướng dẫn viên ONE ĐÀ NẴNG đón khách tại điểm hẹn, khởi hành đi tham quan khu du lịch Cáp Treo Bà Nà với độ cao 1487m so với mực nước biển.",
+              img: [],
+            },
+            {
+              timeSchedule: "08h45",
+              desc: "Du khách có mặt tại khu du lịch Bà Nà, làm thủ tục lên cáp treo Bà Nà, ngắm cảnh núi rừng Bà Nà đẹp như một bức tranh từ trên cao, sau 15 phút cáp treo sẽ đưa du khách lên đỉnh Bà Nà.\nHDV đưa đoàn lên cáp treo khởi hành lên đỉnh Bà Nà.\nNgồi trong những carbin bằng kính chiêm ngưỡng toàn bộ cảnh đẹp hoang vu của núi rừng.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exba-na-cap-treo-01.jpg",
+              ],
+            },
+            {
+              timeSchedule: "09h15",
+              desc: "Tới khu debay, HDV đưa đoàn Tham quan khu ByNight bằng Tàu Hỏa Leo Núi (miễn phí), Hầm Rượu Debay được người Pháp xây dựng năm 1923, Cây Bưởi gần 100 năm tuổi . Vườn Hoa Le Jardin D’amour, Chùa Linh Ứng, tượng Phật Thích Ca, Vườn Lộc Uyển, Quan Âm Các…Con đường bích họa hơn 1 km bậc thang dẫn đến Vườn Thiêng rực rỡ muôn sắc màu​",
+              img: [],
+            },
+            {
+              timeSchedule: "11h00",
+              desc: "Du khách tản bộ tham quan và chụp hình tại Cầu Vàng Bà Nà, một địa điểm check-in đẹp được yêu thích nhất khi đi du lịch Bà Nà Hills, đây cũng là điểm nổi bật của Sunword với nhiều review nhất trên mạng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex53735664_2254305451474695_716273444005609472_n.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex10-8-201848-417893434-w500-2132-1533889853%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/eximage13-1%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/chiec-Cau-Vang-noi-tieng-the-gioi-o-Ba-Na-Hills-1024x538%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "12h00",
+              desc: "HDV đưa đoàn lên cáp treo lên khu làng pháp dùng cơm trưa buffet tại nhà hàng trên đỉnh Bà Nà ở độ cao 1489m với thực đơn buffet gần 88 món theo phong cách 3 miền, có soup dành cho em bé tại nhà hàng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279049823_4878893028906845_6519916344330452904_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279045933_4878891698906978_2317462251045767666_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "13h30",
+              desc: "KHÁM PHÁ THÁC THẦN MẶT TRỜI\nThác Thần Mặt Trời là công trình độc bản do Frilli Gallery tạo tác- Studio điêu khắc lừng danh tại Florence Italy từ những năm 1860.\nĐây là dự án đầu tiên của Frilli Gallery tại Việt Nam, mang đến cho du khách những trải nghiệm nền văn hóa Hi-La cổ đại khi được tận mắt chứng kiến những bức tượng kinh điển như: Thần mặt trời Helios, Thần Ánh Sáng Apollo, Thần tình yêu Venus, nữ thần chiến tranh Athena.\nCùng ngắm nhìn những khung hình ấn tượng công trình “Thác thần Mặt Trời” để có thêm niềm cảm hứng cho chuyến du lịch sắp tới tại Sun World Ba Na Hills bạn nhé! ​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_07_668Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_11_402Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_43_37_907Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/exSkype_Picture_2022_05_09T08_43_39_202Z.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "14h30",
+              desc: "Du khách tự do tham quan và thoả sức vui chơi không giới hạn tại công viên trò Fantasy Park với hơn 105 trò chơi miễn phí, trải nghiệm trò chơi trượt máng mạo hiểm, Tháp rơi tự do, công viên khủng long, Đường đua rực lửa, Mê cung, .....​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhe-lo-9-khu-vui-choi-hap-dan-nhat-da-thanh-10%20(1).jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exthap-roi-tu-do-da-nang%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "16h00",
+              desc: "Quý khách trở lại cáp treo lên Cabin đạt 4 kỷ lục thế giới của Bà Nà, xuống núi. Tạm biệt Bà Nà.​",
+              img: [],
+            },
+            {
+              timeSchedule: "17h30",
+              desc: "Xe đưa khách về lại điểm đón ban đầu, thân ái chào tạm biệt quý khách.​",
+              img: [],
+            },
+          ],
+        },
+
+        {
+          day: "3",
+          title: "CÙ LAO CHÀM - ĐÀ NẴNG VỀ ĐÊM (Ăn sáng, trưa, tối)",
+          details: [
+            {
+              timeSchedule: "06h30-7h30",
+              desc: "Ăn sáng tại khách sạn.",
+              img: [],
+            },
+            {
+              timeSchedule: "07h30 - 7h45",
+              desc: "Xe và Hướng dẫn viên One DaNang đón khách tại điểm hẹn, khởi hành đi Cù Lao Chàm – khu dự trữ sinh quyển thế giới. Đón khách xong xe di chuyển từ Đà Nẵng đến thẳng cảng Cửa Đại (Hội An). Trên đường đi, đoàn sẽ được hướng dẫn tỉ mỉ về trang phục, ăn uống cũng như các kinh nghiệm vui chơi tại Cù Lao Chàm sao cho an toàn, vui vẻ.",
+              img: [],
+            },
+            {
+              timeSchedule: "08h45",
+              desc: "Đến bến thuyền Cửa Đại, Quý khách ngồi nghỉ tại nhà chờ trong lúc HDV làm thủ tục đăng ký danh sách và mua bảo hiểm cho đoàn khoảng 15 phút. Đoàn lên ca nô và xuất bến, bắt đầu hành trình đến với Cù Lao Chàm 1 ngày.\nĐoàn lên Cano siêu tốc loại lớn đời 2020 đi rất nhanh chỉ 15 phút là cập bến đảo Cù Lao Chàm.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_7625.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/excu-lao-cham-01.jpg",
+              ],
+            },
+            {
+              timeSchedule: "09h15",
+              desc: "Hành trình tham quan du Lịch Tour Cù Lao Chàm 1 ngày chính thức bắt đầu.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_7889.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/excu-lao-cham.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "10h30 ",
+              desc: "BÃI XẾP ( BÃI RẠNG SAN HÔ )\n- Cano tiếp tục đưa đoàn đến Bãi Xếp, trang bị áo phao, mắt kính và ống thở để tham gia và trải nghiệm chương trình tắm biển ngắm san hô tại đây. Có hơn 400 loài san hô đang khoe sắc tại Khu Dự Trữ Sinh Quyển Cù Lao Chàm.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/150935932_1931998496958670_8831666142063115451_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/di-het-9-diem-nay-cho-chuyen-du-lich-cu-lao-cham-trong-ngay-ivivu-18-1499334590.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/DSC_6682.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/tour-cu-lao-cham-1-ngay.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "11h30 ",
+              desc: "BÃI CHỒNG ( khu sinh thái duy nhất tại Cù Lao Chàm )",
+              img: [],
+            },
+            {
+              timeSchedule: "13h00",
+              desc: "Sau khi ăn trưa xong, quý khách tự do tham quan hoặc trải nghiệm khám phá món ăn dân dã tại Cù Lao Chàm",
+              img: [],
+            },
+            {
+              timeSchedule: "14h30",
+              desc: "Đoàn tập trung lên Cano về lại đất liền.",
+              img: [],
+            },
+            {
+              timeSchedule: "15h - 15h30",
+              desc: "Xe đưa quý khách khởi hành về Đà Nẵng. Trả khách tại điểm đón, Quý khách nghỉ ngơi và tắm biển Mỹ Khê Đà Nẵng.",
+              img: [],
+            },
+            {
+              timeSchedule: "18h",
+              desc: "HDV đón khách đi ăn tối. Sau khi ăn tối xong, đoàn tư do tham quan khám phá Đà Nẵng về đêm như Beach Bar, Chợ đêm, Asia Park....",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/cong-vien-chau-a-tai-xuat-sau-4-thang-tam-dung-hoat-dong-02.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/105691_og_1.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/checkin-du-lich-da-nang-tu-tuc-asia-park-2.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/105690_og_1.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "20h30",
+              desc: "Xe và HDV đón khách đưa về nghỉ ngơi tại Khách sạn.",
+              img: [],
+            },
+          ],
+        },
+      ],
+      note: "- Nên sử dụng giày thể thao, dép thấp\n- Chuẩn bị nón mũ che nắng hoặc che sương\n- Máy chụp hình sạc pin đầy đủ\n- Du khách nên chuẩn bị áo khoác nhẹ\n- Đối với trẻ em nhỏ nên chuẩn bị áo ấm, khẩu trang, sữa",
+    },
+
+    {
+      name: "Tour Đà Nẵng City - Cù Lao Chàm - Hội An - Bà Nà 3 ngày 2 đêm",
+      title: "Tour Đà Nẵng City - Cù Lao Chàm - Hội An - Bà Nà 3 ngày 2 đêm",
+      slug: "tour-da-nang-city-cu-lao-cham-hoi-an-ba-na-3-ngay-2-dem",
+      time: "3 ngày 2 đêm",
+      price: 3680000,
+      address: "Đà Nẵng - Bà Nà Hills",
+      route: "đà nẵng city - cù lao chàm - hội an - bà nà",
+      hotline: "0902 111 898",
+      serviceIncludes:
+        "-  Xe đời mới, máy lạnh, lái xe vui vẻ, thân thiện \n-  Hướng dẫn viên du lịch chuyên nghiệp, nhiệt tình \n-  Khách sạn chuẩn 3 sao đẹp có ăn sáng (view biển/sông hàn/trung tâm, có hồ bơi)\n-  Vé tham quan theo chương trình ( Ngũ Hành Sơn - Hội An -  Bà Nà - Cù Lao Chàm - Núi Thần Tài)\n-  Ăn theo chương trình ( ăn suất 150k, ăn buffet Bà Nà suất 255k, ăn buffet Núi Thần Tài suất 230k)\n-  Bảo hiểm du lịch ( mức bồi thường 10.000.000 đồng/1người)\n-  Nước uống: chai ½lít/ người ",
+      serviceNotIncludes:
+        "- Thuế VAT 10%\n- Các chi phí cá nhân, thức uống trong bữa ăn \n- Các chi phí khác không nêu trong chương trình \n- Tiền tip HDV, lái xe\n- Vé đi thang máy Ngũ Hành Sơn",
+      childrenPolicy:
+        "- Từ 1-4 tuổi: 60% người lớn.\n- Từ 5-9 tuổi: 70% người lớn.\n- Từ 10 tuổi trở lên tính như người lớn",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_ngu-hanh-son-4.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-4.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_medium_ba-na-2-ngay-1-dem-7.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_hoi-an-onedanang-6.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-2.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-6.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-3.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_ngu-hanh-son-1.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_tour-nui-than-tai-8%20(11).png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_tour-nui-than-tai-8%20(7).png",
+      ],
+      rating: 5,
+      numReviews: 4,
+      reviews: [],
+      description:
+        "One Đà Nẵng là đơn vị chuyên tổ chức các tour hàng ngày chất lượng cao khởi hành từ Đà Nẵng đi đến các điểm tham quan nổi tiếng như: Bà Nà, Núi Thần Tài, Chùa Linh Ứng (Sơn Trà) - Ngũ Hành Sơn - Hội An, Cù Lao Chàm, Đèo Hải Vân - Lăng Cô...\nOneDaNang xin gửi đến Quý khách chương trình TOUR SƠN TRÀ - CHÙA LINH ỨNG - NGŨ HÀNH SƠN - HỘI AN -  BÀ NÀ HILLS - CÙ LAO CHÀM - NÚI THẦN TÀI 4 NGÀY 3 ĐÊM  chi tiết như sau",
+      tourSchedule: [
+        {
+          day: "1",
+          title:
+            "ĐÓN BAY - SƠN TRÀ - CHÙA LINH ỨNG - NGŨ HÀNH SƠN - HỘI AN (ăn tối)",
+          details: [
+            {
+              timeSchedule: "",
+              desc: "Xe và HDV đón khách tại Sân bay theo lịch bay, đưa Quý khách về nhận phòng khách sạn. Quý khách nhận phòng, nghỉ ngơi để chiều bắt đầu tham quan từ 14h.\nTHAM QUAN SƠN TRÀ - CHÙA LINH ỨNG",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8328.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8327.JPG",
+              ],
+            },
+            {
+              timeSchedule: "14h00",
+              desc: "Xe và Hướng Dẫn Viên của ONEDANANG đón quý khách tại điểm đón, đưa đoàn đi Bán Đảo Sơn Trà, đến tham quan chùa Linh Ứng Sơn Trà, thập bát La Hán, Chánh Điện,  tượng Phật Bà Quan Âm cao nhất Việt Nam 67m …",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8321.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8330.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8329.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8334.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8337.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8333.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8335.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8331.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8332.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8322.JPG",
+              ],
+            },
+            {
+              timeSchedule: "15h30",
+              desc: "KHÁM PHÁ NGŨ HÀNH SƠN - ĐÀ NẴNG\nXe và Hướng Dẫn Viên đón khách tại điểm đón, Quý khách khởi hành đi Ngũ Hành Sơn - được mệnh danh là Nam Thiêng Danh Thắng. Đây là danh thắng nổi tiếng với 5 ngọn núi được nằm theo hệ ngũ hành. Đến đây qúy khách sẽ cảm nhận ngay không gian trầm lắng huyền ảo và đầy thơ mộng.\nDu khách sẽ tham quan chùa Non Nước linh thiêng nhất Đà Nẵng. Ngôi chùa nằm trên lưng chừng núi, thi thoảng nghe tiếng chuông vang vọng khi du khách di chuyển bên cạnh hang. Nói đúng hơn thì Ngũ Hành Sơn là cõi thiên thai kích thích mọi người cố gắng khám phá hết vẻ đẹp của nó.\nChinh phục 108 bậc tam cấp của ngọn núi Thủy Sơn để đến tham quan ngôi chùa Linh Ứng 1, Bảo Tháp Xá Lợi, Chùa Tam Thai, khám phá động Tàng Chơn, động Hoa Nghiêm, động Huyền Không… Từ Vọng Hải Đài, Vọng Giang Đài ngắm nhìn 4 ngọn núi còn lại Kim, Mộc, Hỏa, Thổ",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8341.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8325.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/da-nang-ngu-hanh-son-02.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8342.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8343.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8345.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_5864%202.JPG",
+              ],
+            },
+            {
+              timeSchedule: "",
+              desc: "THAM QUAN PHỐ CỔ HỘI AN",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9109.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9099.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9099.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_3302.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhoi-an-bai-choi.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_5864%202.JPG",
+              ],
+            },
+          ],
+        },
+        {
+          day: "2",
+          title: " BÀ NÀ HILLS - ĐÀ NẴNG VỀ ĐÊM (Ăn sáng, trưa, tối)",
+          details: [
+            {
+              timeSchedule: "8h00",
+              desc: "Xe và Hướng dẫn viên ONE ĐÀ NẴNG đón khách tại điểm hẹn, khởi hành đi tham quan khu du lịch Cáp Treo Bà Nà với độ cao 1487m so với mực nước biển.",
+              img: [],
+            },
+            {
+              timeSchedule: "08h45",
+              desc: "Du khách có mặt tại khu du lịch Bà Nà, làm thủ tục lên cáp treo Bà Nà, ngắm cảnh núi rừng Bà Nà đẹp như một bức tranh từ trên cao, sau 15 phút cáp treo sẽ đưa du khách lên đỉnh Bà Nà.\nHDV đưa đoàn lên cáp treo khởi hành lên đỉnh Bà Nà.\nNgồi trong những carbin bằng kính chiêm ngưỡng toàn bộ cảnh đẹp hoang vu của núi rừng.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exba-na-cap-treo-01.jpg",
+              ],
+            },
+            {
+              timeSchedule: "09h15",
+              desc: "Tới khu debay, HDV đưa đoàn Tham quan khu ByNight bằng Tàu Hỏa Leo Núi (miễn phí), Hầm Rượu Debay được người Pháp xây dựng năm 1923, Cây Bưởi gần 100 năm tuổi . Vườn Hoa Le Jardin D’amour, Chùa Linh Ứng, tượng Phật Thích Ca, Vườn Lộc Uyển, Quan Âm Các…Con đường bích họa hơn 1 km bậc thang dẫn đến Vườn Thiêng rực rỡ muôn sắc màu​",
+              img: [],
+            },
+            {
+              timeSchedule: "11h00",
+              desc: "Du khách tản bộ tham quan và chụp hình tại Cầu Vàng Bà Nà, một địa điểm check-in đẹp được yêu thích nhất khi đi du lịch Bà Nà Hills, đây cũng là điểm nổi bật của Sunword với nhiều review nhất trên mạng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex53735664_2254305451474695_716273444005609472_n.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex10-8-201848-417893434-w500-2132-1533889853%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/eximage13-1%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/chiec-Cau-Vang-noi-tieng-the-gioi-o-Ba-Na-Hills-1024x538%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "12h00",
+              desc: "HDV đưa đoàn lên cáp treo lên khu làng pháp dùng cơm trưa buffet tại nhà hàng trên đỉnh Bà Nà ở độ cao 1489m với thực đơn buffet gần 88 món theo phong cách 3 miền, có soup dành cho em bé tại nhà hàng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279049823_4878893028906845_6519916344330452904_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279045933_4878891698906978_2317462251045767666_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "13h30",
+              desc: "KHÁM PHÁ THÁC THẦN MẶT TRỜI\nThác Thần Mặt Trời là công trình độc bản do Frilli Gallery tạo tác- Studio điêu khắc lừng danh tại Florence Italy từ những năm 1860.\nĐây là dự án đầu tiên của Frilli Gallery tại Việt Nam, mang đến cho du khách những trải nghiệm nền văn hóa Hi-La cổ đại khi được tận mắt chứng kiến những bức tượng kinh điển như: Thần mặt trời Helios, Thần Ánh Sáng Apollo, Thần tình yêu Venus, nữ thần chiến tranh Athena.\nCùng ngắm nhìn những khung hình ấn tượng công trình “Thác thần Mặt Trời” để có thêm niềm cảm hứng cho chuyến du lịch sắp tới tại Sun World Ba Na Hills bạn nhé! ​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_07_668Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_11_402Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_43_37_907Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/exSkype_Picture_2022_05_09T08_43_39_202Z.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "14h30",
+              desc: "Du khách tự do tham quan và thoả sức vui chơi không giới hạn tại công viên trò Fantasy Park với hơn 105 trò chơi miễn phí, trải nghiệm trò chơi trượt máng mạo hiểm, Tháp rơi tự do, công viên khủng long, Đường đua rực lửa, Mê cung, .....​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhe-lo-9-khu-vui-choi-hap-dan-nhat-da-thanh-10%20(1).jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exthap-roi-tu-do-da-nang%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "16h00",
+              desc: "Quý khách trở lại cáp treo lên Cabin đạt 4 kỷ lục thế giới của Bà Nà, xuống núi. Tạm biệt Bà Nà.​",
+              img: [],
+            },
+            {
+              timeSchedule: "17h30",
+              desc: "Xe đưa khách về lại điểm đón ban đầu, thân ái chào tạm biệt quý khách.​",
+              img: [],
+            },
+          ],
+        },
+
+        {
+          day: "3",
+          title: "CÙ LAO CHÀM - ĐÀ NẴNG VỀ ĐÊM (Ăn sáng, trưa, tối)",
+          details: [
+            {
+              timeSchedule: "06h30-7h30",
+              desc: "Ăn sáng tại khách sạn.",
+              img: [],
+            },
+            {
+              timeSchedule: "07h30 - 7h45",
+              desc: "Xe và Hướng dẫn viên One DaNang đón khách tại điểm hẹn, khởi hành đi Cù Lao Chàm – khu dự trữ sinh quyển thế giới. Đón khách xong xe di chuyển từ Đà Nẵng đến thẳng cảng Cửa Đại (Hội An). Trên đường đi, đoàn sẽ được hướng dẫn tỉ mỉ về trang phục, ăn uống cũng như các kinh nghiệm vui chơi tại Cù Lao Chàm sao cho an toàn, vui vẻ.",
+              img: [],
+            },
+            {
+              timeSchedule: "08h45",
+              desc: "Đến bến thuyền Cửa Đại, Quý khách ngồi nghỉ tại nhà chờ trong lúc HDV làm thủ tục đăng ký danh sách và mua bảo hiểm cho đoàn khoảng 15 phút. Đoàn lên ca nô và xuất bến, bắt đầu hành trình đến với Cù Lao Chàm 1 ngày.\nĐoàn lên Cano siêu tốc loại lớn đời 2020 đi rất nhanh chỉ 15 phút là cập bến đảo Cù Lao Chàm.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_7625.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/excu-lao-cham-01.jpg",
+              ],
+            },
+            {
+              timeSchedule: "09h15",
+              desc: "Hành trình tham quan du Lịch Tour Cù Lao Chàm 1 ngày chính thức bắt đầu.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_7889.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/excu-lao-cham.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "10h30 ",
+              desc: "BÃI XẾP ( BÃI RẠNG SAN HÔ )\n- Cano tiếp tục đưa đoàn đến Bãi Xếp, trang bị áo phao, mắt kính và ống thở để tham gia và trải nghiệm chương trình tắm biển ngắm san hô tại đây. Có hơn 400 loài san hô đang khoe sắc tại Khu Dự Trữ Sinh Quyển Cù Lao Chàm.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/150935932_1931998496958670_8831666142063115451_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/di-het-9-diem-nay-cho-chuyen-du-lich-cu-lao-cham-trong-ngay-ivivu-18-1499334590.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/DSC_6682.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/tour-cu-lao-cham-1-ngay.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "11h30 ",
+              desc: "BÃI CHỒNG ( khu sinh thái duy nhất tại Cù Lao Chàm )",
+              img: [],
+            },
+            {
+              timeSchedule: "13h00",
+              desc: "Sau khi ăn trưa xong, quý khách tự do tham quan hoặc trải nghiệm khám phá món ăn dân dã tại Cù Lao Chàm",
+              img: [],
+            },
+            {
+              timeSchedule: "14h30",
+              desc: "Đoàn tập trung lên Cano về lại đất liền.",
+              img: [],
+            },
+            {
+              timeSchedule: "15h - 15h30",
+              desc: "Xe đưa quý khách khởi hành về Đà Nẵng. Trả khách tại điểm đón, Quý khách nghỉ ngơi và tắm biển Mỹ Khê Đà Nẵng.",
+              img: [],
+            },
+            {
+              timeSchedule: "18h",
+              desc: "HDV đón khách đi ăn tối. Sau khi ăn tối xong, đoàn tư do tham quan khám phá Đà Nẵng về đêm như Beach Bar, Chợ đêm, Asia Park....",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/cong-vien-chau-a-tai-xuat-sau-4-thang-tam-dung-hoat-dong-02.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/105691_og_1.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/checkin-du-lich-da-nang-tu-tuc-asia-park-2.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/105690_og_1.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "20h30",
+              desc: "Xe và HDV đón khách đưa về nghỉ ngơi tại Khách sạn.",
+              img: [],
+            },
+          ],
+        },
+      ],
+      note: "- Nên sử dụng giày thể thao, dép thấp\n- Chuẩn bị nón mũ che nắng hoặc che sương\n- Máy chụp hình sạc pin đầy đủ\n- Du khách nên chuẩn bị áo khoác nhẹ\n- Đối với trẻ em nhỏ nên chuẩn bị áo ấm, khẩu trang, sữa",
+    },
+
+    {
+      name: "Tour Sơn Trà - Ngũ Hành Sơn - Hội An - Bà Nà - Cù Lao Chàm - Núi Thần Tài 4 ngày 3 đêm",
+      title:
+        "TOUR SƠN TRÀ - CHÙA LINH ỨNG - NGŨ HÀNH SƠN - HỘI AN -  BÀ NÀ HILLS - CÙ LAO CHÀM - NÚI THẦN TÀI 4 NGÀY 3 ĐÊM  ",
+      slug: "tour-son-tra-ngu-hanh-son-hoi-an-ba-na-cu-lao-cham-nui-than-tai-4-ngay-3-dem",
+      time: "4 ngày 3 đêm",
+      price: 4980000,
+      address: "Đà Nẵng - Núi Thần Tài",
+      route:
+        "Lộ trình: đà nẵng - sơn trà - ngũ hành sơn - hội an - bà nà - cù lao chàm - núi thần tài",
+      hotline: "0902 111 898",
+      serviceIncludes:
+        "-  Xe đời mới, máy lạnh, lái xe vui vẻ, thân thiện \n-  Hướng dẫn viên du lịch chuyên nghiệp, nhiệt tình \n-  Khách sạn chuẩn 3 sao đẹp có ăn sáng (view biển/sông hàn/trung tâm, có hồ bơi)\n-  Vé tham quan theo chương trình ( Ngũ Hành Sơn - Hội An -  Bà Nà - Cù Lao Chàm - Núi Thần Tài)\n-  Ăn theo chương trình ( ăn suất 150k, ăn buffet Bà Nà suất 255k, ăn buffet Núi Thần Tài suất 230k)\n-  Bảo hiểm du lịch ( mức bồi thường 10.000.000 đồng/1người)\n-  Nước uống: chai ½lít/ người ",
+      serviceNotIncludes:
+        "- Thuế VAT 10%\n- Các chi phí cá nhân, thức uống trong bữa ăn \n- Các chi phí khác không nêu trong chương trình \n- Tiền tip HDV, lái xe\n- Vé đi thang máy Ngũ Hành Sơn",
+      childrenPolicy:
+        "- Từ 1-4 tuổi: 60% người lớn.\n- Từ 5-9 tuổi: 70% người lớn.\n- Từ 10 tuổi trở lên tính như người lớn",
+      images: [
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_medium_ba-na-2-ngay-1-dem-7.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_hoi-an-onedanang-6.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-2.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-4.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-6.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_trang-mat-3.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_ngu-hanh-son-1.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_ngu-hanh-son-4.png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_tour-nui-than-tai-8%20(11).png",
+        "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/40/medium_tour-nui-than-tai-8%20(7).png",
+      ],
+      rating: 5,
+      numReviews: 4,
+      reviews: [],
+      description:
+        "One Đà Nẵng là đơn vị chuyên tổ chức các tour hàng ngày chất lượng cao khởi hành từ Đà Nẵng đi đến các điểm tham quan nổi tiếng như: Bà Nà, Núi Thần Tài, Chùa Linh Ứng (Sơn Trà) - Ngũ Hành Sơn - Hội An, Cù Lao Chàm, Đèo Hải Vân - Lăng Cô...\nOneDaNang xin gửi đến Quý khách chương trình TOUR SƠN TRÀ - CHÙA LINH ỨNG - NGŨ HÀNH SƠN - HỘI AN -  BÀ NÀ HILLS - CÙ LAO CHÀM - NÚI THẦN TÀI 4 NGÀY 3 ĐÊM  chi tiết như sau",
+      tourSchedule: [
+        {
+          day: "1",
+          title:
+            "ĐÓN BAY - SƠN TRÀ - CHÙA LINH ỨNG - NGŨ HÀNH SƠN - HỘI AN (ăn tối)",
+          details: [
+            {
+              timeSchedule: "",
+              desc: "Xe và HDV đón khách tại Sân bay theo lịch bay, đưa Quý khách về nhận phòng khách sạn. Quý khách nhận phòng, nghỉ ngơi để chiều bắt đầu tham quan từ 14h.\nTHAM QUAN SƠN TRÀ - CHÙA LINH ỨNG",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8328.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8327.JPG",
+              ],
+            },
+            {
+              timeSchedule: "14h00",
+              desc: "Xe và Hướng Dẫn Viên của ONEDANANG đón quý khách tại điểm đón, đưa đoàn đi Bán Đảo Sơn Trà, đến tham quan chùa Linh Ứng Sơn Trà, thập bát La Hán, Chánh Điện,  tượng Phật Bà Quan Âm cao nhất Việt Nam 67m …",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8321.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8330.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8329.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8334.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8337.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8333.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8335.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8331.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8332.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8322.JPG",
+              ],
+            },
+            {
+              timeSchedule: "15h30",
+              desc: "KHÁM PHÁ NGŨ HÀNH SƠN - ĐÀ NẴNG\nXe và Hướng Dẫn Viên đón khách tại điểm đón, Quý khách khởi hành đi Ngũ Hành Sơn - được mệnh danh là Nam Thiêng Danh Thắng. Đây là danh thắng nổi tiếng với 5 ngọn núi được nằm theo hệ ngũ hành. Đến đây qúy khách sẽ cảm nhận ngay không gian trầm lắng huyền ảo và đầy thơ mộng.\nDu khách sẽ tham quan chùa Non Nước linh thiêng nhất Đà Nẵng. Ngôi chùa nằm trên lưng chừng núi, thi thoảng nghe tiếng chuông vang vọng khi du khách di chuyển bên cạnh hang. Nói đúng hơn thì Ngũ Hành Sơn là cõi thiên thai kích thích mọi người cố gắng khám phá hết vẻ đẹp của nó.\nChinh phục 108 bậc tam cấp của ngọn núi Thủy Sơn để đến tham quan ngôi chùa Linh Ứng 1, Bảo Tháp Xá Lợi, Chùa Tam Thai, khám phá động Tàng Chơn, động Hoa Nghiêm, động Huyền Không… Từ Vọng Hải Đài, Vọng Giang Đài ngắm nhìn 4 ngọn núi còn lại Kim, Mộc, Hỏa, Thổ",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8341.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8325.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/da-nang-ngu-hanh-son-02.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8342.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8343.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_8345.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_5864%202.JPG",
+              ],
+            },
+            {
+              timeSchedule: "",
+              desc: "THAM QUAN PHỐ CỔ HỘI AN",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9109.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9099.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_9099.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_3302.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhoi-an-bai-choi.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_5864%202.JPG",
+              ],
+            },
+          ],
+        },
+        {
+          day: "2",
+          title: " BÀ NÀ HILLS - ĐÀ NẴNG VỀ ĐÊM (Ăn sáng, trưa, tối)",
+          details: [
+            {
+              timeSchedule: "8h00",
+              desc: "Xe và Hướng dẫn viên ONE ĐÀ NẴNG đón khách tại điểm hẹn, khởi hành đi tham quan khu du lịch Cáp Treo Bà Nà với độ cao 1487m so với mực nước biển.",
+              img: [],
+            },
+            {
+              timeSchedule: "08h45",
+              desc: "Du khách có mặt tại khu du lịch Bà Nà, làm thủ tục lên cáp treo Bà Nà, ngắm cảnh núi rừng Bà Nà đẹp như một bức tranh từ trên cao, sau 15 phút cáp treo sẽ đưa du khách lên đỉnh Bà Nà.\nHDV đưa đoàn lên cáp treo khởi hành lên đỉnh Bà Nà.\nNgồi trong những carbin bằng kính chiêm ngưỡng toàn bộ cảnh đẹp hoang vu của núi rừng.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exba-na-cap-treo-01.jpg",
+              ],
+            },
+            {
+              timeSchedule: "09h15",
+              desc: "Tới khu debay, HDV đưa đoàn Tham quan khu ByNight bằng Tàu Hỏa Leo Núi (miễn phí), Hầm Rượu Debay được người Pháp xây dựng năm 1923, Cây Bưởi gần 100 năm tuổi . Vườn Hoa Le Jardin D’amour, Chùa Linh Ứng, tượng Phật Thích Ca, Vườn Lộc Uyển, Quan Âm Các…Con đường bích họa hơn 1 km bậc thang dẫn đến Vườn Thiêng rực rỡ muôn sắc màu​",
+              img: [],
+            },
+            {
+              timeSchedule: "11h00",
+              desc: "Du khách tản bộ tham quan và chụp hình tại Cầu Vàng Bà Nà, một địa điểm check-in đẹp được yêu thích nhất khi đi du lịch Bà Nà Hills, đây cũng là điểm nổi bật của Sunword với nhiều review nhất trên mạng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex53735664_2254305451474695_716273444005609472_n.jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/ex10-8-201848-417893434-w500-2132-1533889853%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/eximage13-1%20(1).png",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/chiec-Cau-Vang-noi-tieng-the-gioi-o-Ba-Na-Hills-1024x538%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "12h00",
+              desc: "HDV đưa đoàn lên cáp treo lên khu làng pháp dùng cơm trưa buffet tại nhà hàng trên đỉnh Bà Nà ở độ cao 1489m với thực đơn buffet gần 88 món theo phong cách 3 miền, có soup dành cho em bé tại nhà hàng.​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279049823_4878893028906845_6519916344330452904_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278928996_4878893595573455_2304086517341869752_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279045933_4878891698906978_2317462251045767666_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "13h30",
+              desc: "KHÁM PHÁ THÁC THẦN MẶT TRỜI\nThác Thần Mặt Trời là công trình độc bản do Frilli Gallery tạo tác- Studio điêu khắc lừng danh tại Florence Italy từ những năm 1860.\nĐây là dự án đầu tiên của Frilli Gallery tại Việt Nam, mang đến cho du khách những trải nghiệm nền văn hóa Hi-La cổ đại khi được tận mắt chứng kiến những bức tượng kinh điển như: Thần mặt trời Helios, Thần Ánh Sáng Apollo, Thần tình yêu Venus, nữ thần chiến tranh Athena.\nCùng ngắm nhìn những khung hình ấn tượng công trình “Thác thần Mặt Trời” để có thêm niềm cảm hứng cho chuyến du lịch sắp tới tại Sun World Ba Na Hills bạn nhé! ​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_07_668Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_38_11_402Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/Skype_Picture_2022_05_09T08_43_37_907Z.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/exSkype_Picture_2022_05_09T08_43_39_202Z.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "14h30",
+              desc: "Du khách tự do tham quan và thoả sức vui chơi không giới hạn tại công viên trò Fantasy Park với hơn 105 trò chơi miễn phí, trải nghiệm trò chơi trượt máng mạo hiểm, Tháp rơi tự do, công viên khủng long, Đường đua rực lửa, Mê cung, .....​",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exhe-lo-9-khu-vui-choi-hap-dan-nhat-da-thanh-10%20(1).jpg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/exthap-roi-tu-do-da-nang%20(1).jpg",
+              ],
+            },
+            {
+              timeSchedule: "16h00",
+              desc: "Quý khách trở lại cáp treo lên Cabin đạt 4 kỷ lục thế giới của Bà Nà, xuống núi. Tạm biệt Bà Nà.​",
+              img: [],
+            },
+            {
+              timeSchedule: "17h30",
+              desc: "Xe đưa khách về lại điểm đón ban đầu, thân ái chào tạm biệt quý khách.​",
+              img: [],
+            },
+          ],
+        },
+
+        {
+          day: "3",
+          title: "CÙ LAO CHÀM - ĐÀ NẴNG VỀ ĐÊM (Ăn sáng, trưa, tối)",
+          details: [
+            {
+              timeSchedule: "06h30-7h30",
+              desc: "Ăn sáng tại khách sạn.",
+              img: [],
+            },
+            {
+              timeSchedule: "07h30 - 7h45",
+              desc: "Xe và Hướng dẫn viên One DaNang đón khách tại điểm hẹn, khởi hành đi Cù Lao Chàm – khu dự trữ sinh quyển thế giới. Đón khách xong xe di chuyển từ Đà Nẵng đến thẳng cảng Cửa Đại (Hội An). Trên đường đi, đoàn sẽ được hướng dẫn tỉ mỉ về trang phục, ăn uống cũng như các kinh nghiệm vui chơi tại Cù Lao Chàm sao cho an toàn, vui vẻ.",
+              img: [],
+            },
+            {
+              timeSchedule: "08h45",
+              desc: "Đến bến thuyền Cửa Đại, Quý khách ngồi nghỉ tại nhà chờ trong lúc HDV làm thủ tục đăng ký danh sách và mua bảo hiểm cho đoàn khoảng 15 phút. Đoàn lên ca nô và xuất bến, bắt đầu hành trình đến với Cù Lao Chàm 1 ngày.\nĐoàn lên Cano siêu tốc loại lớn đời 2020 đi rất nhanh chỉ 15 phút là cập bến đảo Cù Lao Chàm.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_7625.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/3/ImageContent/excu-lao-cham-01.jpg",
+              ],
+            },
+            {
+              timeSchedule: "09h15",
+              desc: "Hành trình tham quan du Lịch Tour Cù Lao Chàm 1 ngày chính thức bắt đầu.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/IMG_7889.JPG",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/excu-lao-cham.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "10h30 ",
+              desc: "BÃI XẾP ( BÃI RẠNG SAN HÔ )\n- Cano tiếp tục đưa đoàn đến Bãi Xếp, trang bị áo phao, mắt kính và ống thở để tham gia và trải nghiệm chương trình tắm biển ngắm san hô tại đây. Có hơn 400 loài san hô đang khoe sắc tại Khu Dự Trữ Sinh Quyển Cù Lao Chàm.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/150935932_1931998496958670_8831666142063115451_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/di-het-9-diem-nay-cho-chuyen-du-lich-cu-lao-cham-trong-ngay-ivivu-18-1499334590.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/DSC_6682.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/tour-cu-lao-cham-1-ngay.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "11h30 ",
+              desc: "BÃI CHỒNG ( khu sinh thái duy nhất tại Cù Lao Chàm )",
+              img: [],
+            },
+            {
+              timeSchedule: "13h00",
+              desc: "Sau khi ăn trưa xong, quý khách tự do tham quan hoặc trải nghiệm khám phá món ăn dân dã tại Cù Lao Chàm",
+              img: [],
+            },
+            {
+              timeSchedule: "14h30",
+              desc: "Đoàn tập trung lên Cano về lại đất liền.",
+              img: [],
+            },
+            {
+              timeSchedule: "15h - 15h30",
+              desc: "Xe đưa quý khách khởi hành về Đà Nẵng. Trả khách tại điểm đón, Quý khách nghỉ ngơi và tắm biển Mỹ Khê Đà Nẵng.",
+              img: [],
+            },
+            {
+              timeSchedule: "18h",
+              desc: "HDV đón khách đi ăn tối. Sau khi ăn tối xong, đoàn tư do tham quan khám phá Đà Nẵng về đêm như Beach Bar, Chợ đêm, Asia Park....",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/cong-vien-chau-a-tai-xuat-sau-4-thang-tam-dung-hoat-dong-02.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/105691_og_1.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/checkin-du-lich-da-nang-tu-tuc-asia-park-2.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/105690_og_1.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "20h30",
+              desc: "Xe và HDV đón khách đưa về nghỉ ngơi tại Khách sạn.",
+              img: [],
+            },
+          ],
+        },
+        {
+          day: "4",
+          title: "NÚI THẦN TÀI - TIỄN BAY (Ăn sáng, trưa)",
+          details: [
+            {
+              timeSchedule: "06h30 - 07h30",
+              desc: "Ăn sáng tại Khách sạn.Khám phá điểm mới TOUR NÚI THẦN TÀI ĐÀ NẴNG cùng One Đà Nẵng\n❤️ Vui chơi tại Công viên Khủng Long\n❤️ Tham quan con đường hoa Phong lan\n❤️ Viếng thăm Đền Thần Tài\n❤️ Trải nghiệm trò chơi thực tế ảo\n❤️ Xem phim miễn phí 9D – 12D",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279108563_1685001848519440_4428223786833887851_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "08h00",
+              desc: " Xe và Hướng Dẫn Viên của OneDaNang đón khách tại điểm hẹn, khởi hành đi công viên Suối Khoáng Thần Tài.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/125865319_1325336897819272_360094111050119325_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/126516235_1326340121052283_8101570499633871185_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/126516235_1326340121052283_8101570499633871185_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279455760_1688408314845460_6690864318198295686_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "09h00",
+              desc: "Đến trạm tiếp đón, quý khách làm thủ tục hành lý, bắt đầu chuyến tham quan Công Viên Suối khoáng Thần Tài",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/279246946_1686338361719122_2398228142597734683_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/126516235_1326340121052283_8101570499633871185_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "11h30",
+              desc: "Đoàn có mặt tại nhà hàng, dùng cơm trưa buffet, nghĩ ngơi.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278409444_1677885215897770_8887386855582933136_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/273536972_1634112196941739_4264599355934487921_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/273536972_1634112196941739_4264599355934487921_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "13h30-16h",
+              desc: "Xe điện tiếp tục đưa du khách tận hưởng hồ Suối Khoáng Nóng, ngâm mình nghĩ ngơi và thưởng thức Trứng Gà được luộc từ Hồ Luộc Trứng từ dòng khoáng nóng tự nhiên.",
+              img: [
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278647990_1680222208997404_2942293665492619117_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/127018609_1332369630449332_1100023742146158690_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/134954057_1360768114276150_4581416966643010519_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/280476158_1697008290652129_7460207640250517934_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/278872997_1683346578684967_6564477267165388918_n.jpeg",
+                "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Tours/1/ImageContent/189239173_1466880416998252_1776236189054371524_n.jpeg",
+              ],
+            },
+            {
+              timeSchedule: "16h - 16h30",
+              desc: "Đoàn tập trung xuất phát về Đà Nẵng.",
+            },
+          ],
+        },
+      ],
+      note: "- Nên sử dụng giày thể thao, dép thấp\n- Chuẩn bị nón mũ che nắng hoặc che sương\n- Máy chụp hình sạc pin đầy đủ\n- Du khách nên chuẩn bị áo khoác nhẹ\n- Đối với trẻ em nhỏ nên chuẩn bị áo ấm, khẩu trang, sữa",
     },
   ],
 };

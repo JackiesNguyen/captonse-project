@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./SearchBox.scss";
-import { Box, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Tab, Tabs } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import Container from "react-bootstrap/esm/Container";
 import { Link, useNavigate } from "react-router-dom";
@@ -13,9 +13,47 @@ import { format } from "date-fns";
 
 const SearchBox = () => {
   const [tabIndex, setTabIndex] = useState(0);
+  const navigate = useNavigate();
+
+  // Places
+  const [queryPlace, setQueryPlace] = useState("");
+  const debouncedPlace = useDebounce(queryPlace, 500);
+  const [searchResultPlaces, setSearchResultPlaces] = useState([]);
+  useEffect(() => {
+    const search = async () => {
+      try {
+        if (!debouncedPlace.trim()) {
+          setSearchResultPlaces([]);
+          return;
+        }
+
+        const res = await axios.get(
+          `/api/places/search?keyword=${encodeURIComponent(debouncedPlace)}`
+        );
+
+        setSearchResultPlaces(res.data.places);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    search();
+  }, [debouncedPlace]);
+
+  const handleSubmitSearchPlace = (e) => {
+    e.preventDefault();
+    if (queryPlace.trim()) {
+      navigate(`/search/${queryPlace}`);
+    } else {
+      navigate("/");
+    }
+  };
+
+  // Hotels
+  const [searchResultHotels, setSearchResultHotels] = useState([]);
+  const [queryHotel, setQueryHotel] = useState("");
+  const debouncedHotel = useDebounce(queryHotel, 500);
 
   const [openDate, setOpenDate] = useState(false);
-
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({
     adult: 1,
@@ -29,49 +67,43 @@ const SearchBox = () => {
       key: "selection",
     },
   ]);
-
-  const [query, setQuery] = useState("");
-  const [searchResult, setSearchResult] = useState([]);
-
-  const debounced = useDebounce(query, 500);
-
-  const navigate = useNavigate();
+  //
 
   useEffect(() => {
     const search = async () => {
       try {
-        if (!debounced.trim()) {
-          setSearchResult([]);
+        if (!debouncedHotel.trim()) {
+          setSearchResultHotels([]);
           return;
         }
 
         const res = await axios.get(
-          `/api/places/search?keyword=${encodeURIComponent(debounced)}`
+          `/api/hotels/search?keyword=${encodeURIComponent(debouncedHotel)}`
         );
 
-        setSearchResult(res.data.places);
+        setSearchResultHotels(res.data.hotels);
       } catch (error) {
         console.log(error);
       }
     };
     search();
-  }, [debounced]);
+  }, [debouncedHotel]);
 
-  const handleTabChange = (event, newTabIndex) => {
-    setTabIndex(newTabIndex);
-  };
-  const handleSubmitSearchPlace = (e) => {
+  const handleSubmitSearchHotel = (e) => {
     e.preventDefault();
-    if (query.trim()) {
-      navigate(`/search/${query}`);
+    if (queryHotel.trim()) {
+      navigate(`/hotel/search/${queryHotel}`);
     } else {
       navigate("/");
     }
   };
 
-  const handleSubmitSearchHotel = (e) => {
-    e.preventDefault();
+  //
+
+  const handleTabChange = (event, newTabIndex) => {
+    setTabIndex(newTabIndex);
   };
+
   const handleSubmitSearchTour = (e) => {
     e.preventDefault();
   };
@@ -129,7 +161,7 @@ const SearchBox = () => {
                       <TextField
                         id="search-bar"
                         className="text"
-                        onChange={(e) => setQuery(e.target.value)}
+                        onChange={(e) => setQueryPlace(e.target.value)}
                         variant="standard"
                         placeholder="Nhập dịa điểm bạn muốn đến......"
                         size="small"
@@ -143,10 +175,10 @@ const SearchBox = () => {
                     </button>
                   </div>
 
-                  {searchResult.length > 0 && (
+                  {searchResultPlaces.length > 0 && (
                     <div className="search__data">
                       <div className="data__list">
-                        {searchResult.map((placeSearch) => (
+                        {searchResultPlaces.map((placeSearch) => (
                           <Link
                             to={`/dia-diem/${placeSearch.slug}`}
                             className="data__item"
@@ -186,7 +218,7 @@ const SearchBox = () => {
                       <TextField
                         id="search-bar"
                         className="text"
-                        // onChange={(e) => setQuery(e.target.value)}
+                        onChange={(e) => setQueryHotel(e.target.value)}
                         variant="standard"
                         placeholder="Tìm kiếm khách sạn..."
                         size="small"
@@ -349,22 +381,21 @@ const SearchBox = () => {
                       Tìm kiếm
                     </button>
                   </div>
-
-                  {searchResult.length > 0 && (
+                  {searchResultHotels.length > 0 && (
                     <div className="search__data">
                       <div className="data__list">
-                        {searchResult.map((placeSearch) => (
+                        {searchResultHotels.map((hotelSearch) => (
                           <Link
-                            to={`/dia-diem/${placeSearch.slug}`}
+                            to={`/khach-san/${hotelSearch.slug}`}
                             className="data__item"
-                            key={placeSearch._id}
+                            key={hotelSearch._id}
                           >
                             <img
-                              src={placeSearch.image}
+                              src={hotelSearch.images[0]}
                               alt="img"
                               className="data__img"
                             />
-                            <h5 className="data__name">{placeSearch.title}</h5>
+                            <h5 className="data__name">{hotelSearch.name}</h5>
                           </Link>
                         ))}
                       </div>
@@ -406,27 +437,6 @@ const SearchBox = () => {
                       Tìm kiếm
                     </button>
                   </div>
-
-                  {searchResult.length > 0 && (
-                    <div className="search__data">
-                      <div className="data__list">
-                        {searchResult.map((placeSearch) => (
-                          <Link
-                            to={`/dia-diem/${placeSearch.slug}`}
-                            className="data__item"
-                            key={placeSearch._id}
-                          >
-                            <img
-                              src={placeSearch.image}
-                              alt="img"
-                              className="data__img"
-                            />
-                            <h5 className="data__name">{placeSearch.title}</h5>
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  )}
                 </form>
               )}
             </Box>

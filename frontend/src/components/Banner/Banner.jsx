@@ -63,7 +63,7 @@ const Banner = (props) => {
       ) : (
         <video className="banner__video" autoPlay loop muted>
           <source
-            src="https://res.cloudinary.com/dulkwgwws/video/upload/v1671172287/Video/danang_lvport.mp4"
+            src="https://res.cloudinary.com/dulkwgwws/video/upload/v1672130832/Video/y2mate.com_-_Dragon_Bridge_Breathing_Fire_4K_UHD_Da_Nang_Welcome_To_Vietnam_1080p.mp4_dddizw.mp4"
             type="video/mp4"
           />
         </video>

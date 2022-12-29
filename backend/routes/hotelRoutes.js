@@ -42,6 +42,34 @@ hotelRouter.post(
     }
   })
 );
+
+hotelRouter.get(
+  "/search",
+  expressAsyncHandler(async (req, res) => {
+    const keyword = req.query.keyword
+      ? {
+          $or: [
+            {
+              name: {
+                $regex: req.query.keyword,
+                $options: "i",
+              },
+            },
+          ],
+        }
+      : {};
+    const hotels = await Hotel.find({ ...keyword });
+    res.send({ hotels });
+  })
+);
+
+hotelRouter.get(
+  "/type",
+  expressAsyncHandler(async (req, res) => {
+    const types = await Hotel.find().distinct("type");
+    res.send(types);
+  })
+);
 hotelRouter.get("/slug/:slug", async (req, res) => {
   const hotel = await Hotel.findOne({ slug: req.params.slug });
   if (hotel) {
