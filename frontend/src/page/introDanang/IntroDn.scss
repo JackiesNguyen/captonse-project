@@ -43,6 +43,7 @@
   }
   &__left {
     background-color: #fff;
+    padding-top: 50px;
   }
   &__list {
     display: flex;
@@ -52,8 +53,8 @@
   }
   &__item {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    // align-items: center;
+    gap: 40px;
     a {
       display: block;
       text-decoration: none;
@@ -88,7 +89,7 @@
   }
   &__img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     flex: 0.4;
     overflow: hidden;
     img {

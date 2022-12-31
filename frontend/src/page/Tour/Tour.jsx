@@ -1,12 +1,12 @@
-import { Box } from "@mui/material";
-import axios from "axios";
 import React, { useEffect, useReducer } from "react";
+import axios from "axios";
 import Container from "react-bootstrap/esm/Container";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LoadingClient from "../../components/LoadingClient/LoadingClient";
 import ListTour from "./components/ListTour/ListTour";
 
 import "./Tour.scss";
+import { useSelector } from "react-redux";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -23,6 +23,8 @@ const reducer = (state, action) => {
 
 const Tour = () => {
   window.scrollTo(0, 0);
+  const auth = useSelector((state) => state.auth);
+  const { isLogged } = auth;
 
   const [{ loading, error, tours }, dispatch] = useReducer(reducer, {
     tours: [],
@@ -41,6 +43,10 @@ const Tour = () => {
     };
     fetchData();
   }, []);
+  const navigate = useNavigate();
+  const handleClickCreateTour = () => {
+    navigate("/tour-du-lich/tao-hanh-trinh");
+  };
   return (
     <div className="tour">
       <Container>
@@ -74,13 +80,20 @@ const Tour = () => {
 
             <div className="tour__box">
               <h2 className="tour__title">Hành trình đề xuất</h2>
-              <Link to="#">
+              <div className="create-tour" onClick={handleClickCreateTour}>
                 <i
                   className="fa-solid fa-plus"
                   style={{ marginRight: "5px" }}
                 ></i>
                 Tạo hành trình
-              </Link>
+              </div>
+              {!isLogged && (
+                <div className="check-login">
+                  Vui lòng{" "}
+                  <Link to={`/signin?redirect=/tour-du-lich`}>đăng nhập</Link>{" "}
+                  để tạo hành trình
+                </div>
+              )}
             </div>
 
             <ListTour tours={tours} />

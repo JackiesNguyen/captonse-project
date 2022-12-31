@@ -43,28 +43,87 @@ hotelRouter.post(
   })
 );
 
+const PAGE_SIZE = 3;
 hotelRouter.get(
   "/search",
   expressAsyncHandler(async (req, res) => {
-    const keyword = req.query.keyword
-      ? {
-          $or: [
-            {
-              name: {
-                $regex: req.query.keyword,
-                $options: "i",
-              },
+    const { query } = req;
+    const pageSize = query.pageSize || PAGE_SIZE;
+    const page = query.page || 1;
+    const type = query.type || "";
+    const price = query.price || "";
+    const rating = query.rating || "";
+    const order = query.order || "";
+    const searchQuery = query.query || "";
+
+    const queryFilter =
+      searchQuery && searchQuery !== "all"
+        ? {
+            name: {
+              $regex: searchQuery,
+              $options: "i",
             },
-          ],
-        }
-      : {};
-    const hotels = await Hotel.find({ ...keyword });
-    res.send({ hotels });
+          }
+        : {};
+    const typeFilter = type && type !== "all" ? { type } : {};
+    const ratingFilter =
+      rating && rating !== "all"
+        ? {
+            rating: {
+              $gte: Number(rating),
+            },
+          }
+        : {};
+    const priceFilter =
+      price && price !== "all"
+        ? {
+            // 1-50
+            price: {
+              $gte: Number(price.split("-")[0]),
+              $lte: Number(price.split("-")[1]),
+            },
+          }
+        : {};
+    const sortOrder =
+      order === "featured"
+        ? { featured: -1 }
+        : order === "lowest"
+        ? { price: 1 }
+        : order === "highest"
+        ? { price: -1 }
+        : order === "toprated"
+        ? { rating: -1 }
+        : order === "newest"
+        ? { createdAt: -1 }
+        : { _id: -1 };
+
+    const hotels = await Hotel.find({
+      ...queryFilter,
+      ...typeFilter,
+      ...priceFilter,
+      ...ratingFilter,
+    })
+      .sort(sortOrder)
+      .skip(pageSize * (page - 1))
+      .limit(pageSize);
+
+    const countHotels = await Hotel.countDocuments({
+      ...queryFilter,
+      ...typeFilter,
+      ...priceFilter,
+      ...ratingFilter,
+    });
+    res.send({
+      hotels,
+      countHotels,
+      page,
+      pages: Math.ceil(countHotels / pageSize),
+    });
   })
 );
 
 hotelRouter.get(
-  "/type",
+  "/types",
   expressAsyncHandler(async (req, res) => {
     const types = await Hotel.find().distinct("type");
     res.send(types);

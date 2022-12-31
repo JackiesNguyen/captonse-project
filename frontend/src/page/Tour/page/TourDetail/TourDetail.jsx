@@ -20,9 +20,10 @@ import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import FloatingLabel from "react-bootstrap/esm/FloatingLabel";
 import Button from "react-bootstrap/esm/Button";
-import Rating from "../../../components/Rating/Rating";
-import LoadingClient from "../../../components/LoadingClient/LoadingClient";
+import Rating from "../../../../components/Rating/Rating";
+import LoadingClient from "../../../../components/LoadingClient/LoadingClient";
 import "./TourDetail.scss";
+import OtherTour from "../../components/OtherTour/OtherTour";
 //
 
 const reducer = (state, action) => {
@@ -264,7 +265,7 @@ const TourDetail = () => {
                     <div className="tourDetail__reviews-head">
                       <i className="fa-solid fa-comment"></i>
 
-                      <h2>Đánh giá khách sạn</h2>
+                      <h2>Đánh giá Tour du lịch</h2>
                     </div>
                     <div className="tourDetail__reviews-body">
                       <h2 ref={reviewsRef}>Bình luận</h2>
@@ -348,7 +349,7 @@ const TourDetail = () => {
                           <Link to={`/signin?redirect=/dia-diem/${tour.slug}`}>
                             đăng nhập
                           </Link>{" "}
-                          để đánh giá khách sạn
+                          để đánh giá Tour
                         </div>
                       )}
                     </div>
@@ -377,6 +378,7 @@ const TourDetail = () => {
                       </p>
                     </div>
                   </div>
+                  <OtherTour />
                 </div>
               </Box>
             </div>

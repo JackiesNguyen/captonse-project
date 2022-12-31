@@ -26,8 +26,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    a {
-      flex-shrink: end;
+    .create-tour {
       display: block;
       text-decoration: none;
       font-size: 15px;
@@ -40,12 +39,23 @@
       right: 0;
       transition: all 0.2s linear;
       border: 1px solid transparent;
+
       &:hover {
         color: darkblue;
         background-color: #fff;
         border: 1px solid darkblue;
       }
     }
+  }
+  .check-login {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    background-color: #ffca08;
+    padding: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
   }
   &__title {
     text-align: center;

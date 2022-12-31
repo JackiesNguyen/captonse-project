@@ -1,12 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import Container from "react-bootstrap/esm/Container";
 import "./Footer.scss";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Logo from "../../../../assets/images/himxozfd.png";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [newPlaces, setNewPlaces] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const { data } = await axios.get(`/api/places`);
+        setNewPlaces(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const [cates, setCates] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const { data } = await axios.get(`/api/places/categories`);
+        setCates(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  // const categories = newPlaces.reduce((acc, cur) => {
+  //   acc[cur.category] = (acc[cur.category] || 0) + 1;
+  //   return acc;
+  // }, []);
+
   return (
     <footer className="footer">
       <Container>
@@ -46,11 +81,27 @@ const Footer = () => {
             <Col sm={4}>
               <div className="footer__middle">
                 <h2 className="footer__head">Địa điểm mới nhất</h2>
+                <ul>
+                  {newPlaces.map(
+                    (newP, index) =>
+                      newP.category === "Quán Ăn Chay" && (
+                        <li key={index}>
+                          <img src={newP.image} alt="" />
+                          <Link to={`/dia-diem/${newP.slug}`}>{newP.name}</Link>
+                        </li>
+                      )
+                  )}
+                </ul>
               </div>
             </Col>
             <Col sm={4}>
               <div className="footer__right">
                 <h2 className="footer__head">Mục xem nhiều</h2>
+                <ul>
+                  {cates.map((category, index) => (
+                    <li key={index}>{category}</li>
+                  ))}
+                </ul>
               </div>
             </Col>
           </Row>

@@ -44,6 +44,42 @@ placeRouter.post(
   })
 );
 
+placeRouter.delete("/:id/reviews/:commentId", auth, async (req, res) => {
+  try {
+    const place = await Place.findById(req.params.id);
+
+    // Pull out comment
+    const comment = place.reviews.find(
+      (comment) => comment.id === req.params.id
+    );
+    console.log(comment);
+
+    // Make sure comment exists
+    if (!comment) {
+      return res.status(404).json({ msg: "Comment does not exist" });
+    }
+
+    // Check user
+    if (comment.name.toString() !== req.user.name) {
+      return res.status(401).json({ msg: "User not authorized" });
+    }
+
+    // Get remove index
+    const removeIndex = place.reviews
+      .map((comment) => comment.name.toString())
+      .indexOf(req.user.id);
+
+    place.reviews.splice(removeIndex, 1);
+
+    await place.save();
+
+    res.json(place.reviews);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
 placeRouter.get(
   "/search",
   expressAsyncHandler(async (req, res) => {

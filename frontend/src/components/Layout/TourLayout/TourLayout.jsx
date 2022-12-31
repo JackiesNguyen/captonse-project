@@ -11,7 +11,7 @@ const TourLayout = () => {
   return (
     <div className="tourLayout">
       <Header />
-      <Box style={{ position: "relative" }}>
+      <Box style={{ position: "relative", marginTop: "128px" }}>
         <img
           src={bantayphat}
           alt=""

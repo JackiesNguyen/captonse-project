@@ -1,0 +1,125 @@
+.mapbox {
+  &__container {
+    padding: 20px 0;
+  }
+  &__head {
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+  }
+  &__content {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    &-head {
+      width: 100%;
+      background-color: #f58100;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      button {
+        display: inline-block;
+        border: none;
+        outline: none;
+        padding: 10px;
+        background-color: #51be41;
+        border-radius: 10px;
+        color: #fff;
+      }
+    }
+    &-body {
+      display: flex;
+    }
+  }
+  &__sidebar {
+    flex: 0.3;
+    overflow: hidden;
+    position: relative;
+    &-head {
+      padding: 15px 20px;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .day {
+        padding: 5px 10px;
+        background-color: #ccc;
+        display: inline-block;
+        border-radius: 3px;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        border: 1px solid #000;
+      }
+      .new-day {
+        display: flex;
+        align-items: center;
+        background-color: #ccc;
+        .boxGlo {
+          padding: 5px 10px;
+          border: 1px solid #000;
+          cursor: pointer;
+          font-size: 15px;
+        }
+      }
+    }
+    .calendar {
+      padding: 15px 20px;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      i {
+        font-size: 17px;
+      }
+      p {
+        margin: 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+    &-content {
+      background-color: #888999;
+      width: 100%;
+      height: 100%;
+    }
+    &-bot {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        li {
+          border: 1px dashed #ccc;
+          padding: 5px 10px;
+          color: #ccc;
+          font-size: 13px;
+          cursor: pointer;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

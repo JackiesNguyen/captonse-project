@@ -7,7 +7,10 @@ const Layout = () => {
   return (
     <div style={{ overflow: "hidden" }}>
       <Header />
-      <div className="content" style={{ background: "#f5f5f5" }}>
+      <div
+        className="content"
+        style={{ background: "#f5f5f5", marginTop: "128px" }}
+      >
         <Outlet />
       </div>
       <Footer />

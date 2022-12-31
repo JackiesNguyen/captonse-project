@@ -44,23 +44,83 @@ tourRouter.post(
   })
 );
 
+const PAGE_SIZE = 3;
+
 tourRouter.get(
   "/search",
   expressAsyncHandler(async (req, res) => {
-    const keyword = req.query.keyword
-      ? {
-          $or: [
-            {
-              name: {
-                $regex: req.query.keyword,
-                $options: "i",
-              },
+    const { query } = req;
+    const pageSize = query.pageSize || PAGE_SIZE;
+    const page = query.page || 1;
+    const time = query.time || "";
+    const price = query.price || "";
+    const rating = query.rating || "";
+    const order = query.order || "";
+    const searchQuery = query.query || "";
+
+    const queryFilter =
+      searchQuery && searchQuery !== "all"
+        ? {
+            name: {
+              $regex: searchQuery,
+              $options: "i",
             },
-          ],
-        }
-      : {};
-    const tours = await Tour.find({ ...keyword });
-    res.send({ tours });
+          }
+        : {};
+    const timeFilter = time && time !== "all" ? { time } : {};
+    const ratingFilter =
+      rating && rating !== "all"
+        ? {
+            rating: {
+              $gte: Number(rating),
+            },
+          }
+        : {};
+    const priceFilter =
+      price && price !== "all"
+        ? {
+            // 1-50
+            price: {
+              $gte: Number(price.split("-")[0]),
+              $lte: Number(price.split("-")[1]),
+            },
+          }
+        : {};
+    const sortOrder =
+      order === "featured"
+        ? { featured: -1 }
+        : order === "lowest"
+        ? { price: 1 }
+        : order === "highest"
+        ? { price: -1 }
+        : order === "toprated"
+        ? { rating: -1 }
+        : order === "newest"
+        ? { createdAt: -1 }
+        : { _id: -1 };
+
+    const tours = await Tour.find({
+      ...queryFilter,
+      ...timeFilter,
+      ...priceFilter,
+      ...ratingFilter,
+    })
+      .sort(sortOrder)
+      .skip(pageSize * (page - 1))
+      .limit(pageSize);
+
+    const countTours = await Tour.countDocuments({
+      ...queryFilter,
+      ...timeFilter,
+      ...priceFilter,
+      ...ratingFilter,
+    });
+    res.send({
+      tours,
+      countTours,
+      page,
+      pages: Math.ceil(countTours / pageSize),
+    });
   })
 );
 

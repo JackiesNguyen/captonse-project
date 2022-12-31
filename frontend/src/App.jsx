@@ -47,14 +47,18 @@ import CamLe from "./page/District/CamLe";
 import Search from "./page/Search/Search";
 import SearchLayout from "./components/Layout/SearchLayout/SearchLayout";
 import Vegetarian from "./page/TouristAttraction/Vegetarian/Vegetarian";
-import AdminPage from "./AdminPage";
+// import AdminPage from "./AdminPage";
 import HotelLayout from "./components/Layout/HotelLayout/HotelLayout";
 import Hotel from "./page/Hotel/Hotel";
 import HotelDetail from "./page/Hotel/Page/HotelDetail/HotelDetail";
-import HotelSearch from "./page/Search/HotelSearch/HotelSearch";
 import Tour from "./page/Tour/Tour";
 import TourLayout from "./components/Layout/TourLayout/TourLayout";
-import TourDetail from "./page/Tour/page/TourDetail";
+import TourDetail from "./page/Tour/page/TourDetail/TourDetail";
+import SearchTour from "./page/Tour/page/SearchTour/SearchTour";
+import AdminRouter from "./AdminPage/AdminRouter";
+import SearchHotel from "./page/Hotel/Page/SearchHotel/SearchHotel";
+import MapBox from "./page/Tour/MapBox/MapBox";
+import LayoutAdmin from "./AdminPage/components/LayoutAdmin/LayoutAdmin";
 
 //
 function App() {
@@ -62,6 +66,7 @@ function App() {
   const token = useSelector((state) => state.token);
   const auth = useSelector((state) => state.auth);
   const { isLogged, isAdmin } = auth;
+
   useEffect(() => {
     const firstLogin = localStorage.getItem("firstLogin");
     if (firstLogin) {
@@ -90,20 +95,23 @@ function App() {
       <div className="app">
         <Routes>
           {isAdmin ? (
-            <Route path="/" element={<AdminPage />}>
-              <Route index element={<Navigate to="/admin" />} />
+            <Route path="/" element={<LayoutAdmin />}>
+              <Route index element={<Navigate to="admin" />} />
+              <Route path="*" element={<AdminRouter />} />
             </Route>
-          ) : !isAdmin ? (
+          ) : (
             <Route element={<Layout />}>
               {" "}
               <Route path="/" element={<Home />} />
             </Route>
-          ) : (
-            <NotFound />
           )}
-          <Route path="/admin" element={<NotFound />} />
+          {!isAdmin && <Route path="/admin" element={<NotFound />} />}
+
           {/* Layout Default */}
           <Route element={<Layout />}>
+            <Route path="/tour-du-lich/search" element={<SearchTour />} />
+            <Route path="/tour-du-lich/tao-hanh-trinh" element={<MapBox />} />
+            <Route path="/khach-san/search" element={<SearchHotel />} />
             <Route path="/dia-diem/:slug" element={<PlaceDetail />} />
             <Route path="/khach-san/:slug" element={<HotelDetail />} />
             <Route path="/tour-du-lich/:slug" element={<TourDetail />} />
@@ -170,7 +178,6 @@ function App() {
 
           <Route element={<SearchLayout />}>
             <Route path="/search/:query" element={<Search />} />
-            <Route path="/hotel/search/:query" element={<HotelSearch />} />
           </Route>
           {/*  */}
 

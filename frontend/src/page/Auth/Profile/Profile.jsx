@@ -29,7 +29,6 @@ const initialState = {
 const Profile = () => {
   const auth = useSelector((state) => state.auth);
   const token = useSelector((state) => state.token);
-
   const users = useSelector((state) => state.users);
 
   const { user, isAdmin } = auth;
@@ -189,14 +188,15 @@ const Profile = () => {
 
   return (
     <>
-      <div className="profile_page">
+      <div className="profile_page" style={{ padding: "20px" }}>
         {loading ? (
           <LoadingClient loading={loading} />
         ) : (
           <Container>
             <Row>
-              <Col md={4}>
-                <div className="col-left">
+              <Col md={3}></Col>
+              <Col md={6}>
+                <div className="col-left" style={{}}>
                   <h2>{isAdmin ? "Admin Profile" : "Thông tin cá nhân"}</h2>
 
                   <div className="avatar">
@@ -273,8 +273,8 @@ const Profile = () => {
                   </button>
                 </div>
               </Col>
-              <Col md={8}>
-                <div className="col-right">
+              <Col md={3}>
+                {/* <div className="col-right">
                   <h2>{isAdmin ? "Users" : "My Orders"}</h2>
 
                   <div style={{ overflowX: "auto" }}>
@@ -317,7 +317,7 @@ const Profile = () => {
                       </tbody>
                     </table>
                   </div>
-                </div>
+                </div> */}
               </Col>
             </Row>
           </Container>

@@ -1,0 +1,17 @@
+.searchHotel {
+  background-color: #fff;
+  min-height: calc(100vh - 128px);
+  &__container {
+    padding: 20px 0;
+  }
+  &__left {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    h3 {
+      color: crimson;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}

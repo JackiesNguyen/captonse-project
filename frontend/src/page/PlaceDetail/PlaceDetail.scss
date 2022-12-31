@@ -121,12 +121,57 @@
       &__item {
         border-bottom: 1px solid #ccc;
         padding: 20px 0;
+        position: relative;
+      }
+      &__actions {
+        i {
+          font-size: 18px;
+          cursor: pointer;
+        }
+
+        &-list {
+          margin: 0;
+          padding: 5px;
+          position: absolute;
+          top: 100%;
+          right: -20px;
+          display: flex;
+          flex-direction: column;
+          background: #333;
+          color: #ccc;
+          width: 120px;
+          border-radius: 10px;
+        }
+        &-item {
+          padding: 2px 5px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          &:hover {
+            color: #fff;
+          }
+          span {
+            margin: 0;
+            font-size: 13px;
+            user-select: none;
+          }
+          i {
+            font-size: 13px;
+          }
+        }
       }
       &__name {
         font-size: 16px;
         font-weight: 600;
         margin: 0;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
+
       &__date {
         font-size: 14px;
         margin: 0;

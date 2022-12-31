@@ -6,10 +6,10 @@ import Container from "react-bootstrap/esm/Container";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useDebounce } from "../../hook";
-import { DateRange } from "react-date-range";
+// import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { format } from "date-fns";
+// import { format } from "date-fns";
 
 const SearchBox = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -53,22 +53,20 @@ const SearchBox = () => {
   const [queryHotel, setQueryHotel] = useState("");
   const debouncedHotel = useDebounce(queryHotel, 500);
 
-  const [openDate, setOpenDate] = useState(false);
-  const [openOptions, setOpenOptions] = useState(false);
-  const [options, setOptions] = useState({
-    adult: 1,
-    children: 0,
-    room: 1,
-  });
-  const [date, setDate] = useState([
-    {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: "selection",
-    },
-  ]);
-  //
-
+  // const [openDate, setOpenDate] = useState(false);
+  // const [openOptions, setOpenOptions] = useState(false);
+  // const [options, setOptions] = useState({
+  //   adult: 1,
+  //   children: 0,
+  //   room: 1,
+  // });
+  // const [date, setDate] = useState([
+  //   {
+  //     startDate: new Date(),
+  //     endDate: new Date(),
+  //     key: "selection",
+  //   },
+  // ]);
   useEffect(() => {
     const search = async () => {
       try {
@@ -78,7 +76,7 @@ const SearchBox = () => {
         }
 
         const res = await axios.get(
-          `/api/hotels/search?keyword=${encodeURIComponent(debouncedHotel)}`
+          `/api/hotels/search?query=${encodeURIComponent(debouncedHotel)}`
         );
 
         setSearchResultHotels(res.data.hotels);
@@ -92,7 +90,7 @@ const SearchBox = () => {
   const handleSubmitSearchHotel = (e) => {
     e.preventDefault();
     if (queryHotel.trim()) {
-      navigate(`/hotel/search/${queryHotel}`);
+      navigate(`/khach-san/search/?query=${queryHotel}`);
     } else {
       navigate("/");
     }
@@ -104,18 +102,49 @@ const SearchBox = () => {
     setTabIndex(newTabIndex);
   };
 
+  // const handleOption = (name, operation) => {
+  //   setOptions((prev) => {
+  //     return {
+  //       ...prev,
+  //       [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
+  //     };
+  //   });
+  // };
+
+  // Tours
+
+  const [searchResultTours, setSearchResultTours] = useState([]);
+  const [queryTour, setQueryTour] = useState("");
+  const debouncedTour = useDebounce(queryTour, 500);
+
+  useEffect(() => {
+    const search = async () => {
+      try {
+        if (!debouncedTour.trim()) {
+          setSearchResultHotels([]);
+          return;
+        }
+        const res = await axios.get(
+          `/api/tours/search?query=${encodeURIComponent(debouncedTour)}`
+        );
+
+        setSearchResultTours(res.data.tours);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    search();
+  }, [debouncedTour]);
+
   const handleSubmitSearchTour = (e) => {
     e.preventDefault();
+    if (queryTour.trim()) {
+      navigate(`/tour-du-lich/search/?query=${queryTour}`);
+    } else {
+      navigate("/");
+    }
   };
 
-  const handleOption = (name, operation) => {
-    setOptions((prev) => {
-      return {
-        ...prev,
-        [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
-      };
-    });
-  };
   return (
     <div className="search">
       <Container>
@@ -200,7 +229,13 @@ const SearchBox = () => {
               {tabIndex === 1 && (
                 <form onSubmit={handleSubmitSearchHotel}>
                   <div className="box__container">
-                    <Box style={{ display: "flex", flexDirection: "column" }}>
+                    <Box
+                      style={{
+                        flex: 1,
+                        display: "flex",
+                        flexDirection: "column",
+                      }}
+                    >
                       <label
                         style={{
                           marginBottom: "5px",
@@ -225,7 +260,7 @@ const SearchBox = () => {
                         style={{ fontSize: "14px" }}
                       />
                     </Box>
-                    <Box
+                    {/* <Box
                       style={{
                         position: "relative",
                         display: "flex",
@@ -374,7 +409,7 @@ const SearchBox = () => {
                           </div>
                         </div>
                       ) : null}
-                    </Box>
+                    </Box> */}
 
                     <button type="submit" className="search__btn">
                       <i className="fa-solid fa-magnifying-glass"></i>
@@ -424,7 +459,7 @@ const SearchBox = () => {
                       <TextField
                         id="search-bar"
                         className="text"
-                        // onChange={(e) => setQuery(e.target.value)}
+                        onChange={(e) => setQueryTour(e.target.value)}
                         variant="standard"
                         placeholder="Nhập tour muốn trải nghiệm..."
                         size="small"
@@ -437,6 +472,26 @@ const SearchBox = () => {
                       Tìm kiếm
                     </button>
                   </div>
+                  {searchResultTours.length > 0 && (
+                    <div className="search__data">
+                      <div className="data__list">
+                        {searchResultTours.map((tourSearch) => (
+                          <Link
+                            to={`/tour-du-lich/${tourSearch.slug}`}
+                            className="data__item"
+                            key={tourSearch._id}
+                          >
+                            <img
+                              src={tourSearch.images[0]}
+                              alt="img"
+                              className="data__img"
+                            />
+                            <h5 className="data__name">{tourSearch.name}</h5>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </form>
               )}
             </Box>

@@ -66,6 +66,35 @@ const Header = () => {
   };
   window.addEventListener("scroll", sticky);
 
+  // Tours
+  const [timeTour, setTimeTour] = useState([]);
+
+  useEffect(() => {
+    const fetchTimeTour = async () => {
+      try {
+        const { data } = await axios.get(`/api/tours/times`);
+        setTimeTour(data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchTimeTour();
+  }, []);
+  // hotels
+
+  const [typeHotels, setTypeHotels] = useState([]);
+  useEffect(() => {
+    const fetchTypeHotel = async () => {
+      try {
+        const { data } = await axios.get(`/api/hotels/types`);
+        setTypeHotels(data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchTypeHotel();
+  }, []);
+
   return (
     <header className="header">
       <div className="header__top">
@@ -181,7 +210,7 @@ const Header = () => {
               <li className="menu-item">
                 <div className="menu-link" style={{ cursor: "pointer" }}>
                   Điểm du lịch
-                  <ul className="categoryList">
+                  <ul className="timeTourList">
                     <li>
                       <AiOutlineArrowRight />
                       <NavLink
@@ -247,6 +276,19 @@ const Header = () => {
                   className="menu-link"
                 >
                   Khách sạn
+                  <ul className="hotelList">
+                    {typeHotels.map((type, index) => (
+                      <li key={index}>
+                        <AiOutlineArrowRight />
+                        <NavLink
+                          key={index}
+                          to={`/khach-san/search?type=${type}`}
+                        >
+                          Khách sạn {type} sao
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
                 </NavLink>
               </li>
               <li className="menu-item">
@@ -256,6 +298,19 @@ const Header = () => {
                   className="menu-link"
                 >
                   Tour du lịch
+                  <ul className="timeTourList">
+                    {timeTour.map((time, index) => (
+                      <li key={index}>
+                        <AiOutlineArrowRight />
+                        <NavLink
+                          key={index}
+                          to={`/tour-du-lich/search?time=${time}`}
+                        >
+                          {time}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
                 </NavLink>
               </li>
             </ul>

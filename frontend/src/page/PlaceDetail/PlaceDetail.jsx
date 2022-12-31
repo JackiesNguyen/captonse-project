@@ -124,6 +124,21 @@ const PlaceDetail = () => {
       dispatch({ type: "CREATE_FAIL" });
     }
   };
+
+  // const [actionCmt, setActionCmt] = useState(false);
+  // const handleDeleteComment = async (id) => {
+  //   try {
+  //     await axios.delete(`/api/places/${place._id}/reviews/${id}`, {
+  //       headers: { Authorization: token },
+  //     });
+  //     toast.success("Xoá thành công");
+  //   } catch (error) {
+  //     toast.error(error);
+  //   }
+  // };
+
+  // const handleEditComment = async () => {};
+
   return (
     <div className="placeDetail">
       <Container>
@@ -256,7 +271,40 @@ const PlaceDetail = () => {
                         <ul className="reviews__list">
                           {place.reviews.map((review, index) => (
                             <li className="reviews__item" key={index}>
-                              <h4 className="reviews__name">{review.name}</h4>
+                              <h4 className="reviews__name">
+                                {review.name}
+                                {/* {isLogged && user.name === review.name ? (
+                                  <div className="reviews__actions">
+                                    <i
+                                      className="fa-solid fa-ellipsis-vertical"
+                                      onClick={() => setActionCmt(!actionCmt)}
+                                    ></i>
+                                    {actionCmt && (
+                                      <ul className="reviews__actions-list">
+                                        <li
+                                          className="reviews__actions-item"
+                                          onClick={handleEditComment(
+                                            review._id
+                                          )}
+                                        >
+                                          <i className="fa-solid fa-pen"></i>
+                                          <span>Chỉnh sửa</span>
+                                        </li>
+                                        <li
+                                          className="reviews__actions-item"
+                                          onClick={handleDeleteComment(
+                                            review._id
+                                          )}
+                                        >
+                                          <i className="fa-solid fa-trash"></i>
+                                          <span>Xoá</span>
+                                        </li>
+                                      </ul>
+                                    )}
+                                  </div>
+                                ) : null} */}
+                              </h4>
+
                               <Rating
                                 rating={review.rating}
                                 setColor

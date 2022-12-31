@@ -226,9 +226,57 @@
       }
     }
   }
-  p {
-    text-align: justify;
+  &__other {
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 4px #e6e6e6;
+    &-head {
+      display: flex;
+      align-items: center;
+      background: #e6e6e6;
+      padding: 15px;
+      gap: 10px;
+      i {
+        font-size: 18px;
+        color: #e61b23;
+      }
+      h2 {
+        font-size: 18px;
+        line-height: 1.6;
+        font-weight: bold;
+        margin: 0;
+        text-transform: uppercase;
+      }
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px 20px;
+    }
+    &-item {
+      a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        color: #074c6c;
+        &:hover {
+          color: #f7941d;
+        }
+
+        p {
+          display: inline-block;
+          padding: 2px 10px;
+          margin: 0;
+          font-size: 15px;
+          background-color: #00adef;
+          color: #fff;
+          border-radius: 20px;
+        }
+      }
+    }
   }
+
   .reviews__item {
     list-style: circle;
   }
