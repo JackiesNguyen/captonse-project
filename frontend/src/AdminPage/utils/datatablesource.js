@@ -1,5 +1,11 @@
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
+
+const formatPrice = (num) => {
+  const stringNum = num.toString();
+  const format = stringNum.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return format;
+};
 export const userColumns = [
   {
     field: "id",
@@ -30,8 +36,8 @@ export const userColumns = [
 
   {
     field: "isAdmin",
-    headerName: "isAdmin",
-    width: 80,
+    headerName: "Có phải Admin",
+    width: 120,
     renderCell: (params) => {
       return (
         <div className="cellWithRole">
@@ -46,7 +52,7 @@ export const userColumns = [
   },
   {
     field: "createdAt",
-    headerName: "Create Account",
+    headerName: "Ngày tạo",
     width: 160,
     renderCell: (params) => {
       return <div className="cellWithCreateAt">{params.row.createdAt}</div>;
@@ -54,86 +60,177 @@ export const userColumns = [
   },
 ];
 
-//temporary data
-export const userRows = [
+//Places column
+
+export const placeColumns = [
   {
-    id: 1,
-    username: "Snow",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    status: "active",
-    email: "1snow@gmail.com",
-    age: 35,
+    field: "id",
+    headerName: "ID",
+    width: 200,
+    renderCell: (params) => {
+      return <div className="cellWithId">{params.row._id}</div>;
+    },
   },
   {
-    id: 2,
-    username: "Jamie Lannister",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "2snow@gmail.com",
-    status: "passive",
-    age: 42,
+    field: "name",
+    headerName: "Tên địa điểm",
+    width: 250,
+    renderCell: (params) => {
+      return (
+        <div className="cellWithImg">
+          <img className="cellImgPlace" src={params.row.image} alt="Avatar" />
+          {params.row.name}
+        </div>
+      );
+    },
   },
   {
-    id: 3,
-    username: "Lannister",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "3snow@gmail.com",
-    status: "pending",
-    age: 45,
+    field: "address",
+    headerName: "Địa chỉ",
+    width: 350,
+    renderCell: (params) => {
+      return <div className="cellWithAddressPlace">{params.row.address}</div>;
+    },
   },
   {
-    id: 4,
-    username: "Stark",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "4snow@gmail.com",
-    status: "active",
-    age: 16,
+    field: "category",
+    headerName: "Thể loại",
+    width: 150,
+    renderCell: (params) => {
+      return <div className="cellWithCategoryPlace">{params.row.category}</div>;
+    },
+  },
+
+  {
+    field: "createdAt",
+    headerName: "Create Date",
+    width: 84,
+    renderCell: (params) => {
+      return <div className="cellWithCreateAt">{params.row.createdAt}</div>;
+    },
+  },
+];
+
+//
+export const hotelColumns = [
+  {
+    field: "id",
+    headerName: "ID",
+    width: 200,
+    renderCell: (params) => {
+      return <div className="cellWithId">{params.row._id}</div>;
+    },
   },
   {
-    id: 5,
-    username: "Targaryen",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "5snow@gmail.com",
-    status: "passive",
-    age: 22,
+    field: "name",
+    headerName: "Tên khách sạn",
+    width: 300,
+    renderCell: (params) => {
+      return (
+        <div className="cellWithImg">
+          <img
+            className="cellImgPlace"
+            src={params.row.images[0]}
+            alt="Khách sạn"
+          />
+          {params.row.name}
+        </div>
+      );
+    },
   },
   {
-    id: 6,
-    username: "Melisandre",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "6snow@gmail.com",
-    status: "active",
-    age: 15,
+    field: "address",
+    headerName: "Địa chỉ",
+    width: 350,
+    renderCell: (params) => {
+      return <div className="cellWithAddressPlace">{params.row.address}</div>;
+    },
   },
   {
-    id: 7,
-    username: "Clifford",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "7snow@gmail.com",
-    status: "passive",
-    age: 44,
+    field: "price",
+    headerName: "Giá trung bình",
+    width: 120,
+    renderCell: (params) => {
+      return (
+        <div className="cellWithCategoryPlace">
+          {formatPrice(params.row.price)} VNĐ
+        </div>
+      );
+    },
+  },
+
+  {
+    field: "createdAt",
+    headerName: "Create Date",
+    width: 84,
+    renderCell: (params) => {
+      return <div className="cellWithCreateAt">{params.row.createdAt}</div>;
+    },
+  },
+];
+
+//
+export const tourColumns = [
+  {
+    field: "id",
+    headerName: "ID",
+    width: 200,
+    renderCell: (params) => {
+      return <div className="cellWithId">{params.row._id}</div>;
+    },
   },
   {
-    id: 8,
-    username: "Frances",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "8snow@gmail.com",
-    status: "active",
-    age: 36,
+    field: "name",
+    headerName: "Tên tuyến đường",
+    width: 300,
+    renderCell: (params) => {
+      return (
+        <div className="cellWithImg">
+          <img
+            className="cellImgPlace"
+            src={params.row.images[0]}
+            alt="Khách sạn"
+          />
+          {params.row.name}
+        </div>
+      );
+    },
   },
   {
-    id: 9,
-    username: "Roxie",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "snow@gmail.com",
-    status: "pending",
-    age: 65,
+    field: "route",
+    headerName: "Tuyến đường",
+    width: 300,
+    renderCell: (params) => {
+      return <div className="cellWithAddressPlace">{params.row.route}</div>;
+    },
   },
   {
-    id: 10,
-    username: "Roxie",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "snow@gmail.com",
-    status: "active",
-    age: 65,
+    field: "time",
+    headerName: "Thời gian",
+    width: 100,
+    renderCell: (params) => {
+      return <div className="cellWithAddressPlace">{params.row.time}</div>;
+    },
+  },
+  {
+    field: "price",
+    headerName: "Giá trung bình",
+    width: 110,
+    renderCell: (params) => {
+      return (
+        <div className="cellWithCategoryPlace">
+          {formatPrice(params.row.price)} VNĐ
+        </div>
+      );
+    },
+  },
+
+  {
+    field: "createdAt",
+    headerName: "Create Date",
+    width: 84,
+    renderCell: (params) => {
+      return <div className="cellWithCreateAt">{params.row.createdAt}</div>;
+    },
   },
 ];

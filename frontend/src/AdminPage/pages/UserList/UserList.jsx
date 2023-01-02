@@ -14,7 +14,6 @@ import axios from "axios";
 
 const UserList = () => {
   const userRows = useSelector((state) => state.users);
-  // const [data, setData] = useState(userRows);
   const token = useSelector((state) => state.token);
   const auth = useSelector((state) => state.auth);
   const dispatch = useDispatch();
@@ -29,7 +28,6 @@ const UserList = () => {
   }, [callback, token, isAdmin, dispatch]);
 
   const handleDelete = async (id) => {
-    console.log(id);
     try {
       Swal.fire({
         title: "Bạn có chắc chắn không?",
@@ -65,13 +63,13 @@ const UserList = () => {
               to={`/admin/users/edit/${params.row._id}`}
               style={{ textDecoration: "none" }}
             >
-              <div className="viewButton">Edit</div>
+              <div className="viewButton">Sửa</div>
             </Link>
             <div
               className="deleteButton"
               onClick={() => handleDelete(params.row._id)}
             >
-              Delete
+              Xoá
             </div>
           </div>
         );
@@ -89,7 +87,7 @@ const UserList = () => {
       <div className="datatable">
         <div className="datatableTitle">
           Danh sách người dùng
-          <Link to={`admin/user`} className="link">
+          <Link to={`create`} className="link">
             <i className="fa-solid fa-plus" style={{ marginRight: "5px" }}></i>
             Thêm người dùng
           </Link>

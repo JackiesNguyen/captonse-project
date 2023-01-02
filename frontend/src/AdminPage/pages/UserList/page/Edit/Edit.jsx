@@ -6,8 +6,6 @@ import { toast } from "react-toastify";
 import "./Edit.scss";
 
 const Edit = () => {
-  const auth = useSelector((state) => state.auth);
-  const { user } = auth;
   const { id } = useParams();
   const navigate = useNavigate();
   const [editUser, setEditUser] = useState([]);

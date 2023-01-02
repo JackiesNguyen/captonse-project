@@ -3,11 +3,125 @@ import Place from "../models/placeModel.js";
 const placeRouter = express.Router();
 import expressAsyncHandler from "express-async-handler";
 import auth from "../middleware/auth.js";
+import authAdmin from "../middleware/authAdmin.js";
 
 placeRouter.get("/", async (req, res) => {
   const places = await Place.find();
   res.send(places);
 });
+
+placeRouter.post(
+  "/",
+  auth,
+  authAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const {
+      name,
+      slug,
+      title,
+      category,
+      image,
+      district,
+      rating,
+      address,
+      description,
+      mapUrl,
+    } = req.body;
+    const placeExits = await Place.findOne({ name });
+    if (placeExits) {
+      res.status(400);
+      throw new Error("Place already");
+    } else {
+      const place = new Place({
+        name,
+        slug,
+        title,
+        category,
+        image,
+        district,
+        rating,
+        address,
+        description,
+        mapUrl,
+      });
+      if (place) {
+        const createdPlace = await place.save();
+        res.status(201).json(createdPlace);
+      } else {
+        res.status(404);
+        throw new Error("Invalid data");
+      }
+    }
+  })
+);
+
+placeRouter.put(
+  "/:id",
+  auth,
+  authAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const {
+      name,
+      slug,
+      title,
+      category,
+      image,
+      district,
+      rating,
+      address,
+      description,
+      mapUrl,
+    } = req.body;
+    const place = await Place.findById(req.params.id);
+    if (place) {
+      place.name = name;
+      place.slug = slug;
+      place.title = title;
+      place.category = category;
+      place.image = image;
+      place.district = district;
+      place.rating = rating;
+      place.address = address;
+      place.description = description;
+      place.mapUrl = mapUrl;
+
+      const updatedPlace = await place.save();
+      res.json(updatedPlace);
+    } else {
+      res.status(400);
+      throw new Error("Invalid place data");
+    }
+  })
+);
+
+placeRouter.get(
+  "/admin",
+  auth,
+  authAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const places = await Place.find();
+    const countPlaces = await Place.countDocuments();
+    res.send({
+      places,
+      countPlaces,
+    });
+  })
+);
+
+placeRouter.delete(
+  "/:id",
+  auth,
+  authAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const place = await Place.findById(req.params.id);
+    if (place) {
+      await place.remove();
+      res.send({ message: "Product Deleted" });
+    } else {
+      res.status(404).send({ message: "Product Not Found" });
+    }
+  })
+);
 
 placeRouter.post(
   "/:id/reviews",

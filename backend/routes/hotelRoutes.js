@@ -3,11 +3,129 @@ import auth from "../middleware/auth.js";
 import Hotel from "../models/hotelModel.js";
 const hotelRouter = express.Router();
 import expressAsyncHandler from "express-async-handler";
+import authAdmin from "../middleware/authAdmin.js";
 
 hotelRouter.get("/", async (req, res) => {
   const hotels = await Hotel.find();
   res.send(hotels);
 });
+
+hotelRouter.get(
+  "/admin",
+  auth,
+  authAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const hotels = await Hotel.find();
+    const countHotels = await Hotel.countDocuments();
+    res.send({
+      hotels,
+      countHotels,
+    });
+  })
+);
+
+hotelRouter.post(
+  "/",
+  auth,
+  authAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const {
+      name,
+      slug,
+      address,
+      district,
+      description,
+      mapUrl,
+      hotline,
+      images,
+      type,
+      price,
+      tags,
+    } = req.body;
+    const hotelExits = await Hotel.findOne({ name });
+    if (hotelExits) {
+      res.status(400);
+      throw new Error("Hotels already");
+    } else {
+      const hotel = new Hotel({
+        name,
+        slug,
+        address,
+        district,
+        description,
+        mapUrl,
+        hotline,
+        images,
+        type,
+        price,
+        tags,
+      });
+      if (hotel) {
+        const createdHotel = await hotel.save();
+        res.status(201).json(createdHotel);
+      } else {
+        res.status(404);
+        throw new Error("Invalid data");
+      }
+    }
+  })
+);
+
+hotelRouter.put(
+  "/:id",
+  auth,
+  authAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const {
+      name,
+      slug,
+      address,
+      district,
+      description,
+      mapUrl,
+      hotline,
+      images,
+      type,
+      price,
+      tags,
+    } = req.body;
+    const hotel = await Hotel.findById(req.params.id);
+    if (hotel) {
+      hotel.name = name;
+      hotel.slug = slug;
+      hotel.address = address;
+      hotel.district = district;
+      hotel.description = description;
+      hotel.mapUrl = mapUrl;
+      hotel.hotline = hotline;
+      hotel.images = images;
+      hotel.type = type;
+      hotel.price = price;
+      hotel.tags = tags;
+      const updatedHotel = await hotel.save();
+      res.json(updatedHotel);
+    } else {
+      res.status(400);
+      throw new Error("Lỗi backend");
+    }
+  })
+);
+
+hotelRouter.delete(
+  "/:id",
+  auth,
+  authAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const hotel = await Hotel.findById(req.params.id);
+    if (hotel) {
+      await hotel.remove();
+      res.send({ message: "Product Deleted" });
+    } else {
+      res.status(404).send({ message: "Product Not Found" });
+    }
+  })
+);
+
 hotelRouter.post(
   "/:id/reviews",
   auth,

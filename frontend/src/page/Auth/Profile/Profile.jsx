@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
 import { isLength, isMatch } from "../../../utils/validation/Validation";
 import "./Profile.scss";
 import {
@@ -14,8 +13,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { BsFillCameraFill } from "react-icons/bs";
 import LoadingClient from "../../../components/LoadingClient/LoadingClient";
-import { FaTimes, FaCheck, FaEdit, FaTrashAlt } from "react-icons/fa";
-import Swal from "sweetalert2/dist/sweetalert2.js";
 import "sweetalert2/src/sweetalert2.scss";
 
 const initialState = {
@@ -29,14 +26,14 @@ const initialState = {
 const Profile = () => {
   const auth = useSelector((state) => state.auth);
   const token = useSelector((state) => state.token);
-  const users = useSelector((state) => state.users);
+  // const users = useSelector((state) => state.users);
 
   const { user, isAdmin } = auth;
   const [data, setData] = useState(initialState);
   const { name, password, cf_password, err, success } = data;
 
   const [avatar, setAvatar] = useState(false);
-  const [callback, setCallback] = useState(false);
+  // const [callback, setCallback] = useState(false);
 
   const dispatch = useDispatch();
 
@@ -46,7 +43,7 @@ const Profile = () => {
         dispatch(dispatchGetAllUsers(res));
       });
     }
-  }, [token, isAdmin, dispatch, callback]);
+  }, [token, isAdmin, dispatch]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -148,29 +145,6 @@ const Profile = () => {
     if (password) updatePassword();
   };
 
-  const handleDelete = async (id) => {
-    try {
-      Swal.fire({
-        title: "Bạn có chắc chắn không?",
-        text: "Bạn sẽ không thể hoàn lại điều này!",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, delete it!",
-      }).then(async (result) => {
-        if (result.isConfirmed) {
-          await axios.delete(`/api/user/delete/${id}`, {
-            headers: { Authorization: token },
-          });
-          setCallback(!callback);
-          Swal.fire("Deleted!", "Your file has been deleted.", "success");
-        }
-      });
-    } catch (err) {
-      setData({ ...data, err: err.response.data.msg, success: "" });
-    }
-  };
   if (err) {
     toast.error(err);
   } else if (success) {

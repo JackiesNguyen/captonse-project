@@ -1,6 +1,13 @@
-.userList {
+.HotelList {
+  .loading {
+    text-align: center;
+    padding: 50px;
+    span {
+      margin: 0 auto;
+    }
+  }
   .datatable {
-    height: 600px;
+    height: 650px;
     padding: 20px;
 
     .datatableTitle {
@@ -32,16 +39,13 @@
       display: flex;
       align-items: center;
 
-      .cellImg {
-        width: 32px;
+      .cellImgPlace {
+        width: 50px;
         height: 32px;
-        border-radius: 50%;
+        // border-radius: 50%;
         object-fit: cover;
-        margin-right: 20px;
+        margin-right: 10px;
       }
-    }
-    .cellWithRole {
-      text-align: center;
     }
 
     .cellWithStatus {

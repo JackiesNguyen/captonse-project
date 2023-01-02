@@ -9,13 +9,42 @@ import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
 import TourIcon from "@mui/icons-material/Tour";
 import HotelIcon from "@mui/icons-material/Hotel";
-
+import logo from "../../../assets/images/LOGO.png";
+import axios from "axios";
 const Sidebar = () => {
   const { dispatch } = useContext(DarkModeContext);
+
+  const handleLogout = async () => {
+    try {
+      await axios.get("/api/user/logout");
+      localStorage.removeItem("firstLogin");
+      window.location.href = "/signin";
+    } catch (error) {
+      window.location.href = "/";
+    }
+  };
   return (
     <div className="sidebar">
       <div className="top">
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link
+          to="/"
+          style={{
+            textDecoration: "none",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src={logo}
+            alt=""
+            style={{
+              width: "40px",
+              height: "40px",
+              objectFit: "cover",
+              borderRadius: "50%",
+              border: "1px solid #6439ff",
+            }}
+          />
           <span className="logo">TravelCaps</span>
         </Link>
       </div>
@@ -26,7 +55,7 @@ const Sidebar = () => {
           <Link to="/admin" style={{ textDecoration: "none" }}>
             <li>
               <DashboardIcon className="icon" />
-              <span>Dashboard</span>
+              <span>Home</span>
             </li>
           </Link>
           <p className="title">LISTS</p>
@@ -60,7 +89,7 @@ const Sidebar = () => {
             <AccountCircleOutlinedIcon className="icon" />
             <span>Profile</span>
           </li>
-          <li>
+          <li onClick={handleLogout}>
             <ExitToAppIcon className="icon" />
             <span>Logout</span>
           </li>
