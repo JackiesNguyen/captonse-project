@@ -39,11 +39,15 @@ const UserList = () => {
         confirmButtonText: "Yes, delete it!",
       }).then(async (result) => {
         if (result.isConfirmed) {
-          await axios.delete(`/api/user/delete/${id}`, {
-            headers: { Authorization: token },
-          });
-          setCallback(!callback);
-          Swal.fire("Deleted!", "Your file has been deleted.", "success");
+          if (isAdmin) {
+            Swal.fire("Deleted!", "Bạn không thể xoá", "error");
+          } else {
+            await axios.delete(`/api/user/delete/${id}`, {
+              headers: { Authorization: token },
+            });
+            setCallback(!callback);
+            Swal.fire("Deleted!", "Your file has been deleted.", "success");
+          }
         }
       });
     } catch (err) {
@@ -87,10 +91,10 @@ const UserList = () => {
       <div className="datatable">
         <div className="datatableTitle">
           Danh sách người dùng
-          <Link to={`create`} className="link">
+          {/* <Link to={`create`} className="link">
             <i className="fa-solid fa-plus" style={{ marginRight: "5px" }}></i>
             Thêm người dùng
-          </Link>
+          </Link> */}
         </div>
         <DataGrid
           className="datagrid"

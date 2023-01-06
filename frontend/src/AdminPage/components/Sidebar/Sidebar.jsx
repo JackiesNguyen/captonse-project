@@ -2,18 +2,13 @@ import "./sidebar.scss";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import PlaceIcon from "@mui/icons-material/Place";
 import { Link } from "react-router-dom";
-import { DarkModeContext } from "../../context/darkModeContext";
-import { useContext } from "react";
 import TourIcon from "@mui/icons-material/Tour";
 import HotelIcon from "@mui/icons-material/Hotel";
 import logo from "../../../assets/images/LOGO.png";
 import axios from "axios";
 const Sidebar = () => {
-  const { dispatch } = useContext(DarkModeContext);
-
   const handleLogout = async () => {
     try {
       await axios.get("/api/user/logout");
@@ -85,25 +80,11 @@ const Sidebar = () => {
           </Link>
 
           <p className="title">USER</p>
-          <li>
-            <AccountCircleOutlinedIcon className="icon" />
-            <span>Profile</span>
-          </li>
           <li onClick={handleLogout}>
             <ExitToAppIcon className="icon" />
             <span>Logout</span>
           </li>
         </ul>
-      </div>
-      <div className="bottom">
-        <div
-          className="colorOption"
-          onClick={() => dispatch({ type: "LIGHT" })}
-        ></div>
-        <div
-          className="colorOption"
-          onClick={() => dispatch({ type: "DARK" })}
-        ></div>
       </div>
     </div>
   );

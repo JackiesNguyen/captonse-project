@@ -21,68 +21,6 @@
       box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
       padding: 10px;
       margin: 20px;
-
-      //   h1 {
-      //     color: gray;
-      //     font-size: 24px;
-      //     text-transform: capitalize;
-      //   }
-
-      //   .left {
-      //     flex: 1;
-      //     text-align: center;
-
-      //     img {
-      //       width: 100px;
-      //       height: 100px;
-      //       border-radius: 50%;
-      //       object-fit: cover;
-      //     }
-      //   }
-
-      //   .right {
-      //     margin-bottom: 20px;
-      //     flex: 2;
-
-      //     form {
-      //       display: flex;
-      //       flex-wrap: wrap;
-      //       gap: 30px;
-      //       //   justify-content: space-between;
-
-      //       .formInput {
-      //         width: 40%;
-
-      //         label {
-      //           display: flex;
-      //           align-items: center;
-      //           gap: 10px;
-
-      //           .icon {
-      //             cursor: pointer;
-      //           }
-      //         }
-
-      //         input {
-      //           width: 100%;
-      //           padding: 5px;
-      //           border: none;
-      //           border-bottom: 1px solid gray;
-      //         }
-      //       }
-
-      //       button {
-      //         width: 150px;
-      //         padding: 10px;
-      //         border: none;
-      //         background-color: teal;
-      //         color: white;
-      //         font-weight: bold;
-      //         cursor: pointer;
-      //         margin-top: 10px;
-      //       }
-      //     }
-      //   }
     }
   }
   .form {
@@ -115,7 +53,7 @@
 
         input {
           width: 100%;
-          padding: 10px;
+          padding: 15px;
           border: none;
           border: 1px solid gray;
           outline: none;
@@ -126,7 +64,7 @@
         }
         select {
           width: 100%;
-          padding: 10px;
+          padding: 15px;
           border: none;
           border: 1px solid gray;
           outline: none;

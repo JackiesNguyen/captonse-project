@@ -99,7 +99,6 @@ tourRouter.put(
       tour.serviceNotIncludes = serviceNotIncludes;
       tour.childrenPolicy = childrenPolicy;
       tour.images = images;
-
       tour.note = note;
 
       const updateTour = await tour.save();

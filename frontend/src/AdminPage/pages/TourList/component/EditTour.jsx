@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { useNavigate, useParams } from "react-router-dom";
 import Loading from "../../../components/Loading/Loading";
+import { convertToSlug } from "../../../components/convertToSlug";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -123,6 +124,11 @@ const EditTour = () => {
     }
   };
 
+  const handleChange = (e) => {
+    setName(e.target.value);
+    setSlug(convertToSlug(e.target.value));
+  };
+
   return (
     <div className="new">
       {loading ? (
@@ -132,7 +138,7 @@ const EditTour = () => {
       ) : (
         <div className="newContainers">
           <div className="toph">
-            <h1>Sửa</h1>
+            <h1>Sửa hành trình</h1>
           </div>
           <div className="bottom">
             <form onSubmit={handleSubmit} className="form">
@@ -144,7 +150,7 @@ const EditTour = () => {
                     type="text"
                     placeholder="Nhập tên hành trình..."
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="formInput">
@@ -236,35 +242,35 @@ const EditTour = () => {
 
                 <div className="formInput">
                   <label>Dịch vụ bao gồm</label>
-                  <input
-                    required
+                  <textarea
                     type="text"
                     placeholder="Dịch vụ bao gồm"
-                    value={serviceIncludes}
+                    required
                     onChange={(e) => setServiceIncludes(e.target.value)}
-                  />
+                    value={serviceIncludes}
+                  ></textarea>
                 </div>
 
                 <div className="formInput">
                   <label>Dịch vụ không bao gồm</label>
-                  <input
-                    required
+                  <textarea
                     type="text"
-                    placeholder="Dịch không bao gồm"
-                    value={serviceNotIncludes}
+                    placeholder="Dịch vụ không bao gồm..."
+                    required
                     onChange={(e) => setServiceNotIncludes(e.target.value)}
-                  />
+                    value={serviceNotIncludes}
+                  ></textarea>
                 </div>
 
                 <div className="formInput">
                   <label>Chính sách trẻ em</label>
-                  <input
-                    required
+                  <textarea
                     type="text"
-                    placeholder="Nhập chính sách trẻ em"
-                    value={childrenPolicy}
+                    placeholder="Chính sách trẻ em..."
+                    required
                     onChange={(e) => setChildrenPolicy(e.target.value)}
-                  />
+                    value={childrenPolicy}
+                  ></textarea>
                 </div>
 
                 <div className="formInput">

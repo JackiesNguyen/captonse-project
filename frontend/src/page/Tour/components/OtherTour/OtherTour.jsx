@@ -54,7 +54,7 @@ const OtherTour = () => {
           <ul className="tourDetail__other-list">
             {tours.map((tour, index) => (
               <li className="tourDetail__other-item" key={index}>
-                <Link to={`tour-du-lich/${tour.slug}`}>
+                <Link to={`/tour-du-lich/${tour.slug}`}>
                   {tour.name} <p>{formatPrice(tour.price)} đ</p>
                 </Link>
               </li>

@@ -25,7 +25,7 @@ const tourSchema = new mongoose.Schema(
     serviceIncludes: { type: String, require: true },
     serviceNotIncludes: { type: String, require: true },
     childrenPolicy: { type: String, require: true },
-    images: { type: Array, require: true },
+    images: [{ type: String, required: true }],
     rating: { type: Number, require: true },
     numReviews: { type: Number, require: true },
     reviews: [reviewSchema],
@@ -38,7 +38,7 @@ const tourSchema = new mongoose.Schema(
           {
             timeSchedule: { type: String, require: true },
             desc: { type: String, require: true },
-            img: { type: Array, require: true },
+            img: [{ type: String, required: true }],
           },
         ],
       },

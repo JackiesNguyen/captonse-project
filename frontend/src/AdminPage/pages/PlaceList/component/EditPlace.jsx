@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { useNavigate, useParams } from "react-router-dom";
 import Loading from "../../../components/Loading/Loading";
+import { convertToSlug } from "../../../components/convertToSlug";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -110,6 +111,11 @@ const EditPlace = () => {
     }
   };
 
+  const handleChange = (e) => {
+    setName(e.target.value);
+    setSlug(convertToSlug(e.target.value));
+  };
+
   return (
     <div className="new">
       {loading ? (
@@ -131,7 +137,7 @@ const EditPlace = () => {
                     type="text"
                     placeholder="Nhập địa điểm vào đây..."
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="formInput">

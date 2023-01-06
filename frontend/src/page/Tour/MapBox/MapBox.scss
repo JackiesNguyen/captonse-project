@@ -47,6 +47,16 @@
     flex: 0.3;
     overflow: hidden;
     position: relative;
+    overflow: hidden;
+    &-places {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      transition: all 0.3s linear;
+    }
     &-head {
       padding: 15px 20px;
       border-bottom: 1px solid #ccc;
@@ -72,6 +82,9 @@
           border: 1px solid #000;
           cursor: pointer;
           font-size: 15px;
+          &:hover {
+            opacity: 0.5;
+          }
         }
       }
     }
@@ -115,6 +128,9 @@
           color: #ccc;
           font-size: 13px;
           cursor: pointer;
+          &:hover {
+            color: #fff;
+          }
           i {
             margin-right: 10px;
           }
@@ -122,4 +138,7 @@
       }
     }
   }
+}
+.mapbox__sidebar-places.active {
+  left: 0;
 }

@@ -247,52 +247,7 @@ const Profile = () => {
                   </button>
                 </div>
               </Col>
-              <Col md={3}>
-                {/* <div className="col-right">
-                  <h2>{isAdmin ? "Users" : "My Orders"}</h2>
-
-                  <div style={{ overflowX: "auto" }}>
-                    <table className="customers">
-                      <thead>
-                        <tr>
-                          <th>ID</th>
-                          <th>Name</th>
-                          <th>Email</th>
-                          <th>Admin</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {users.map((user) => (
-                          <tr key={user._id}>
-                            <td>{user._id}</td>
-                            <td>{user.name}</td>
-                            <td>{user.email}</td>
-                            <td>
-                              {user.role === 1 ? (
-                                <FaCheck title="Admin" className="fa-check" />
-                              ) : (
-                                <FaTimes title="User" className="fa-times" />
-                              )}
-                            </td>
-                            <td>
-                              <Link to={`/edit_user/${user._id}`}>
-                                <FaEdit title="Edit" className="fa-edit" />
-                              </Link>
-
-                              <FaTrashAlt
-                                title="Remove"
-                                onClick={() => handleDelete(user._id)}
-                                className="fa-trash-alt"
-                              />
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div> */}
-              </Col>
+              <Col md={3}></Col>
             </Row>
           </Container>
         )}

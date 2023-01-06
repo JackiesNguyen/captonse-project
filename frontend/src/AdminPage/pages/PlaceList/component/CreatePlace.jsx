@@ -1,10 +1,11 @@
 import React, { useReducer } from "react";
-import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import { useState } from "react";
 import "./CreateEdit.scss";
 import axios from "axios";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
+import Loading from "../../../components/Loading/Loading";
+import { convertToSlug } from "../../../components/convertToSlug";
 import { useNavigate } from "react-router-dom";
 
 const reducer = (state, action) => {
@@ -21,13 +22,12 @@ const reducer = (state, action) => {
 };
 
 const CreatePlace = () => {
-  const token = useSelector((state) => state.token);
   const navigate = useNavigate();
-  const [{ loading, error, loadingUpdate, loadingUpload }, dispatch] =
-    useReducer(reducer, {
-      loading: true,
-      error: "",
-    });
+  const token = useSelector((state) => state.token);
+  const [{ loading, error }, dispatch] = useReducer(reducer, {
+    loading: true,
+    error: "",
+  });
   const [name, setName] = useState("");
   const [slug, setSlug] = useState("");
   const [title, setTile] = useState("");
@@ -63,12 +63,18 @@ const CreatePlace = () => {
       );
       toast.success("Thêm địa điểm thành công ");
       dispatch({ type: "FETCH_SUCCESS" });
+      navigate("/admin/places");
     } catch (err) {
       toast.error(error);
       dispatch({
         type: "FETCH_FAIL",
       });
     }
+  };
+
+  const handleChange = (e) => {
+    setName(e.target.value);
+    setSlug(convertToSlug(e.target.value));
   };
 
   return (
@@ -87,7 +93,7 @@ const CreatePlace = () => {
                   type="text"
                   placeholder="Nhập địa điểm vào đây..."
                   value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  onChange={handleChange}
                 />
               </div>
               <div className="formInput">
@@ -97,7 +103,6 @@ const CreatePlace = () => {
                   type="text"
                   placeholder="Ví dụ: cau-song-han"
                   value={slug}
-                  onChange={(e) => setSlug(e.target.value)}
                 />
               </div>
               <div className="formInput">
@@ -129,27 +134,6 @@ const CreatePlace = () => {
                   <option value="Quán Ăn Chay">Quán ăn</option>
                 </select>
               </div>
-              {/* <div className="formInput">
-                <>
-                  <label htmlFor="file">
-                    Hình ảnh: <DriveFolderUploadOutlinedIcon className="icon" />
-                  </label>
-                  <input
-                    type="file"
-                    id="file"
-                    onChange={(e) => setImage(e.target.files[0])}
-                    style={{ display: "none" }}
-                  />
-                </>
-                <img
-                  src={
-                    image
-                      ? URL.createObjectURL(image)
-                      : "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
-                  }
-                  alt=""
-                />
-              </div> */}
               <div className="formInput">
                 <label>Hình ảnh</label>
                 <input

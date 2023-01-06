@@ -33,7 +33,7 @@ const Header = () => {
       await axios.get("/api/user/logout");
       localStorage.removeItem("firstLogin");
       window.location.href = "/signin";
-    } catch (error) {
+    } catch (err) {
       window.location.href = "/";
     }
   };
@@ -46,11 +46,11 @@ const Header = () => {
           <AiFillCaretDown />
           <ul className="user-content">
             <li>
-              <Link to="/profile">Profie</Link>
+              <Link to="/profile">Thông tin cá nhân</Link>
             </li>
             <li>
               <Link to="/" onClick={handleLogout}>
-                Logout
+                Đăng xuất
               </Link>
             </li>
           </ul>

@@ -9,7 +9,6 @@ const Edit = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [editUser, setEditUser] = useState([]);
-
   const users = useSelector((state) => state.users);
 
   const token = useSelector((state) => state.token);
@@ -27,7 +26,7 @@ const Edit = () => {
         }
       });
     } else {
-      navigate("/profile");
+      navigate("/admin");
     }
   }, [users, id, navigate]);
 
@@ -51,7 +50,7 @@ const Edit = () => {
       err.response.data.msg && setErr(err.response.data.msg);
     }
   };
-
+  console.log(users.role);
   const handleCheck = () => {
     setSuccess("");
     setErr("");

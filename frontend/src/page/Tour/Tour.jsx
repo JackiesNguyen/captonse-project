@@ -45,7 +45,11 @@ const Tour = () => {
   }, []);
   const navigate = useNavigate();
   const handleClickCreateTour = () => {
-    navigate("/tour-du-lich/tao-hanh-trinh");
+    if (isLogged === false) {
+      navigate(`/signin?redirect=/tour-du-lich`);
+    } else {
+      navigate("/tour-du-lich/tao-hanh-trinh");
+    }
   };
   return (
     <div className="tour">
@@ -80,13 +84,14 @@ const Tour = () => {
 
             <div className="tour__box">
               <h2 className="tour__title">Hành trình đề xuất</h2>
-              <div className="create-tour" onClick={handleClickCreateTour}>
+
+              <button className="create-tour" onClick={handleClickCreateTour}>
                 <i
                   className="fa-solid fa-plus"
                   style={{ marginRight: "5px" }}
                 ></i>
                 Tạo hành trình
-              </div>
+              </button>
               {!isLogged && (
                 <div className="check-login">
                   Vui lòng{" "}

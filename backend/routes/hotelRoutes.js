@@ -1,9 +1,9 @@
 import express from "express";
 import auth from "../middleware/auth.js";
+import authAdmin from "../middleware/authAdmin.js";
 import Hotel from "../models/hotelModel.js";
 const hotelRouter = express.Router();
 import expressAsyncHandler from "express-async-handler";
-import authAdmin from "../middleware/authAdmin.js";
 
 hotelRouter.get("/", async (req, res) => {
   const hotels = await Hotel.find();

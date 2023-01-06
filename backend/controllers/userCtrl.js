@@ -162,9 +162,10 @@ const userCtrl = {
       return res.status(500).json({ msg: err.message });
     }
   },
+
   logout: async (req, res) => {
     try {
-      res.clearCookie("refreshtoken", { path: "api/user/refresh_token" });
+      res.clearCookie("refreshtoken", { path: "/api/user/refresh_token" });
       return res.json({ msg: "Đăng xuất" });
     } catch (err) {
       return res.status(500).json({ msg: err.message });

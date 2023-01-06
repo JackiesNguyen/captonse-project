@@ -82,7 +82,7 @@ const IntroDn = () => {
                           <Link to="/gioi-thieu/tong-quan-da-nang">
                             Tổng quan Đà Nẵng
                           </Link>
-                          <p className="date__post">10/12/2022</p>
+                          {/* <p className="date__post">10/12/2022</p> */}
                           <p className="introDn__desc">
                             Đà Nẵng là thành phố lớn thứ 4 ở Việt Nam sau Thành
                             phố Hồ Chí Minh, Hà Nội và Hải Phòng về đô thị hóa
@@ -104,7 +104,7 @@ const IntroDn = () => {
                           <Link to="/gioi-thieu/thoi-tiet-da-nang">
                             Thời tiết Đà Nẵng
                           </Link>
-                          <p className="date__post">10/12/2022</p>
+                          {/* <p className="date__post">10/12/2022</p> */}
                           <p className="introDn__desc">
                             Thời tiết Đà Nẵng nằm trong vùng khí hậu nhiệt đới
                             gió mùa điển hình, nhiệt độ cao và ổn định. Đà Nẵng
@@ -126,7 +126,7 @@ const IntroDn = () => {
                           <Link to="/gioi-thieu/lich-su-da-nang">
                             Lịch sử Đà Nẵng
                           </Link>
-                          <p className="date__post">10/12/2022</p>
+                          {/* <p className="date__post">10/12/2022</p> */}
                           <p className="introDn__desc">
                             Trong lịch sử dân tộc, Đà Nẵng được biết đến không
                             chỉ là một thành phố cảng lớn nhất miền Trung Việt
