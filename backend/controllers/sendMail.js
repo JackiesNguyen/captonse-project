@@ -39,7 +39,7 @@ const sendEmail = (to, url, txt) => {
   });
 
   const mailOptions = {
-    from: `"Van Hai"<hainguyen.061001@gmail.com>`,
+    from: `"TravelCaps"<hainguyen.061001@gmail.com>`,
     to: to,
     subject: "Travel Caps",
     html: `

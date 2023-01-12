@@ -77,7 +77,7 @@ export const ratings = [
 ];
 
 export default function SearchTour() {
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
   const navigate = useNavigate();
   const { search } = useLocation();
   const sp = new URLSearchParams(search); // /search?category=Shirts
@@ -248,7 +248,11 @@ export default function SearchTour() {
                         price !== "all" ? (
                           <Button
                             variant="light"
-                            onClick={() => navigate("/search")}
+                            onClick={() =>
+                              navigate(
+                                "/tour-du-lich/search?time=all&query=all&price=all&rating=all&order=newest&page=1"
+                              )
+                            }
                           >
                             <i className="fas fa-times-circle"></i>
                           </Button>

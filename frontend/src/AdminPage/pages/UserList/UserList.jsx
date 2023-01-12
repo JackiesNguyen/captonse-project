@@ -27,7 +27,7 @@ const UserList = () => {
     }
   }, [callback, token, isAdmin, dispatch]);
 
-  const handleDelete = async (id) => {
+  const handleDelete = async (id, role) => {
     try {
       Swal.fire({
         title: "Bạn có chắc chắn không?",
@@ -39,7 +39,7 @@ const UserList = () => {
         confirmButtonText: "Yes, delete it!",
       }).then(async (result) => {
         if (result.isConfirmed) {
-          if (isAdmin) {
+          if (role === 1) {
             Swal.fire("Deleted!", "Bạn không thể xoá", "error");
           } else {
             await axios.delete(`/api/user/delete/${id}`, {
@@ -71,7 +71,7 @@ const UserList = () => {
             </Link>
             <div
               className="deleteButton"
-              onClick={() => handleDelete(params.row._id)}
+              onClick={() => handleDelete(params.row._id, params.row.role)}
             >
               Xoá
             </div>

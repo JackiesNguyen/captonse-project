@@ -214,7 +214,7 @@ const TourDetail = () => {
                       }}
                     />
                     <div className="tourDetail__schedule">
-                      <h3>Lịch trình tour: </h3>
+                      {/* <h3>Lịch trình tour: </h3> */}
                       <div className="tourDetail__schedule-list">
                         {tour.tourSchedule.map((sh, index) => (
                           <div

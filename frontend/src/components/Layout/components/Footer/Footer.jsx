@@ -62,7 +62,7 @@ const Footer = () => {
                   <li>
                     <i className="fa-solid fa-phone-flip"></i>
                     <span>
-                      Hotline: <strong>0123456789</strong>
+                      Hotline: <strong>0867405503</strong>
                     </span>
                   </li>
                   <li>
@@ -80,7 +80,7 @@ const Footer = () => {
             </Col>
             <Col sm={4}>
               <div className="footer__middle">
-                <h2 className="footer__head">Địa điểm mới nhất</h2>
+                <h2 className="footer__head">Địa điểm nổi bật</h2>
                 <ul>
                   {newPlaces.map(
                     (newP, index) =>
@@ -97,11 +97,11 @@ const Footer = () => {
             <Col sm={4}>
               <div className="footer__right">
                 <h2 className="footer__head">Mục xem nhiều</h2>
-                <ul>
+                {/* <ul>
                   {cates.map((category, index) => (
                     <li key={index}>{category}</li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </Col>
           </Row>

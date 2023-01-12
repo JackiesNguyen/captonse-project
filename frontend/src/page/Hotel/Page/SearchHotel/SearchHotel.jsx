@@ -248,7 +248,11 @@ export default function SearchHotel() {
                         price !== "all" ? (
                           <Button
                             variant="light"
-                            onClick={() => navigate("/search")}
+                            onClick={() =>
+                              navigate(
+                                "/khach-san/search?type=all&query=all&price=all&rating=all&order=newest&page=1"
+                              )
+                            }
                           >
                             <i className="fas fa-times-circle"></i>
                           </Button>
