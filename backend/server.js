@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
+import path from "path";
 // Router import
 import seedRouter from "./routes/seedRoutes.js";
 import placeRouter from "./routes/placeRoutes.js";
@@ -40,6 +41,12 @@ app.use("/api/hotels", hotelRouter);
 app.use("/api/tours", tourRouter);
 app.use("/api/user", userRouter);
 app.use("/api/avatar", uploadRouter);
+
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, "/frontend/build")));
+app.get("*", (req, res) =>
+  res.sendFile(path.join(__dirname, "/frontend/build/index.html"))
+);
 
 // PORT
 
